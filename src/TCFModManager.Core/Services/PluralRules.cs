@@ -55,6 +55,9 @@ public static class PluralRules
             "fr" => FrenchAndFriends(n),
             "ru" or "uk" => EastSlavic(n),
 
+            // Simplified and Traditional alike: CLDR gives every Chinese variant the one category.
+            "zh" => SingleForm(n),
+
             _ => TwoForm(n),
         };
     }
@@ -101,6 +104,18 @@ public static class PluralRules
             _ => PluralCategory.Many,
         };
     }
+
+    //
+    // Chinese: ONE category, so every count takes the same form and the number is carried by the
+    // message rather than by the wording.
+    //
+    // The arm that matters most to be written down rather than left to the fallback. TwoForm would
+    // answer _one for a count of 1, and Chinese translations hold no _one key - they hold the _other
+    // wording, which reads correctly for 1 and for 40 alike. Falling through would therefore send
+    // every single-item message to an English form that does not exist in the translation at all:
+    // a Chinese app saying "1 mod found" in English, on every page that counts anything.
+    //
+    private static PluralCategory SingleForm(int n) => PluralCategory.Other;
 
     //
     // The suffix a category contributes to a key: Installed_CountFound + _one. Lower case, because

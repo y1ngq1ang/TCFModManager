@@ -210,11 +210,15 @@ Debug-level output in the same log. Logs rotate daily as `tcfmm-<yyyyMMdd>.log`.
 ### Translating the app
 
 **Options - Language** picks the language the app's own text is read in; **System default** follows
-the display language Windows is set to. Five languages ship: English, German, French, Italian and
-Russian.
+the display language Windows is set to. Six languages ship: English, German, French, Italian, Russian
+and Simplified Chinese.
 
-**Four of those five are machine translations that no native speaker has checked.** They exist
-because the alternative was English only until a volunteer translated 1,290 strings from nothing,
+Chinese ships as `zh-Hans` - the script tag rather than a region, so a machine set to Chinese
+(Simplified) on any machine, `zh-CN` or `zh-SG` alike, lands on it. A Traditional Chinese machine
+(`zh-Hant`, `zh-TW`) has nothing to land on and reads English until somebody translates it.
+
+**Five of those six are machine translations that no native speaker has checked.** They exist
+because the alternative was English only until a volunteer translated 1,399 strings from nothing,
 which was not going to happen. Each one says so in its own `Meta_TranslationCredit`, shown under the
 language picker, and that line is what a human translator replaces with their name.
 
@@ -230,7 +234,7 @@ editor:
 1. Take `src\TCFModManager.App\Localization\Strings.resx`.
 2. Open it in [ResXResourceManager](https://github.com/dotnet/ResXResourceManager/releases) - the
    standalone build, not the Visual Studio extension. It shows every language side by side in a
-   grid, so the English and the four existing translations are all readable while filling in a new
+   grid, so the English and the five existing translations are all readable while filling in a new
    column.
 3. Add a column for the new language and fill it in. Most entries carry a comment saying what the
    string is for and what each `{0}` is replaced with.
@@ -253,9 +257,10 @@ way the dropdown should list it (`Deutsch`, not `German`). `Meta_TranslationCred
 translator's own line, shown under the language picker in Options and hidden when empty.
 
 Counted sentences are split into one entry per plural form. English and German need two (`_one`,
-`_other`), French two but with 0 taking the singular, Russian three (`_one`, `_few`, `_many`); the
-key schema reserves all six CLDR categories, so a language needing more is a resx change plus one
-rule in `Core\Services\PluralRules.cs` - no call site moves.
+`_other`), French two but with 0 taking the singular, Russian three (`_one`, `_few`, `_many`), Chinese
+one (`_other` alone, which every count reads); the key schema reserves all six CLDR categories, so a
+language needing more is a resx change plus one rule in `Core\Services\PluralRules.cs` - no call site
+moves.
 
 ## Known limitations
 

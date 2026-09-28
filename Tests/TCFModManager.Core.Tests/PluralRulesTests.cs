@@ -91,6 +91,24 @@ public class PluralRulesTests
         Assert.Equal(expected, For(tag, count));
 
     //
+    // Chinese is the other extreme from Russian: ONE category, so no count changes the wording and
+    // the number is always spelled by {0} inside the message. Written as its own arm for the same
+    // reason German and Italian are, and worth asserting rather than assuming because the fallback
+    // is wrong here in a way it is not for them - TwoForm would answer _one for a count of 1, and a
+    // Chinese translation holds no _one key to answer with.
+    //
+    [Theory]
+    [InlineData("zh-Hans", 0)]
+    [InlineData("zh-Hans", 1)]
+    [InlineData("zh-Hans", 2)]
+    [InlineData("zh-Hans", 11)]
+    [InlineData("zh-Hans", 21)]
+    [InlineData("zh-Hans", 100)]
+    [InlineData("zh-CN", 1)]
+    public void Chinese_has_a_single_form_whatever_the_count(string tag, int count) =>
+        Assert.Equal(PluralCategory.Other, For(tag, count));
+
+    //
     // A language nobody has written a rule for falls back to the two-form shape, which is the same
     // shape as the English values resource fallback is already handing it.
     //

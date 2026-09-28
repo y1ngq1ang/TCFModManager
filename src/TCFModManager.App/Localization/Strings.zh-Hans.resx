@@ -1,0 +1,4308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    The canonical English strings. Every other language is a Strings.<tag>.resx beside this file,
+    holding only the keys it has translated - anything missing falls back through here, so an
+    out-of-date translation is a partly-English app rather than a blank one.
+
+    Keys are Page_Thing, underscored, one flat file: the key name is what a C# call site
+    (Strings.Common_Rescan) and a XAML binding ({loc:Str Common_Rescan}) both spell, and the
+    generated accessor turns a dot into an underscore anyway.
+
+    Edit translations with ResXResourceManager's standalone build rather than by hand - it shows
+    every language side by side and marks what is untranslated.
+  -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Addon_ActionInstall" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="Addon_ActionRedownload" xml:space="preserve">
+    <value>重新下载</value>
+  </data>
+  <data name="Addon_ActionUpdate" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Addon_CancelledFormat" xml:space="preserve">
+    <value>已取消，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="Addon_DownloadsFormat" xml:space="preserve">
+    <value>{0:N0} 次下载</value>
+  </data>
+  <data name="Addon_HeadingFormat" xml:space="preserve">
+    <value>附加组件：{0}</value>
+  </data>
+  <data name="Addon_InstallParentFirstFormat" xml:space="preserve">
+    <value>请先安装 {0}，此附加组件依附于它。</value>
+  </data>
+  <data name="Addon_InstallParentNoticeFormat" xml:space="preserve">
+    <value>请先安装 {0}，附加组件需要知道父模组的版本，才能确定自己哪些版本适用。</value>
+  </data>
+  <data name="Addon_NameFormat" xml:space="preserve">
+    <value>附加组件 {0}</value>
+  </data>
+  <data name="Addon_NeedsParentFormat" xml:space="preserve">
+    <value>需要 {0} {1}，你当前是 {2}。</value>
+  </data>
+  <data name="Addon_NoVersionsFormat" xml:space="preserve">
+    <value>{0} 没有已发布的版本。</value>
+  </data>
+  <data name="Addon_ParentFallback" xml:space="preserve">
+    <value>父模组</value>
+  </data>
+  <data name="Addon_QueuedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 加入队列，进度请在「下载」页面查看。</value>
+  </data>
+  <data name="Addon_TagInstalled" xml:space="preserve">
+    <value> - 已安装</value>
+  </data>
+  <data name="Addon_TagLatest" xml:space="preserve">
+    <value> - 最新</value>
+  </data>
+  <data name="Addon_TagNeedsFormat" xml:space="preserve">
+    <value> - 需要 {0}</value>
+  </data>
+  <data name="Addon_ThisMod" xml:space="preserve">
+    <value>此模组</value>
+  </data>
+  <data name="Addon_UncheckedFormat" xml:space="preserve">
+    <value>无法对照 {0} {1} 进行检查，只有作者说明它适用时才安装。</value>
+  </data>
+  <data name="Addons_Description" xml:space="preserve">
+    <value>为该模组发布的额外内容。附加组件的版本对照的是该模组的已安装版本，而不是你的 SPT 版本。</value>
+  </data>
+  <data name="Addons_InstalledFormat" xml:space="preserve">
+    <value>已安装：{0}</value>
+  </data>
+  <data name="Addons_OpenPage" xml:space="preserve">
+    <value>在 sp-mod.com 上打开此附加组件的页面</value>
+  </data>
+  <data name="Api_ErrorFormat" xml:space="preserve">
+    <value>sp-mod.com 错误：{0}</value>
+  </data>
+  <data name="Api_NetworkErrorFormat" xml:space="preserve">
+    <value>网络错误：{0}</value>
+  </data>
+  <data name="Api_RateLimitedFormat" xml:space="preserve">
+    <value>被 sp-mod.com 限制了请求频率，请在 {0:N0} 秒后重试。</value>
+  </data>
+  <data name="Api_UnreachableFormat" xml:space="preserve">
+    <value>无法访问 sp-mod.com：{0}</value>
+  </data>
+  <data name="App_CrashBodyFormat" xml:space="preserve">
+    <value>出现了未被处理的错误：
+
+{0}
+
+错误已写入：
+{1}</value>
+  </data>
+  <data name="App_CrashTitle" xml:space="preserve">
+    <value>TCF Mod Manager，意外错误</value>
+  </data>
+  <data name="AppUpdate_BannerTitleFormat" xml:space="preserve">
+    <value>{0}：{1}</value>
+  </data>
+  <data name="AppUpdate_Cancelled" xml:space="preserve">
+    <value>更新已取消。未做任何更改。</value>
+  </data>
+  <data name="AppUpdate_ChangeMajor" xml:space="preserve">
+    <value>重大更新</value>
+  </data>
+  <data name="AppUpdate_ChangeMinor" xml:space="preserve">
+    <value>功能更新</value>
+  </data>
+  <data name="AppUpdate_ChangePatch" xml:space="preserve">
+    <value>问题修复更新</value>
+  </data>
+  <data name="AppUpdate_ChangeUnknown" xml:space="preserve">
+    <value>有可用更新</value>
+  </data>
+  <data name="AppUpdate_CheckFailedTitle" xml:space="preserve">
+    <value>无法检查更新</value>
+  </data>
+  <data name="AppUpdate_CheckNow" xml:space="preserve">
+    <value>立即检查</value>
+  </data>
+  <data name="AppUpdate_CheckUnexpectedFormat" xml:space="preserve">
+    <value>检查更新时出现意外错误：{0}</value>
+  </data>
+  <data name="AppUpdate_DownloadAndInstall" xml:space="preserve">
+    <value>下载并安装</value>
+  </data>
+  <data name="AppUpdate_DownloadingFormat" xml:space="preserve">
+    <value>正在从 sp-mod.com 下载 {0}…</value>
+  </data>
+  <data name="AppUpdate_DownloadingProgressFormat" xml:space="preserve">
+    <value>正在从 sp-mod.com 下载 {0}… {1:P0}</value>
+  </data>
+  <data name="AppUpdate_DownloadNotReadable" xml:space="preserve">
+    <value>下载的文件不是可读取的 zip 压缩包，下载可能已中断。请重试。</value>
+  </data>
+  <data name="AppUpdate_DownloadSizeFormat" xml:space="preserve">
+    <value>需下载 {0:N0} MB</value>
+  </data>
+  <data name="AppUpdate_FolderNotWritableFormat" xml:space="preserve">
+    <value>本应用无法写入自己所在的文件夹（{0}），因此无法就地更新自己。请把它移到 Program Files 之外的位置，或者从模组页面下载新版本后手动替换。</value>
+  </data>
+  <data name="AppUpdate_InfoMessage" xml:space="preserve">
+    <value>本应用在 sp-mod.com 上有自己的模组页面，与你通过本应用安装的其他内容一样。更新信息通过公开 API 从该页面读取，下载的文件也正是该页面自己的「下载」按钮所提供的文件。与其他模组一样，下载任何内容之前都会先打开该页面，方便你阅读更新说明，不绕过任何流程，这符合 sp-mod.com 及其作者的要求。</value>
+  </data>
+  <data name="AppUpdate_InfoTitle" xml:space="preserve">
+    <value>更新来自 sp-mod.com</value>
+  </data>
+  <data name="AppUpdate_InstalledLabel" xml:space="preserve">
+    <value>已安装：</value>
+  </data>
+  <data name="AppUpdate_InstallNote" xml:space="preserve">
+    <value>系统会先请你打开模组页面。随后本应用会下载该版本，自行关闭，替换为新版本后重新打开。你的设置、安装记录和已暂存的下载都不会被改动。</value>
+  </data>
+  <data name="AppUpdate_LatestLabel" xml:space="preserve">
+    <value>sp-mod.com 上的最新版本：</value>
+  </data>
+  <data name="AppUpdate_MajorBodyFormat" xml:space="preserve">
+    <value>{0} 改变了版本号的第一个数字（●.x.x），所以这是一次重大更新，预计会有较大变化。更新前请先阅读下方说明与模组页面。</value>
+  </data>
+  <data name="AppUpdate_MajorNote" xml:space="preserve">
+    <value>重大更新。改动较大，请先阅读更新说明。</value>
+  </data>
+  <data name="AppUpdate_MinorBodyFormat" xml:space="preserve">
+    <value>{0} 改变了中间的数字（x.●.x），因此它会新增功能，或改变某些东西的工作方式。更新前值得先读一读下面的说明。</value>
+  </data>
+  <data name="AppUpdate_MinorNote" xml:space="preserve">
+    <value>功能更新。有新增内容，或者某些东西的工作方式变了。</value>
+  </data>
+  <data name="AppUpdate_NoDownloadFileFormat" xml:space="preserve">
+    <value>sp-mod.com 上列出了 {0}，但没有附带文件。请打开模组页面手动下载。</value>
+  </data>
+  <data name="AppUpdate_NoSpaceFormat" xml:space="preserve">
+    <value>{0} 上的可用空间不足，无法下载并解压更新。</value>
+  </data>
+  <data name="AppUpdate_NoSpaceSizedFormat" xml:space="preserve">
+    <value>{0} 上的可用空间不足，无法下载并解压更新，大约需要 {1}MB，可用 {2}MB。</value>
+  </data>
+  <data name="AppUpdate_NotAppliedTitle" xml:space="preserve">
+    <value>更新未应用</value>
+  </data>
+  <data name="AppUpdate_OpenModPage" xml:space="preserve">
+    <value>打开模组页面</value>
+  </data>
+  <data name="AppUpdate_PatchBodyFormat" xml:space="preserve">
+    <value>{0} 只改变最后一位数字（x.x.●），因此它只是对当前版本已有行为的修复，没有新东西要学。如果你这里没出问题，可以放心跳过。</value>
+  </data>
+  <data name="AppUpdate_PatchNote" xml:space="preserve">
+    <value>错误修复。修复已有内容。可以放心跳过。</value>
+  </data>
+  <data name="AppUpdate_PatternMajor" xml:space="preserve">
+    <value>变更.x.x</value>
+  </data>
+  <data name="AppUpdate_PatternMinor" xml:space="preserve">
+    <value>x.变更.x</value>
+  </data>
+  <data name="AppUpdate_PatternPatch" xml:space="preserve">
+    <value>x.x.变更</value>
+  </data>
+  <data name="AppUpdate_PublishedFormat" xml:space="preserve">
+    <value>发布于 {0:yyyy年M月d日}</value>
+  </data>
+  <data name="AppUpdate_RateLimited" xml:space="preserve">
+    <value>sp-mod.com 目前正在限流。请过一分钟再试。</value>
+  </data>
+  <data name="AppUpdate_ReleaseMissingExeFormat" xml:space="preserve">
+    <value>{0} 版本的发布包里，本应用预期的位置没有 {1}。请从模组页面下载，再手动复制过去。</value>
+  </data>
+  <data name="AppUpdate_Restarting" xml:space="preserve">
+    <value>正在关闭并重启以完成更新…</value>
+  </data>
+  <data name="AppUpdate_ServerMapBehindTitle" xml:space="preserve">
+    <value>服务器地图模组有新版本</value>
+  </data>
+  <data name="AppUpdate_ServerMapCheckFailed" xml:space="preserve">
+    <value>无法检查 sp-mod.com 上是否有更新的服务器地图模组。点「立即检查」会再试一次。</value>
+  </data>
+  <data name="AppUpdate_ServerMapConnectedBehindFormat" xml:space="preserve">
+    <value>你连接的服务器运行的是 {0}，而 {1} 已经发布。只有运行该服务器的人才能更新它，请转告他们。</value>
+  </data>
+  <data name="AppUpdate_ServerMapConnectedLabel" xml:space="preserve">
+    <value>在你连接的服务器上：</value>
+  </data>
+  <data name="AppUpdate_ServerMapHeader" xml:space="preserve">
+    <value>服务器地图模组</value>
+  </data>
+  <data name="AppUpdate_ServerMapLocalBehindFormat" xml:space="preserve">
+    <value>版本 {0} 已发布，而本机的服务器运行的是 {1}。请停止服务器，用新压缩包里的 payload 和 stub 替换现有的，然后重新启动，具体步骤见压缩包里的 INSTALL.txt。</value>
+  </data>
+  <data name="AppUpdate_ServerMapLocalLabel" xml:space="preserve">
+    <value>在本机上：</value>
+  </data>
+  <data name="AppUpdate_ServerMapOpenPage" xml:space="preserve">
+    <value>打开模组页面</value>
+  </data>
+  <data name="AppUpdate_ServerMapStubBehindFormat" xml:space="preserve">
+    <value>user\mods 里的 stub 是 {0}，payload 是 {1}。请用与 payload 同一个压缩包里的 stub 替换它，在替换之前，「仅应答此网络」会拒绝所有机器。</value>
+  </data>
+  <data name="AppUpdate_ServerMapStubBehindTitle" xml:space="preserve">
+    <value>stub 比 payload 旧</value>
+  </data>
+  <data name="AppUpdate_ServerMapUpToDate" xml:space="preserve">
+    <value>服务器地图模组已是最新。</value>
+  </data>
+  <data name="AppUpdate_StagedMissingExeFormat" xml:space="preserve">
+    <value>已暂存的更新缺少 {0}，没有做任何更改。</value>
+  </data>
+  <data name="AppUpdate_StagedTooSmallFormat" xml:space="preserve">
+    <value>已暂存的 {0} 太小，不可能是真正的构建，没有做任何更改。</value>
+  </data>
+  <data name="AppUpdate_StagedTooSmallSizedFormat" xml:space="preserve">
+    <value>已暂存的 {0} 只有 {1}KB，太小，不可能是真正的构建，没有做任何更改。</value>
+  </data>
+  <data name="AppUpdate_TheAppExecutable" xml:space="preserve">
+    <value>应用可执行文件</value>
+  </data>
+  <data name="AppUpdate_TheNewVersion" xml:space="preserve">
+    <value>新版本</value>
+  </data>
+  <data name="AppUpdate_TimedOut" xml:space="preserve">
+    <value>连接 sp-mod.com 超时，请检查网络连接后重试。</value>
+  </data>
+  <data name="AppUpdate_UnexpectedFormat" xml:space="preserve">
+    <value>更新失败：{0}。没有做任何更改，如果反复出现，请从模组页面下载并手动替换此文件夹。</value>
+  </data>
+  <data name="AppUpdate_UnknownBodyFormat" xml:space="preserve">
+    <value>sp-mod.com 上列出的是 {0}，但它的版本编号让本应用无法与 {1} 比较。请查看模组页面，看看有什么变化。</value>
+  </data>
+  <data name="AppUpdate_Unpacking" xml:space="preserve">
+    <value>正在解压新版本…</value>
+  </data>
+  <data name="AppUpdate_UnreachableFormat" xml:space="preserve">
+    <value>无法访问 sp-mod.com：{0}</value>
+  </data>
+  <data name="AppUpdate_UpdaterWouldNotStartFormat" xml:space="preserve">
+    <value>无法启动更新脚本。新版本已下载并解压到 {0}，请关闭应用，把里面的内容复制到这个文件夹中，手动完成更新。</value>
+  </data>
+  <data name="AppUpdate_UpToDate" xml:space="preserve">
+    <value>你使用的已是 sp-mod.com 上发布的最新版本。</value>
+  </data>
+  <data name="AppUpdate_VersionGuideHeader" xml:space="preserve">
+    <value>如何看懂版本号</value>
+  </data>
+  <data name="AppUpdate_VersionHeader" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="AppUpdate_WhatsNew" xml:space="preserve">
+    <value>更新内容</value>
+  </data>
+  <data name="Browse_AddonBadge_other" xml:space="preserve">
+    <value>{0} 个附加组件</value>
+  </data>
+  <data name="Browse_AddonBadgeToolTip" xml:space="preserve">
+    <value>打开此模组即可查看并安装它的附加组件</value>
+  </data>
+  <data name="Browse_AllSptVersions" xml:space="preserve">
+    <value>所有 SPT 版本</value>
+  </data>
+  <data name="Browse_BadgeHasDependencies" xml:space="preserve">
+    <value>有依赖</value>
+  </data>
+  <data name="Browse_ByAuthorFormat" xml:space="preserve">
+    <value>作者：{0}</value>
+  </data>
+  <data name="Browse_CategoryFilterToolTip" xml:space="preserve">
+    <value>按模组所属的分类筛选</value>
+  </data>
+  <data name="Browse_CompatibleVersionNoteFormat" xml:space="preserve">
+    <value>有兼容你已安装的 SPT 的 v{0} 可用。</value>
+  </data>
+  <data name="Browse_CountFound_other" xml:space="preserve">
+    <value>找到 {0} 个模组。</value>
+  </data>
+  <data name="Browse_DependencyNote" xml:space="preserve">
+    <value>依赖信息会在你浏览时逐步补全，因此检查的模组越多，这个列表就越长。</value>
+  </data>
+  <data name="Browse_DetailsFailedFormat" xml:space="preserve">
+    <value>无法加载 {0} 的详情：{1}</value>
+  </data>
+  <data name="Browse_DetailsNetworkFormat" xml:space="preserve">
+    <value>加载 {0} 的详情时出现网络错误：{1}</value>
+  </data>
+  <data name="Browse_DetailsTimedOutFormat" xml:space="preserve">
+    <value>加载 {0} 的详情超时，请检查网络连接后重试。</value>
+  </data>
+  <data name="Browse_DetailsUnexpectedFormat" xml:space="preserve">
+    <value>加载 {0} 的详情时出现意外错误：{1}</value>
+  </data>
+  <data name="Browse_DisabledFormat" xml:space="preserve">
+    <value>{0} 已被禁用，请先在「已安装」页面启用它，再重新安装。</value>
+  </data>
+  <data name="Browse_EndorsementsFormat" xml:space="preserve">
+    <value>{0:N0} 次点赞</value>
+  </data>
+  <data name="Browse_FeaturedFilterToolTip" xml:space="preserve">
+    <value>是否包含 sp-mod.com 上的精选模组</value>
+  </data>
+  <data name="Browse_FirstLaunchNote" xml:space="preserve">
+    <value>首次启动会下载模组目录。之后目录直接从磁盘读取，这一步瞬间就能完成。</value>
+  </data>
+  <data name="Browse_InstallCancelledFormat" xml:space="preserve">
+    <value>已取消安装，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="Browse_NoMatches" xml:space="preserve">
+    <value>没有匹配的模组。</value>
+  </data>
+  <data name="Browse_NoVersionFormat" xml:space="preserve">
+    <value>{0} 没有可安装的已发布版本。</value>
+  </data>
+  <data name="Browse_OlderVersionNoteFormat" xml:space="preserve">
+    <value>有适用于你已安装的 SPT 的更旧版本 v{0}。</value>
+  </data>
+  <data name="Browse_QueuedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 加入队列，进度请在「下载」页面查看。</value>
+  </data>
+  <data name="Browse_RedownloadCancelledFormat" xml:space="preserve">
+    <value>已取消重新下载，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="Browse_RefreshCache" xml:space="preserve">
+    <value>刷新缓存</value>
+  </data>
+  <data name="Browse_SaveAsDefaultToolTip" xml:space="preserve">
+    <value>让此页面打开时采用当前的筛选、排序和每页数量设置，包括已勾选的 SPT 版本。搜索框不在其中。可在「设置」中再次清除。</value>
+  </data>
+  <data name="Browse_SavedAsDefault" xml:space="preserve">
+    <value>已保存。浏览页面今后都会以此状态打开，可在「设置」中恢复原状。</value>
+  </data>
+  <data name="Browse_SptCompatibleFormat" xml:space="preserve">
+    <value>✓ SPT {0}</value>
+  </data>
+  <data name="Browse_SptIncompatibleFormat" xml:space="preserve">
+    <value>✗ SPT {0}</value>
+  </data>
+  <data name="Browse_SptPlainFormat" xml:space="preserve">
+    <value>SPT {0}</value>
+  </data>
+  <data name="Browse_SptVersionCountFormat" xml:space="preserve">
+    <value>{0} 个 SPT 版本</value>
+  </data>
+  <data name="Browse_SptVersionFilterToolTip" xml:space="preserve">
+    <value>按模组支持的 SPT 版本筛选</value>
+  </data>
+  <data name="Browse_SptVersionItemFormat" xml:space="preserve">
+    <value>SPT {0}</value>
+  </data>
+  <data name="Browse_SptVersionsFormat" xml:space="preserve">
+    <value>SPT {0}</value>
+  </data>
+  <data name="Browse_SptVersionUnknown" xml:space="preserve">
+    <value>SPT 版本未知</value>
+  </data>
+  <data name="Browse_StageAddons" xml:space="preserve">
+    <value>正在加载附加组件…</value>
+  </data>
+  <data name="Browse_StageCatalog" xml:space="preserve">
+    <value>正在加载模组目录…</value>
+  </data>
+  <data name="Browse_StageInstalled" xml:space="preserve">
+    <value>正在检查你已安装的内容…</value>
+  </data>
+  <data name="Browse_StageSorting" xml:space="preserve">
+    <value>正在排序结果…</value>
+  </data>
+  <data name="Browse_StageSptVersions" xml:space="preserve">
+    <value>正在检查 SPT 版本…</value>
+  </data>
+  <data name="Browse_StageStarting" xml:space="preserve">
+    <value>正在启动…</value>
+  </data>
+  <data name="Browse_StartupProgressFormat" xml:space="preserve">
+    <value>已加载 {0:N0}/{1:N0} 个模组</value>
+  </data>
+  <data name="Browse_ThisMod" xml:space="preserve">
+    <value>此模组</value>
+  </data>
+  <data name="Browse_TimedOutLoading" xml:space="preserve">
+    <value>访问 sp-mod.com 超时，请检查网络连接，再进入「浏览」页面重试。</value>
+  </data>
+  <data name="Browse_TimedOutRefreshing" xml:space="preserve">
+    <value>访问 sp-mod.com 超时，请检查网络连接后再次点击「刷新缓存」。</value>
+  </data>
+  <data name="Browse_TooltipConstraintFormat" xml:space="preserve">
+    <value>约束条件：{0}</value>
+  </data>
+  <data name="Browse_TooltipNeedsFormat" xml:space="preserve">
+    <value>v{0} 需要 SPT {1}。</value>
+  </data>
+  <data name="Browse_TooltipNoInstall" xml:space="preserve">
+    <value>未检测到 SPT 安装，请在「设置」页面中指定。</value>
+  </data>
+  <data name="Browse_TooltipNoRequirementFormat" xml:space="preserve">
+    <value>v{0} 没有可识别的 SPT 版本要求。</value>
+  </data>
+  <data name="Browse_TooltipNoVersion" xml:space="preserve">
+    <value>此模组在目录中没有已发布的版本。</value>
+  </data>
+  <data name="Browse_TooltipRunsOnRangeFormat" xml:space="preserve">
+    <value>v{0} 可在 SPT {1} 至 {2} 上运行。</value>
+  </data>
+  <data name="Browse_TooltipRunsOnSingleFormat" xml:space="preserve">
+    <value>v{0} 可在 SPT {1} 上运行。</value>
+  </data>
+  <data name="Browse_TooltipShowingOlderFormat" xml:space="preserve">
+    <value>此处显示的是这个版本，而非最新版 v{0}（它需要 SPT {1}）。</value>
+  </data>
+  <data name="Browse_TooltipYouHaveFormat" xml:space="preserve">
+    <value>你当前的 SPT 版本是 {0}。</value>
+  </data>
+  <data name="Browse_UnexpectedLoadFormat" xml:space="preserve">
+    <value>加载模组目录时发生意外错误：{0}</value>
+  </data>
+  <data name="Browse_UnexpectedRefreshFormat" xml:space="preserve">
+    <value>刷新模组目录时发生意外错误：{0}</value>
+  </data>
+  <data name="Common_AttributeFilterToolTip" xml:space="preserve">
+    <value>按 Fika 支持、广告、AI 内容、依赖与附加组件筛选</value>
+  </data>
+  <data name="Common_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Common_ClauseSeparator" xml:space="preserve">
+    <value>；</value>
+  </data>
+  <data name="Common_ClearFilters" xml:space="preserve">
+    <value>清除筛选</value>
+  </data>
+  <data name="Common_ClearFiltersToolTip" xml:space="preserve">
+    <value>把每个筛选都恢复为此页面打开时的默认状态。</value>
+  </data>
+  <data name="Common_Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Common_Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Common_DownloadsFormat" xml:space="preserve">
+    <value>{0:N0} 次下载</value>
+  </data>
+  <data name="Common_FactSeparator" xml:space="preserve">
+    <value> · </value>
+  </data>
+  <data name="Common_FlagContainsAds" xml:space="preserve">
+    <value>包含广告</value>
+  </data>
+  <data name="Common_FlagContainsAiContent" xml:space="preserve">
+    <value>包含 AI 内容</value>
+  </data>
+  <data name="Common_FlagFikaCompatible" xml:space="preserve">
+    <value>兼容 Fika</value>
+  </data>
+  <data name="Common_FlagSeparator" xml:space="preserve">
+    <value> • </value>
+  </data>
+  <data name="Common_FolderOpenFailed" xml:space="preserve">
+    <value>无法打开该文件夹。</value>
+  </data>
+  <data name="Common_ListPairFormat" xml:space="preserve">
+    <value>{0} 和 {1}</value>
+  </data>
+  <data name="Common_ListSeparator" xml:space="preserve">
+    <value>，</value>
+  </data>
+  <data name="Common_Next" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="Common_NoSptInstallFolder" xml:space="preserve">
+    <value>未设置 SPT 安装文件夹，请先在「设置」页面配置。</value>
+  </data>
+  <data name="Common_Off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="Common_On" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="Common_PagerFormat" xml:space="preserve">
+    <value>第 {0} 页，共 {1} 页</value>
+  </data>
+  <data name="Common_PageSizeFormat" xml:space="preserve">
+    <value>每页 {0} 个</value>
+  </data>
+  <data name="Common_PageSizeToolTip" xml:space="preserve">
+    <value>每页显示多少张卡片</value>
+  </data>
+  <data name="Common_PinnedToolTip" xml:space="preserve">
+    <value>已固定，你应用的任何模组列表都不会把此模组移开</value>
+  </data>
+  <data name="Common_Previous" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="Common_Rescan" xml:space="preserve">
+    <value>重新扫描</value>
+  </data>
+  <data name="Common_ReviewAndInstall" xml:space="preserve">
+    <value>预览并安装</value>
+  </data>
+  <data name="Common_ReviewAndInstallToolTip" xml:space="preserve">
+    <value>打开「模组列表」，选中服务器上的列表，并已算好它的预览。在你按下那里的「应用」之前，不会安装任何东西。</value>
+  </data>
+  <data name="Common_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Common_SaveAsDefault" xml:space="preserve">
+    <value>保存为默认</value>
+  </data>
+  <data name="Common_SearchPlaceholder" xml:space="preserve">
+    <value>搜索模组…（@author 表示按作者搜索）</value>
+  </data>
+  <data name="Common_SentenceSeparator" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="Common_SizeBFormat" xml:space="preserve">
+    <value>{0:0} B</value>
+  </data>
+  <data name="Common_SizeGbFormat" xml:space="preserve">
+    <value>{0:0.#} GB</value>
+  </data>
+  <data name="Common_SizeKbFormat" xml:space="preserve">
+    <value>{0:0.#} KB</value>
+  </data>
+  <data name="Common_SizeMbFormat" xml:space="preserve">
+    <value>{0:0.#} MB</value>
+  </data>
+  <data name="Common_SortToolTip" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="Common_UnitB" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="Common_UnitGb" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="Common_UnitKb" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="Common_UnitMb" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="Common_Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Common_UnknownAmount" xml:space="preserve">
+    <value>未知大小</value>
+  </data>
+  <data name="Common_ViewModPage" xml:space="preserve">
+    <value>查看模组页面</value>
+  </data>
+  <data name="ConfigPolicy_KeepMine" xml:space="preserve">
+    <value>保留我的</value>
+  </data>
+  <data name="ConfigPolicy_Merge" xml:space="preserve">
+    <value>合并我的修改</value>
+  </data>
+  <data name="ConfigPolicy_TakeNew" xml:space="preserve">
+    <value>采用新文件</value>
+  </data>
+  <data name="Configs_AddSettingsFileTitleFormat" xml:space="preserve">
+    <value>{0} 内的设置文件</value>
+  </data>
+  <data name="Configs_AddUserDataTitleFormat" xml:space="preserve">
+    <value>{0} 内用于存放你自己编写的文件的文件夹</value>
+  </data>
+  <data name="Configs_AuthoredFiles" xml:space="preserve">
+    <value>我编写的文件…</value>
+  </data>
+  <data name="Configs_AuthoredFilesToolTip" xml:space="preserve">
+    <value>该模组内用于存放你自己编写的文件（例如预设）的文件夹。更新时会原样保留，移除模组时也不会删除。</value>
+  </data>
+  <data name="Configs_ChangedOnDiskFormat" xml:space="preserve">
+    <value>自你在此处打开 {0} 以来，它已在磁盘上发生更改。
+
+是：用编辑器中的内容覆盖它
+否：重新加载，放弃你的修改
+取消：保持一切不变
+
+无论选择哪一项，磁盘上当前的版本都会先复制到 {1}。</value>
+  </data>
+  <data name="Configs_ChangedOnDiskTitle" xml:space="preserve">
+    <value>文件已在磁盘上更改</value>
+  </data>
+  <data name="Configs_ChipIgnoredFormat" xml:space="preserve">
+    <value>已忽略：{0}</value>
+  </data>
+  <data name="Configs_ChipIgnoredToolTip" xml:space="preserve">
+    <value>完全不作为配置处理，不会列在此处、不会被合并，移除模组时也不会保留。</value>
+  </data>
+  <data name="Configs_ChipSettingsFormat" xml:space="preserve">
+    <value>设置：{0}</value>
+  </data>
+  <data name="Configs_ChipSettingsToolTip" xml:space="preserve">
+    <value>作为该模组的设置文件之一处理，因此更新时你的修改会被带入新版本。</value>
+  </data>
+  <data name="Configs_ChipUserDataFormat" xml:space="preserve">
+    <value>你的：{0}</value>
+  </data>
+  <data name="Configs_ChipUserDataToolTip" xml:space="preserve">
+    <value>你自己编写的文件。更新时会原样保留该文件夹，移除模组时也会保留。</value>
+  </data>
+  <data name="Configs_CopyPathToolTip" xml:space="preserve">
+    <value>复制完整路径</value>
+  </data>
+  <data name="Configs_CountFormat" xml:space="preserve">
+    <value>配置文件：{0} · 模组：{1}</value>
+  </data>
+  <data name="Configs_DiscardFormat" xml:space="preserve">
+    <value>要放弃对 {0} 的未保存修改吗？</value>
+  </data>
+  <data name="Configs_DiscardTitle" xml:space="preserve">
+    <value>未保存的修改</value>
+  </data>
+  <data name="Configs_DisclaimerMessage" xml:space="preserve">
+    <value>修改模组的配置可能会弄坏模组，甚至弄坏你的游戏。这不在模组作者负责修复的范围内，所以请只修改你理解的设置；如果你编辑过配置，报告问题时请一并说明。每个文件在保存前都会复制到 Data\config-backups。</value>
+  </data>
+  <data name="Configs_DisclaimerTitle" xml:space="preserve">
+    <value>修改需自行斟酌</value>
+  </data>
+  <data name="Configs_EmptyState" xml:space="preserve">
+    <value>在左侧选择一个配置文件即可编辑。</value>
+  </data>
+  <data name="Configs_ExcludedFormat" xml:space="preserve">
+    <value>{0} 不再作为 {1} 的配置文件处理。</value>
+  </data>
+  <data name="Configs_FileFilter" xml:space="preserve">
+    <value>配置文件 (*.json;*.jsonc;*.json5)|*.json;*.jsonc;*.json5|所有文件 (*.*)|*.*</value>
+  </data>
+  <data name="Configs_FileNotInsideMod" xml:space="preserve">
+    <value>该文件不在这个模组内，因此不可能属于它。</value>
+  </data>
+  <data name="Configs_FileReadFailedFormat" xml:space="preserve">
+    <value>无法读取该文件：{0}</value>
+  </data>
+  <data name="Configs_FolderNotInsideMod" xml:space="preserve">
+    <value>该文件夹不在这个模组内，因此不可能属于它。</value>
+  </data>
+  <data name="Configs_FormatBepInEx" xml:space="preserve">
+    <value>BepInEx 配置</value>
+  </data>
+  <data name="Configs_FormatJson" xml:space="preserve">
+    <value>JSON</value>
+  </data>
+  <data name="Configs_LocationClient" xml:space="preserve">
+    <value>BepInEx\config</value>
+  </data>
+  <data name="Configs_LocationRemovedFormat" xml:space="preserve">
+    <value>{0} 已恢复为按常规规则判断。</value>
+  </data>
+  <data name="Configs_LocationServer" xml:space="preserve">
+    <value>user\mods</value>
+  </data>
+  <data name="Configs_NoMatches" xml:space="preserve">
+    <value>没有匹配项。注意，很多插件只在游戏第一次运行时才写出配置。</value>
+  </data>
+  <data name="Configs_NoneFound" xml:space="preserve">
+    <value>没有找到模组配置。很多插件只在游戏第一次运行时才写出一个。</value>
+  </data>
+  <data name="Configs_NotAConfig" xml:space="preserve">
+    <value>这不是配置</value>
+  </data>
+  <data name="Configs_NotAConfigToolTip" xml:space="preserve">
+    <value>不再把打开的文件当作这个模组的配置，适用于那些碰巧放在名为 config 的文件夹里的数据。</value>
+  </data>
+  <data name="Configs_NoteModDisabled" xml:space="preserve">
+    <value>该模组已被禁用，SPT 不会加载它。该文件已随模组的其余部分一起移入“.disabled”文件夹，重新启用后所做的修改才会生效。</value>
+  </data>
+  <data name="Configs_NoteShippedDefault" xml:space="preserve">
+    <value>这是模组随附的默认配置的原始副本，不是它实际读取的配置。在这里所做的修改不会生效。</value>
+  </data>
+  <data name="Configs_PathCopied" xml:space="preserve">
+    <value>路径已复制。</value>
+  </data>
+  <data name="Configs_PathCopyFailed" xml:space="preserve">
+    <value>无法复制路径，剪贴板被其他程序占用了。</value>
+  </data>
+  <data name="Configs_PolicyKeepMineFormat" xml:space="preserve">
+    <value>{0}：更新时会原样保留你的文件。</value>
+  </data>
+  <data name="Configs_PolicyMergeFormat" xml:space="preserve">
+    <value>{0}：更新时会合并你的更改。</value>
+  </data>
+  <data name="Configs_PolicyTakeNewFormat" xml:space="preserve">
+    <value>{0}：更新时会采用新的文件。</value>
+  </data>
+  <data name="Configs_ReadFailedFormat" xml:space="preserve">
+    <value>无法读取安装信息：{0}</value>
+  </data>
+  <data name="Configs_ReloadedFormat" xml:space="preserve">
+    <value>已从磁盘重新加载 {0}。</value>
+  </data>
+  <data name="Configs_Revert" xml:space="preserve">
+    <value>还原</value>
+  </data>
+  <data name="Configs_RevertToolTip" xml:space="preserve">
+    <value>丢弃你的修改，恢复磁盘上的内容</value>
+  </data>
+  <data name="Configs_RunningBepInEx_other" xml:space="preserve">
+    <value>{0} 正在运行。游戏关闭时 BepInEx 会把它的配置文件重新写出，这会让此处保存的内容失效，请先关闭它们。</value>
+  </data>
+  <data name="Configs_RunningServer_other" xml:space="preserve">
+    <value>{0} 正在运行。服务器模组在服务器启动时读取配置，所以此处保存的内容会在下次重启时生效。</value>
+  </data>
+  <data name="Configs_SavedBackupFormat" xml:space="preserve">
+    <value>已保存 {0}。之前的版本在 {1} 中。</value>
+  </data>
+  <data name="Configs_SavedFormat" xml:space="preserve">
+    <value>已保存 {0}。</value>
+  </data>
+  <data name="Configs_SearchPlaceholder" xml:space="preserve">
+    <value>搜索模组和文件…</value>
+  </data>
+  <data name="Configs_SectionClient" xml:space="preserve">
+    <value>客户端</value>
+  </data>
+  <data name="Configs_SectionFramework" xml:space="preserve">
+    <value>BepInEx</value>
+  </data>
+  <data name="Configs_SectionServer" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="Configs_SectionUnclaimed" xml:space="preserve">
+    <value>未认领</value>
+  </data>
+  <data name="Configs_SettingsAddedFormat" xml:space="preserve">
+    <value>{0} 将被视为设置，并在更新时保留。</value>
+  </data>
+  <data name="Configs_SettingsElsewhere" xml:space="preserve">
+    <value>保存在别处的设置…</value>
+  </data>
+  <data name="Configs_SettingsElsewhereToolTip" xml:space="preserve">
+    <value>这个模组把某个设置文件放在不会有人去找它的地方，因此更新时会把你的修改带过去。</value>
+  </data>
+  <data name="Configs_ShowInExplorerToolTip" xml:space="preserve">
+    <value>在资源管理器中显示此文件</value>
+  </data>
+  <data name="Configs_StatusScanning" xml:space="preserve">
+    <value>正在扫描模组配置…</value>
+  </data>
+  <data name="Configs_StopTreatingToolTip" xml:space="preserve">
+    <value>不再这样对待它</value>
+  </data>
+  <data name="Configs_TagModDisabled" xml:space="preserve">
+    <value>模组已禁用</value>
+  </data>
+  <data name="Configs_TagShippedDefault" xml:space="preserve">
+    <value>随附默认</value>
+  </data>
+  <data name="Configs_TooManyFilesFormat" xml:space="preserve">
+    <value>{0} 里有 {1} 个文件。这些属于数据而不是设置，因此没有添加。</value>
+  </data>
+  <data name="Configs_UnsavedChanges" xml:space="preserve">
+    <value>有未保存的修改</value>
+  </data>
+  <data name="Configs_UpdatePolicyLabel" xml:space="preserve">
+    <value>此模组更新时：</value>
+  </data>
+  <data name="Configs_UpdatePolicyToolTip" xml:space="preserve">
+    <value>适用于该模组的所有配置文件，并会记录在 Data\mod_configs.json 中。</value>
+  </data>
+  <data name="Configs_UserDataAddedFormat" xml:space="preserve">
+    <value>更新时不会改动 {0}，并且在移除 {1} 时会被保留下来。</value>
+  </data>
+  <data name="Configs_WhereClient" xml:space="preserve">
+    <value>保存在模组自身文件夹之外的 BepInEx\config 中，因此禁用模组和移除模组都不会影响它。</value>
+  </data>
+  <data name="Configs_WhereFramework" xml:space="preserve">
+    <value>属于 BepInEx 自身的配置，而不属于任何模组。改动它会影响每个插件的加载方式。</value>
+  </data>
+  <data name="Configs_WhereServer" xml:space="preserve">
+    <value>保存在模组自身的文件夹内，因此移除该模组时会把这个文件放到别处，而不是删除它。</value>
+  </data>
+  <data name="Configs_WhereUnclaimed" xml:space="preserve">
+    <value>没有已安装的插件声称拥有这个文件，所以它原本所属的模组很可能已被移除。在重新安装该模组之前，编辑它不会产生任何影响。</value>
+  </data>
+  <data name="ConfigUpdate_AlsoAddedFormat" xml:space="preserve">
+    <value>它还报告了 {0} 项由你自行添加、它无法归位的设置。</value>
+  </data>
+  <data name="ConfigUpdate_AlsoBothFormat" xml:space="preserve">
+    <value>它还报告了 {0} 项更新后已不存在的设置，以及 {1} 项由你自行添加、它无法归位的设置。</value>
+  </data>
+  <data name="ConfigUpdate_AlsoDroppedFormat" xml:space="preserve">
+    <value>它还报告了 {0} 项更新后已不存在的设置。</value>
+  </data>
+  <data name="ConfigUpdate_MergedFormat" xml:space="preserve">
+    <value>你的设置已并入新的默认值（共 {0} 项）。</value>
+  </data>
+  <data name="ConfigUpdate_MergedWithLostFormat" xml:space="preserve">
+    <value>你的设置已并入新的默认值（共 {0} 项）；另有 {1} 项无法并入，已列在「配置」页面上。</value>
+  </data>
+  <data name="ConfigUpdate_NoteAddedFormat" xml:space="preserve">
+    <value>这个文件是随 {0} 一起到来的。</value>
+  </data>
+  <data name="ConfigUpdate_NoteDefaultsUpdatedFormat" xml:space="preserve">
+    <value>更新到 {0} 时一并带来了这个文件的新默认值。其中没有属于你的内容。</value>
+  </data>
+  <data name="ConfigUpdate_NoteKeptMineFormat" xml:space="preserve">
+    <value>按你的要求，更新到 {0} 时这个文件保持原样。</value>
+  </data>
+  <data name="ConfigUpdate_NoteMerged_other" xml:space="preserve">
+    <value>更新到 {0} 时，这个文件中保留了你的 {1} 项设置。</value>
+  </data>
+  <data name="ConfigUpdate_NoteNotUpdatedFormat" xml:space="preserve">
+    <value>更新到 {0} 时无法复制这个文件作为备份，因此它保持原样未动。</value>
+  </data>
+  <data name="ConfigUpdate_NotePreservedFormat" xml:space="preserve">
+    <value>更新到 {0} 时这个文件保持原样，它属于你，而不属于模组。</value>
+  </data>
+  <data name="ConfigUpdate_NoteReplacedFormat" xml:space="preserve">
+    <value>更新到 {0} 时，这个文件已被该版本的默认值替换。</value>
+  </data>
+  <data name="ConfigUpdate_NoteReplacedWhereFormat" xml:space="preserve">
+    <value>更新到 {0} 时，这个文件已被该版本的默认值替换，你的副本位于 Data\LegacyConfigs\{1}。</value>
+  </data>
+  <data name="ConfigUpdate_NoteUnchangedFormat" xml:space="preserve">
+    <value>更新到 {0} 时这个文件没有变化。</value>
+  </data>
+  <data name="ConfigUpdate_NotUpdatedCountFormat" xml:space="preserve">
+    <value>你有 {0} 个配置文件无法复制备份，因此保留了你的版本，新版本没有安装。</value>
+  </data>
+  <data name="ConfigUpdate_NotUpdatedNamedFormat" xml:space="preserve">
+    <value>你的 {0} 无法复制备份，因此保留了你的版本，新版本没有安装。</value>
+  </data>
+  <data name="ConfigUpdate_PolicyKeepMine" xml:space="preserve">
+    <value>你的文件完全保持原样。新版本新增的设置在这个文件里会缺失，有些模组能应对这种情况，有些则不能。</value>
+  </data>
+  <data name="ConfigUpdate_PolicyMerge" xml:space="preserve">
+    <value>采用新版本的文件，同时把你改动过的设置并入其中。更新新增的设置会以默认值出现；更新移除的设置会被报告并丢弃。</value>
+  </data>
+  <data name="ConfigUpdate_PolicyTakeNew" xml:space="preserve">
+    <value>以新版本的文件为准。你的副本会保留在 Data\LegacyConfigs 中，方便你手动把数值填回去。</value>
+  </data>
+  <data name="ConfigUpdate_ReasonNoBaseline" xml:space="preserve">
+    <value>应用还没有可供比对的基准，下一次更新就能带上你的改动了。</value>
+  </data>
+  <data name="ConfigUpdate_ReasonNotMergeable" xml:space="preserve">
+    <value>它的格式是合并功能无法读取的，如果你会编辑它，请把这个模组设为保留你的文件。</value>
+  </data>
+  <data name="ConfigUpdate_ReasonTakeNew" xml:space="preserve">
+    <value>这个模组已设为采用新文件。</value>
+  </data>
+  <data name="ConfigUpdate_ReasonTooLarge" xml:space="preserve">
+    <value>它包含的内容太多，不像是设置，因此保留了模组发布时的原样。</value>
+  </data>
+  <data name="ConfigUpdate_RemovedCountFormat" xml:space="preserve">
+    <value>你有 {0} 个配置文件已不再属于该模组。</value>
+  </data>
+  <data name="ConfigUpdate_RemovedManyWhereFormat" xml:space="preserve">
+    <value>你有 {0} 个配置文件已不再属于该模组，你的副本位于 Data\LegacyConfigs\{1}。</value>
+  </data>
+  <data name="ConfigUpdate_RemovedNamedFormat" xml:space="preserve">
+    <value>你的 {0} 已不再属于该模组。</value>
+  </data>
+  <data name="ConfigUpdate_RemovedOneWhereFormat" xml:space="preserve">
+    <value>你的 {0} 已不再属于该模组，你的副本位于 Data\LegacyConfigs\{1}。</value>
+  </data>
+  <data name="ConfigUpdate_ReplacedCountFormat" xml:space="preserve">
+    <value>{0} 个配置文件已被此版本的默认值替换。</value>
+  </data>
+  <data name="ConfigUpdate_ReplacedFirstTime" xml:space="preserve">
+    <value>应用没有记录上一个版本附带了哪些文件，因此无法区分你的改动与模组自带的改动。</value>
+  </data>
+  <data name="ConfigUpdate_ReplacedManyWhereFormat" xml:space="preserve">
+    <value>{0} 个配置文件已被此版本的默认值替换，你的副本位于 Data\LegacyConfigs\{1}。</value>
+  </data>
+  <data name="ConfigUpdate_ReplacedNamedFormat" xml:space="preserve">
+    <value>你的 {0} 已被此版本的默认值替换。</value>
+  </data>
+  <data name="ConfigUpdate_ReplacedOneWhereFormat" xml:space="preserve">
+    <value>你的 {0} 已被此版本的默认值替换，你的副本位于 Data\LegacyConfigs\{1}。</value>
+  </data>
+  <data name="ConfigUpdate_VersionRangeFormat" xml:space="preserve">
+    <value>{0} 至 {1}</value>
+  </data>
+  <data name="DataFiles_ErrorInvalidJsonFormat" xml:space="preserve">
+    <value>不是有效的 JSON，{0}</value>
+  </data>
+  <data name="DataFiles_ErrorNotManifest" xml:space="preserve">
+    <value>这个文件看起来不是模组安装清单。</value>
+  </data>
+  <data name="DataFiles_ListHeader" xml:space="preserve">
+    <value>Data\ 文件</value>
+  </data>
+  <data name="DataFiles_MissingFormat" xml:space="preserve">
+    <value>{0} 尚不存在，应用第一次写入它时才会创建。</value>
+  </data>
+  <data name="DataFiles_NotSavedFormat" xml:space="preserve">
+    <value>未保存，{0}</value>
+  </data>
+  <data name="DataFiles_ReadFailedFormat" xml:space="preserve">
+    <value>无法读取 {0}：{1}</value>
+  </data>
+  <data name="DataFiles_Reload" xml:space="preserve">
+    <value>重新读取</value>
+  </data>
+  <data name="DataFiles_ReloadToolTip" xml:space="preserve">
+    <value>放弃未保存的修改，从磁盘重新读取此文件</value>
+  </data>
+  <data name="DataFiles_SavedFormat" xml:space="preserve">
+    <value>已保存 {0}，上一版本已保留为 {1}.bak。</value>
+  </data>
+  <data name="DataFiles_Title" xml:space="preserve">
+    <value>数据文件</value>
+  </data>
+  <data name="Dependencies_AllSatisfied_other" xml:space="preserve">
+    <value>{0} 个模组声明了依赖，均已满足。</value>
+  </data>
+  <data name="Dependencies_AlreadyQueuedFormat" xml:space="preserve">
+    <value>{0} 已在下载队列中，进度请见「下载」页面。</value>
+  </data>
+  <data name="Dependencies_Attention_other" xml:space="preserve">
+    <value>{0} 个模组声明了依赖，其中 {1} 个需要处理。</value>
+  </data>
+  <data name="Dependencies_CancelledFormat" xml:space="preserve">
+    <value>已取消安装，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="Dependencies_Description" xml:space="preserve">
+    <value>列出所有声明了依赖的已安装模组，以及每项依赖是否满足。需要注意的模组排在最前，并默认展开。</value>
+  </data>
+  <data name="Dependencies_Empty" xml:space="preserve">
+    <value>已安装的模组都没有声明依赖。</value>
+  </data>
+  <data name="Dependencies_NoneDeclared" xml:space="preserve">
+    <value>你安装的模组都没有声明依赖。</value>
+  </data>
+  <data name="Dependencies_NoneMatched" xml:space="preserve">
+    <value>你安装的模组都没能与 sp-mod.com 匹配。</value>
+  </data>
+  <data name="Dependencies_NoSptVersion" xml:space="preserve">
+    <value>未能检测到你的 SPT 版本，而解析依赖需要用到它。</value>
+  </data>
+  <data name="Dependencies_QueuedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 加入队列，进度请在「下载」页面查看。</value>
+  </data>
+  <data name="Dependencies_Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Dependencies_Resolving_other" xml:space="preserve">
+    <value>正在解析 {0} 个模组的依赖…</value>
+  </data>
+  <data name="Dependencies_RowConflict" xml:space="preserve">
+    <value>冲突，两个模组需要互不兼容的版本</value>
+  </data>
+  <data name="Dependencies_RowDisabled" xml:space="preserve">
+    <value>已安装但已禁用，SPT 不会加载它</value>
+  </data>
+  <data name="Dependencies_RowDisabledVersionFormat" xml:space="preserve">
+    <value>已安装 {0}，但已禁用，SPT 不会加载它</value>
+  </data>
+  <data name="Dependencies_RowInstall" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="Dependencies_RowInstalled" xml:space="preserve">
+    <value>已安装</value>
+  </data>
+  <data name="Dependencies_RowInstalledVersionFormat" xml:space="preserve">
+    <value>已安装 {0}</value>
+  </data>
+  <data name="Dependencies_RowNeedsUpdateFormat" xml:space="preserve">
+    <value>需要 {0}，已安装 {1}</value>
+  </data>
+  <data name="Dependencies_RowNoCompatible" xml:space="preserve">
+    <value>没有与你的 SPT 兼容的版本</value>
+  </data>
+  <data name="Dependencies_RowNotInstalled" xml:space="preserve">
+    <value>未安装</value>
+  </data>
+  <data name="Dependencies_RowNotInstalledNeedsFormat" xml:space="preserve">
+    <value>未安装，需要 {0}</value>
+  </data>
+  <data name="Dependencies_RowUpdate" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Dependencies_Scanning" xml:space="preserve">
+    <value>正在扫描已安装的模组…</value>
+  </data>
+  <data name="Dependencies_SummaryConflictingFormat" xml:space="preserve">
+    <value>{0} 个冲突</value>
+  </data>
+  <data name="Dependencies_SummaryMissingFormat" xml:space="preserve">
+    <value>{0} 个缺失</value>
+  </data>
+  <data name="Dependencies_SummaryOutdatedFormat" xml:space="preserve">
+    <value>{0} 个版本落后</value>
+  </data>
+  <data name="Dependencies_SummarySatisfied_other" xml:space="preserve">
+    <value>{0} 个依赖，全部满足</value>
+  </data>
+  <data name="Dependencies_SummaryUnresolvedFormat" xml:space="preserve">
+    <value>{0} 个未解析</value>
+  </data>
+  <data name="Dependencies_UnexpectedFormat" xml:space="preserve">
+    <value>解析依赖时发生意外错误：{0}</value>
+  </data>
+  <data name="Dependencies_UnknownName" xml:space="preserve">
+    <value>（未知）</value>
+  </data>
+  <data name="Disable_CascadeDisable" xml:space="preserve">
+    <value>同时禁用这些</value>
+  </data>
+  <data name="Disable_CascadeEnable" xml:space="preserve">
+    <value>同时启用这些</value>
+  </data>
+  <data name="Disable_HeadingAffected" xml:space="preserve">
+    <value>受影响的模组</value>
+  </data>
+  <data name="Disable_HeadingStillDisabled" xml:space="preserve">
+    <value>仍处于禁用状态</value>
+  </data>
+  <data name="Disable_ImpactDisable_other" xml:space="preserve">
+    <value>另有 {0} 个模组依赖于你即将禁用的内容。</value>
+  </data>
+  <data name="Disable_ImpactEnable_other" xml:space="preserve">
+    <value>它需要的 {0} 个模组仍处于禁用状态。</value>
+  </data>
+  <data name="Disable_ProceedDisable" xml:space="preserve">
+    <value>仍然禁用</value>
+  </data>
+  <data name="Disable_ProceedEnable" xml:space="preserve">
+    <value>仍然启用</value>
+  </data>
+  <data name="Disable_SelectedFormat" xml:space="preserve">
+    <value>已选择：{0}</value>
+  </data>
+  <data name="Disable_TitleDisableCountFormat" xml:space="preserve">
+    <value>禁用 {0} 个模组？</value>
+  </data>
+  <data name="Disable_TitleDisableNamedFormat" xml:space="preserve">
+    <value>禁用 {0}？</value>
+  </data>
+  <data name="Disable_TitleEnableCountFormat" xml:space="preserve">
+    <value>启用 {0} 个模组？</value>
+  </data>
+  <data name="Disable_TitleEnableNamedFormat" xml:space="preserve">
+    <value>启用 {0}？</value>
+  </data>
+  <data name="DownloadConfirm_Confirm" xml:space="preserve">
+    <value>标记为已安装</value>
+  </data>
+  <data name="DownloadConfirm_Note" xml:space="preserve">
+    <value>取消勾选不正确的项，在你下载更新的版本之前不会再询问它们。把模组标记为已安装不会改动磁盘上的任何内容。</value>
+  </data>
+  <data name="DownloadConfirm_NotNow" xml:space="preserve">
+    <value>暂不</value>
+  </data>
+  <data name="DownloadConfirm_RowDetailFormat" xml:space="preserve">
+    <value>版本 {0}，来自 {1}</value>
+  </data>
+  <data name="DownloadConfirm_Summary_other" xml:space="preserve">
+    <value>你下载的 {0} 个模组现在看起来都已安装。要将它们标记为已安装，好让本应用知道你装的是哪些版本吗？</value>
+  </data>
+  <data name="DownloadConfirm_Title" xml:space="preserve">
+    <value>已下载的模组现已安装</value>
+  </data>
+  <data name="Downloads_AddonTag" xml:space="preserve">
+    <value>附加组件</value>
+  </data>
+  <data name="Downloads_CancelledBeforeStart" xml:space="preserve">
+    <value>已在开始前取消。</value>
+  </data>
+  <data name="Downloads_CancelledItemFormat" xml:space="preserve">
+    <value>已取消 {0} {1}。</value>
+  </data>
+  <data name="Downloads_Cancelling" xml:space="preserve">
+    <value>正在取消…</value>
+  </data>
+  <data name="Downloads_CancelToolTip" xml:space="preserve">
+    <value>取消此下载，以及它加入队列的所有依赖。</value>
+  </data>
+  <data name="Downloads_CheckingDependencies" xml:space="preserve">
+    <value>正在检查依赖…</value>
+  </data>
+  <data name="Downloads_ClearFinished" xml:space="preserve">
+    <value>清除已完成项</value>
+  </data>
+  <data name="Downloads_Description" xml:space="preserve">
+    <value>下载严格按你加入队列的顺序逐个安装，一次只装一个。你可以在「浏览」或更新对话框里随意加入任意数量的下载，再回到这里查看进度。</value>
+  </data>
+  <data name="Downloads_DownloadedToFormat" xml:space="preserve">
+    <value>已下载到 {0}</value>
+  </data>
+  <data name="Downloads_Empty" xml:space="preserve">
+    <value>队列中还没有内容，在「浏览」的模组卡片上点击「安装」，或在模组详情对话框中点击「更新」，即可在此加入内容。</value>
+  </data>
+  <data name="Downloads_EnterModId" xml:space="preserve">
+    <value>输入模组 ID（或 GUID）和确切的版本号。</value>
+  </data>
+  <data name="Downloads_FailedFormat" xml:space="preserve">
+    <value>下载失败：{0}</value>
+  </data>
+  <data name="Downloads_InstalledFormat" xml:space="preserve">
+    <value>已安装 {0} {1}。</value>
+  </data>
+  <data name="Downloads_NoLinkFormat" xml:space="preserve">
+    <value>找不到 {0} {1} 的下载链接。</value>
+  </data>
+  <data name="Downloads_NotSizedYet" xml:space="preserve">
+    <value>大小未知</value>
+  </data>
+  <data name="Downloads_RateFormat" xml:space="preserve">
+    <value>{0}/秒</value>
+  </data>
+  <data name="Downloads_ResolvingLink" xml:space="preserve">
+    <value>正在解析下载链接…</value>
+  </data>
+  <data name="Downloads_Retry" xml:space="preserve">
+    <value>重试</value>
+  </data>
+  <data name="Downloads_RetryFailed" xml:space="preserve">
+    <value>重试失败项</value>
+  </data>
+  <data name="Downloads_RetryFailedToolTip" xml:space="preserve">
+    <value>把所有失败或已取消的下载重新加入队列。</value>
+  </data>
+  <data name="Downloads_RetryToolTip" xml:space="preserve">
+    <value>将此项放回队列末尾并重新尝试。其他内容不会重新下载。</value>
+  </data>
+  <data name="Downloads_SavedConfigsNote" xml:space="preserve">
+    <value>其中包含你已有的配置文件，用它覆盖现有安装会替换掉你的设置，而安装若不是由本应用执行，它也无法把这些设置带过去。</value>
+  </data>
+  <data name="Downloads_SavedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 保存到 {2}。准备好后请自行安装，SPT 中的任何内容都没有改动。</value>
+  </data>
+  <data name="Downloads_SavedUnrecognisedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 保存到 {2}。本应用无法判断它的安装方式，请按照该模组页面上的步骤操作。</value>
+  </data>
+  <data name="Downloads_SavingToFormat" xml:space="preserve">
+    <value>正在下载到 {0}…</value>
+  </data>
+  <data name="Downloads_ShowInFolder" xml:space="preserve">
+    <value>在文件夹中显示</value>
+  </data>
+  <data name="Downloads_ShowInFolderToolTip" xml:space="preserve">
+    <value>打开文件夹并选中已下载的文件。</value>
+  </data>
+  <data name="Downloads_StatDownloaded" xml:space="preserve">
+    <value>已下载</value>
+  </data>
+  <data name="Downloads_StatLeftToFetch" xml:space="preserve">
+    <value>剩余待获取</value>
+  </data>
+  <data name="Downloads_StatQueue" xml:space="preserve">
+    <value>队列</value>
+  </data>
+  <data name="Downloads_StatSpeed" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="Downloads_StatTimeLeft" xml:space="preserve">
+    <value>剩余时间</value>
+  </data>
+  <data name="Downloads_StatTimeToGo" xml:space="preserve">
+    <value>预计总用时</value>
+  </data>
+  <data name="Downloads_StatusCancelled" xml:space="preserve">
+    <value>已取消</value>
+  </data>
+  <data name="Downloads_StatusCompleted" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="Downloads_StatusDownloading" xml:space="preserve">
+    <value>下载中</value>
+  </data>
+  <data name="Downloads_StatusFailed" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="Downloads_StatusInstalling" xml:space="preserve">
+    <value>安装中</value>
+  </data>
+  <data name="Downloads_StatusPending" xml:space="preserve">
+    <value>等待中</value>
+  </data>
+  <data name="Downloads_StatusUnknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Downloads_SummaryProgressFormat" xml:space="preserve">
+    <value>已完成 {0}/{1}</value>
+  </data>
+  <data name="Downloads_TimeAFewSeconds" xml:space="preserve">
+    <value>几秒</value>
+  </data>
+  <data name="Downloads_TimeHoursFormat" xml:space="preserve">
+    <value>{0:0.#} 小时</value>
+  </data>
+  <data name="Downloads_TimeMinutesFormat" xml:space="preserve">
+    <value>{0:0} 分钟</value>
+  </data>
+  <data name="Downloads_TimeSecondsFormat" xml:space="preserve">
+    <value>{0:0} 秒</value>
+  </data>
+  <data name="Downloads_TransferredFormat" xml:space="preserve">
+    <value>{0:0.#} / {1:0.#} {2}</value>
+  </data>
+  <data name="Downloads_UnexpectedFormat" xml:space="preserve">
+    <value>意外错误：{0}</value>
+  </data>
+  <data name="Downloads_UnnamedModFormat" xml:space="preserve">
+    <value>模组 {0}</value>
+  </data>
+  <data name="Downloads_VersionNotFound" xml:space="preserve">
+    <value>在 sp-mod.com 上找不到该模组版本。</value>
+  </data>
+  <data name="Downloads_WaitingInQueue" xml:space="preserve">
+    <value>正在队列中等待…</value>
+  </data>
+  <data name="Downloads_WriteFailedFormat" xml:space="preserve">
+    <value>无法写入文件：{0}</value>
+  </data>
+  <data name="Filter_AllCategories" xml:space="preserve">
+    <value>所有分类</value>
+  </data>
+  <data name="Filter_AllGroups" xml:space="preserve">
+    <value>所有分组</value>
+  </data>
+  <data name="Filter_AnyMod" xml:space="preserve">
+    <value>任意模组</value>
+  </data>
+  <data name="Filter_ConfigAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Filter_ConfigClient" xml:space="preserve">
+    <value>仅客户端</value>
+  </data>
+  <data name="Filter_ConfigOther" xml:space="preserve">
+    <value>不属于任何模组</value>
+  </data>
+  <data name="Filter_ConfigServer" xml:space="preserve">
+    <value>仅服务器</value>
+  </data>
+  <data name="Filter_DisabledOnly" xml:space="preserve">
+    <value>仅已禁用</value>
+  </data>
+  <data name="Filter_DownloadedNotConfirmed" xml:space="preserve">
+    <value>已下载，未确认</value>
+  </data>
+  <data name="Filter_DownloadedNotConfirmedToolTip" xml:space="preserve">
+    <value>你自行下载、准备自己安装的模组中，已存在于磁盘但尚未确认的，包括文件与下载内容不符的模组。</value>
+  </data>
+  <data name="Filter_EnabledAll" xml:space="preserve">
+    <value>已启用与已禁用</value>
+  </data>
+  <data name="Filter_EnabledOnly" xml:space="preserve">
+    <value>仅已启用</value>
+  </data>
+  <data name="Filter_FeaturedExcluded" xml:space="preserve">
+    <value>不含精选</value>
+  </data>
+  <data name="Filter_FeaturedIncluded" xml:space="preserve">
+    <value>含精选</value>
+  </data>
+  <data name="Filter_FeaturedOnly" xml:space="preserve">
+    <value>仅精选</value>
+  </data>
+  <data name="Filter_FikaOnly" xml:space="preserve">
+    <value>仅 Fika 兼容</value>
+  </data>
+  <data name="Filter_HasAddons" xml:space="preserve">
+    <value>有附加组件</value>
+  </data>
+  <data name="Filter_HasAddonsToolTip" xml:space="preserve">
+    <value>只显示有已发布附加组件的模组。</value>
+  </data>
+  <data name="Filter_HasDependencies" xml:space="preserve">
+    <value>有依赖</value>
+  </data>
+  <data name="Filter_HasDependenciesBrowseToolTip" xml:space="preserve">
+    <value>只显示会引入其他模组的模组。依赖是随浏览逐个查询的，所以这里涵盖的是本应用目前查过的部分，而不是整个目录。</value>
+  </data>
+  <data name="Filter_HasDependenciesInstalledToolTip" xml:space="preserve">
+    <value>只显示需要另一个你已安装的模组的模组。</value>
+  </data>
+  <data name="Filter_HideAds" xml:space="preserve">
+    <value>隐藏带广告的模组</value>
+  </data>
+  <data name="Filter_HideAiContent" xml:space="preserve">
+    <value>隐藏含 AI 内容的模组</value>
+  </data>
+  <data name="Filter_HideInstalled" xml:space="preserve">
+    <value>隐藏已安装的模组</value>
+  </data>
+  <data name="Filter_HideInstalledToolTip" xml:space="preserve">
+    <value>只显示你还没有的模组。已禁用的模组也算作已安装。</value>
+  </data>
+  <data name="Filter_SelectedCountFormat" xml:space="preserve">
+    <value>已选 {0} 项</value>
+  </data>
+  <data name="Filter_Ungrouped" xml:space="preserve">
+    <value>未分组</value>
+  </data>
+  <data name="Filter_UpdateAny" xml:space="preserve">
+    <value>任意更新状态</value>
+  </data>
+  <data name="Filter_UpdateNeeded" xml:space="preserve">
+    <value>需要更新</value>
+  </data>
+  <data name="Filter_UpdateNotFound" xml:space="preserve">
+    <value>在 sp-mod.com 上未找到</value>
+  </data>
+  <data name="Filter_UpdateUpToDate" xml:space="preserve">
+    <value>已是最新</value>
+  </data>
+  <data name="Footprint_AreaClient" xml:space="preserve">
+    <value>客户端</value>
+  </data>
+  <data name="Footprint_AreaClientCpu" xml:space="preserve">
+    <value>客户端 · CPU</value>
+  </data>
+  <data name="Footprint_AreaClientGpu" xml:space="preserve">
+    <value>客户端 · GPU</value>
+  </data>
+  <data name="Footprint_AreaClientMemory" xml:space="preserve">
+    <value>客户端 · 内存</value>
+  </data>
+  <data name="Footprint_AreaClientStartup" xml:space="preserve">
+    <value>客户端 · 启动</value>
+  </data>
+  <data name="Footprint_AreaDisk" xml:space="preserve">
+    <value>磁盘</value>
+  </data>
+  <data name="Footprint_AreaNote" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Footprint_AreaNotLoaded" xml:space="preserve">
+    <value>未加载</value>
+  </data>
+  <data name="Footprint_AreaServer" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="Footprint_AreaServerCpu" xml:space="preserve">
+    <value>服务器 · CPU</value>
+  </data>
+  <data name="Footprint_AreaServerMemory" xml:space="preserve">
+    <value>服务器 · 内存</value>
+  </data>
+  <data name="Footprint_AreaUnknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Footprint_BundlesEffect" xml:space="preserve">
+    <value>资源包用来存放纹理、模型、声音和着色器，一旦加载就会占用内存，其中显卡需要的部分还会占用显存。这些文件按扩展名识别，并按磁盘占用计量；至于模组何时加载它们、是否加载，则要另说。</value>
+  </data>
+  <data name="Footprint_BundlesFormat" xml:space="preserve">
+    <value>{0}，分布在扩展名为 .bundle 的 {1} 中</value>
+  </data>
+  <data name="Footprint_CallbacksFormat" xml:space="preserve">
+    <value>找到的引擎回调：{0}</value>
+  </data>
+  <data name="Footprint_CallbacksTruncatedFormat" xml:space="preserve">
+    <value>找到的引擎回调：{0}…</value>
+  </data>
+  <data name="Footprint_Camera_other" xml:space="preserve">
+    <value>其中 {0} 个会挂钩相机的渲染</value>
+  </data>
+  <data name="Footprint_CameraEffect" xml:space="preserve">
+    <value>OnPreRender 与 OnPostRender 分别在相机绘制的前后运行，每台相机每帧各一次。它们运行在处理器上，而不是显卡上，无论其中的代码之后会去设置什么。</value>
+  </data>
+  <data name="Footprint_Components_other" xml:space="preserve">
+    <value>声明了 {0} 个引擎会定时调用的组件</value>
+  </data>
+  <data name="Footprint_ComponentsEffect" xml:space="preserve">
+    <value>这里说的是模组包含什么，而不是你游玩时实际会发生什么：声明过的组件只有在被创建出实例、挂到活动对象上并启用之后才会运行，而这些在文件里都看不出来。下面各行说明每个组件用的是哪一类回调，一个组件若声明了不止一种，就会出现在不止一行里，所以各行相加可能大于这个总数。</value>
+  </data>
+  <data name="Footprint_DetailComponent_other" xml:space="preserve">
+    <value>{0} 个带引擎回调的组件</value>
+  </data>
+  <data name="Footprint_DetailDisabled" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="Footprint_DetailPatch_other" xml:space="preserve">
+    <value>{0} 个补丁类</value>
+  </data>
+  <data name="Footprint_DiskAssemblies_other" xml:space="preserve">
+    <value>其中 {0} 个是托管程序集，上面的一切都是从它们读出来的。</value>
+  </data>
+  <data name="Footprint_DiskAssembliesNone" xml:space="preserve">
+    <value>它们都不是托管程序集，所以这里没有已编译的代码可读。</value>
+  </data>
+  <data name="Footprint_DiskEffectTail" xml:space="preserve">
+    <value>这是模组自己的文件夹里的全部内容，所以安装进这些文件夹的东西也会算在这里，比如没有自己文件夹的附加组件。</value>
+  </data>
+  <data name="Footprint_DiskFormat" xml:space="preserve">
+    <value>{0}，分布在 {1} 中</value>
+  </data>
+  <data name="Footprint_Empty" xml:space="preserve">
+    <value>暂无内容可显示。</value>
+  </data>
+  <data name="Footprint_FactSeparator" xml:space="preserve">
+    <value>  ·  </value>
+  </data>
+  <data name="Footprint_Files_other" xml:space="preserve">
+    <value>{0} 个文件</value>
+  </data>
+  <data name="Footprint_FrameUpdate_other" xml:space="preserve">
+    <value>其中 {0} 个声明了每帧更新的方法</value>
+  </data>
+  <data name="Footprint_FrameUpdateEffect" xml:space="preserve">
+    <value>组件存在且处于启用状态时，Unity 每帧会对它调用一次 Update 或 LateUpdate。这类工作与帧率的关系最直接，不过开销有多大，完全取决于里面的代码做了什么。</value>
+  </data>
+  <data name="Footprint_Gui_other" xml:space="preserve">
+    <value>其中 {0} 个使用即时模式 GUI 绘制</value>
+  </data>
+  <data name="Footprint_GuiEffect" xml:space="preserve">
+    <value>Unity 每帧会多次调用 OnGUI，先进行一次布局，然后每个输入事件再各调用一次；即时模式的代码通常每次调用都会分配内存，从而加重垃圾回收的压力。它实际绘制什么，决定了这件事有多要紧。</value>
+  </data>
+  <data name="Footprint_ImageEffect_other" xml:space="preserve">
+    <value>其中 {0} 个是全屏图像效果</value>
+  </data>
+  <data name="Footprint_ImageEffectEffect" xml:space="preserve">
+    <value>OnRenderImage 取走已渲染的画面并写入一张新的画面，组件挂在哪个相机上，就为哪个相机做一次。这项工作由显卡完成，开销随分辨率变化，而不随处理器速度变化。</value>
+  </data>
+  <data name="Footprint_NothingFound" xml:space="preserve">
+    <value>没有会对游戏打补丁或按计时器运行的内容</value>
+  </data>
+  <data name="Footprint_NothingFoundEffect" xml:space="preserve">
+    <value>没有补丁类，也没有声明引擎回调的组件。这个模组无论做什么，都发生在别的东西调用它的时候，或者它本身就是数据与资源，而不是代码。</value>
+  </data>
+  <data name="Footprint_NotLoadedEffect" xml:space="preserve">
+    <value>它的文件仍在磁盘上，所以仍能被读取，但 SPT 没有加载其中任何一个。下面描述的一切，都是你重新启用它之后这个模组会做的事。</value>
+  </data>
+  <data name="Footprint_NotLoadedWhat" xml:space="preserve">
+    <value>这个模组当前已禁用</value>
+  </data>
+  <data name="Footprint_Patcher" xml:space="preserve">
+    <value>自带 BepInEx 补丁器</value>
+  </data>
+  <data name="Footprint_PatcherEffect" xml:space="preserve">
+    <value>BepInEx 会在预加载器中运行补丁器，此时游戏的程序集还没有加载。这是一项启动开销，进入战局后它就不再运行。</value>
+  </data>
+  <data name="Footprint_Patches_other" xml:space="preserve">
+    <value>自带 {0} 个补丁类</value>
+  </data>
+  <data name="Footprint_PatchesEffect" xml:space="preserve">
+    <value>一个补丁类会改动游戏自身的一个方法，通常只有一个，但一个类可以针对多个方法，所以这个数字是下限而不是总数。决定开销的是补丁所在的位置，而这恰恰是读文件无法确定的：一个打在游戏每秒调用数千次的方法上的补丁，在这里和打在菜单按钮上的补丁看起来毫无区别。请把它理解为这个模组的触及范围，而不是它的开销。</value>
+  </data>
+  <data name="Footprint_Physics_other" xml:space="preserve">
+    <value>其中 {0} 个声明了物理步进方法</value>
+  </data>
+  <data name="Footprint_PhysicsEffect" xml:space="preserve">
+    <value>FixedUpdate 按物理时间步长运行（默认每秒五十次），而不是每帧一次。它可能在一帧里运行多次，也可能在另一帧里完全不运行，所以它的开销不像 Update 那样随帧率变化。</value>
+  </data>
+  <data name="Footprint_ServerBundlesEffect" xml:space="preserve">
+    <value>这些位于服务器那一半，属于服务器的内存，而不是游戏的内存。</value>
+  </data>
+  <data name="Footprint_ServerComponents_other" xml:space="preserve">
+    <value>服务器那一半里有 {0} 个类型看起来像游戏组件</value>
+  </data>
+  <data name="Footprint_ServerComponentsEffect" xml:space="preserve">
+    <value>服务器代码没有理由使用它们，而这项检查只按类型名匹配，所以这更可能是命名上的巧合，而不是真的做了什么事。无论如何，它只会被列出，而不会被当作客户端的工作量计入。</value>
+  </data>
+  <data name="Footprint_ServerHalf" xml:space="preserve">
+    <value>在 user\mods 下安装文件</value>
+  </data>
+  <data name="Footprint_ServerHalfEffect" xml:space="preserve">
+    <value>这些在 SPT 服务器进程里加载，而不是在游戏里。它们的开销落在服务器启动和战局加载上；它们不在客户端的帧循环里，所以不会直接拖累你的帧率。</value>
+  </data>
+  <data name="Footprint_ServerPatches_other" xml:space="preserve">
+    <value>其中 {0} 个是补丁类</value>
+  </data>
+  <data name="Footprint_ServerPatchesEffect" xml:space="preserve">
+    <value>在服务器那一半里发现，所以它改动的是服务器而不是游戏。它与上面的客户端数字分开计数，也不影响这个模组的等级，等级只描述客户端。</value>
+  </data>
+  <data name="Footprint_ShowingNamesEffect" xml:space="preserve">
+    <value>上面的计数是完整的，只有下方的方法名称列表被截短了。</value>
+  </data>
+  <data name="Footprint_ShowingNamesFormat" xml:space="preserve">
+    <value>正在显示 {1} 个回调名称中的 {0} 个</value>
+  </data>
+  <data name="Footprint_SortByLabel" xml:space="preserve">
+    <value>排序方式</value>
+  </data>
+  <data name="Footprint_Status_other" xml:space="preserve">
+    <value>已从 {0} 个模组随包上传到磁盘的文件中读取完毕。</value>
+  </data>
+  <data name="Footprint_StatusNone" xml:space="preserve">
+    <value>没有找到已安装的模组。请在「设置」页面上设置你的 SPT 安装文件夹。</value>
+  </data>
+  <data name="Footprint_StatusReading" xml:space="preserve">
+    <value>正在读取已安装的模组…</value>
+  </data>
+  <data name="Footprint_StatusRereading" xml:space="preserve">
+    <value>正在重新读取每个模组…</value>
+  </data>
+  <data name="Footprint_TitleFormat" xml:space="preserve">
+    <value>{0}  {1}</value>
+  </data>
+  <data name="Footprint_UnreadableEffect" xml:space="preserve">
+    <value>上面的每一项计数都只是下限，而不是总数。程序集可能因为被混淆、被加壳，或构建方式无法被解析而读不出来。</value>
+  </data>
+  <data name="Footprint_UnreadableFormat" xml:space="preserve">
+    <value>{1} 个程序集中有 {0} 个无法读取</value>
+  </data>
+  <data name="Footprint_WhatThisReadsBody" xml:space="preserve">
+    <value>每个模组都是从它安装的文件中读取的：它给游戏打了多少补丁、它声明了哪些由引擎按计时器调用的内容，以及它往磁盘上放了什么。它描述的是模组包含什么，而不是你游玩时会发生什么：这里不做任何计时或测量，应用也无法得知声明的组件是否真的被创建过，或者某个补丁是否落在游戏频繁调用的东西上。所以这些只是计数，不是评分，本应用无从知道其中任何一项给你带来了多少开销，并且刻意不给任何人的作品打分。打开一个模组即可查看读到了什么，以及每项发现所能证明的极限。</value>
+  </data>
+  <data name="Footprint_WhatThisReadsHeader" xml:space="preserve">
+    <value>这里读取的是什么</value>
+  </data>
+  <data name="Install_StageDone" xml:space="preserve">
+    <value>完成。</value>
+  </data>
+  <data name="Install_StageDownloadingFormat" xml:space="preserve">
+    <value>正在下载 {0} {1}…</value>
+  </data>
+  <data name="Install_StageExtracting" xml:space="preserve">
+    <value>正在解压…</value>
+  </data>
+  <data name="Install_StageExtractingCountFormat" xml:space="preserve">
+    <value>正在解压文件 {0}/{1}…</value>
+  </data>
+  <data name="Install_StageExtractingUnknownFormat" xml:space="preserve">
+    <value>正在解压 {0} 个文件…</value>
+  </data>
+  <data name="Install_StageInstallingCountFormat" xml:space="preserve">
+    <value>正在安装文件 {0}/{1}…</value>
+  </data>
+  <data name="Install_StageInstallingUnknownFormat" xml:space="preserve">
+    <value>正在安装 {0} 个文件…</value>
+  </data>
+  <data name="Install_StageRemovingFormat" xml:space="preserve">
+    <value>正在移除先前安装的版本（{0}）…</value>
+  </data>
+  <data name="Installed_AddGroup" xml:space="preserve">
+    <value>添加分组</value>
+  </data>
+  <data name="Installed_Addon" xml:space="preserve">
+    <value>附加组件</value>
+  </data>
+  <data name="Installed_AddonForFormat" xml:space="preserve">
+    <value>{0} 的附加组件</value>
+  </data>
+  <data name="Installed_CardDisableToolTip" xml:space="preserve">
+    <value>禁用，把它移到 .disabled 文件夹，不删除任何东西</value>
+  </data>
+  <data name="Installed_CardEnableToolTip" xml:space="preserve">
+    <value>启用，把它移回 SPT 加载它的位置</value>
+  </data>
+  <data name="Installed_CategoryFilterToolTip" xml:space="preserve">
+    <value>按模组在 sp-mod.com 上所属的分类筛选</value>
+  </data>
+  <data name="Installed_ClientFolder" xml:space="preserve">
+    <value>客户端文件夹</value>
+  </data>
+  <data name="Installed_CollapseAllToolTip" xml:space="preserve">
+    <value>收起所有符合筛选条件的模组</value>
+  </data>
+  <data name="Installed_ConfirmDownload" xml:space="preserve">
+    <value>确认安装</value>
+  </data>
+  <data name="Installed_ConfirmDownloadToolTip" xml:space="preserve">
+    <value>把下载的版本记录为已安装的版本。磁盘上不会有任何改动。</value>
+  </data>
+  <data name="Installed_CountDisabled_other" xml:space="preserve">
+    <value>{0} 个已禁用。</value>
+  </data>
+  <data name="Installed_CountFound_other" xml:space="preserve">
+    <value>找到 {0} 个模组。</value>
+  </data>
+  <data name="Installed_CountShown_other" xml:space="preserve">
+    <value>已显示 {1} 个模组中的 {0} 个。</value>
+  </data>
+  <data name="Installed_DeleteGroup_other" xml:space="preserve">
+    <value>删除“{0}”？它的 {1} 个模组会移回未分组。</value>
+  </data>
+  <data name="Installed_DeleteGroupEmptyFormat" xml:space="preserve">
+    <value>删除“{0}”？</value>
+  </data>
+  <data name="Installed_DeleteGroupTitle" xml:space="preserve">
+    <value>删除分组？</value>
+  </data>
+  <data name="Installed_DetailFilesReportFormat" xml:space="preserve">
+    <value>文件显示 {0}</value>
+  </data>
+  <data name="Installed_DetailFilesReportPairFormat" xml:space="preserve">
+    <value>文件显示客户端 {0} / 服务器 {1}</value>
+  </data>
+  <data name="Installed_DetailGuidFormat" xml:space="preserve">
+    <value>GUID：{0}</value>
+  </data>
+  <data name="Installed_DetailInstalledAsFormat" xml:space="preserve">
+    <value>安装为：{0}</value>
+  </data>
+  <data name="Installed_DetailInstalledOnFormat" xml:space="preserve">
+    <value>安装于：{0:d}</value>
+  </data>
+  <data name="Installed_DetailInstalledVersionFormat" xml:space="preserve">
+    <value>已安装版本：{0}</value>
+  </data>
+  <data name="Installed_DetailLastUpdatedFormat" xml:space="preserve">
+    <value>sp-mod.com 上的最后更新：{0:d}</value>
+  </data>
+  <data name="Installed_DetailLatestPublishedFormat" xml:space="preserve">
+    <value>最新发布：{0}</value>
+  </data>
+  <data name="Installed_DetailManuallyConfirmed" xml:space="preserve">
+    <value>已手动确认</value>
+  </data>
+  <data name="Installed_DetailManuallyConfirmedFormat" xml:space="preserve">
+    <value>{0}，已手动确认</value>
+  </data>
+  <data name="Installed_DetailParentConstraintFormat" xml:space="preserve">
+    <value>最新发布版本（{0}）需要 {1} {2}，你目前是 {3}</value>
+  </data>
+  <data name="Installed_DetailParentConstraintUnnamedFormat" xml:space="preserve">
+    <value>最新发布版本（{0}）需要它的父模组 {1}，你目前是 {2}</value>
+  </data>
+  <data name="Installed_DetailParentMissingFormat" xml:space="preserve">
+    <value>{0} 未安装，所以这里无法检查更新</value>
+  </data>
+  <data name="Installed_DetailParentMissingUnnamed" xml:space="preserve">
+    <value>它的父模组未安装，所以这里无法检查更新</value>
+  </data>
+  <data name="Installed_DetailsAndVersions" xml:space="preserve">
+    <value>详情与版本</value>
+  </data>
+  <data name="Installed_DetailsAndVersionsToolTip" xml:space="preserve">
+    <value>打开完整的版本历史与更新对话框</value>
+  </data>
+  <data name="Installed_DetailUndetermined" xml:space="preserve">
+    <value>无法确定版本，假定已是最新</value>
+  </data>
+  <data name="Installed_DetailUndeterminedLatestFormat" xml:space="preserve">
+    <value>无法确定版本，假定已安装最新发布的版本（{0}）</value>
+  </data>
+  <data name="Installed_DisabledCount_other" xml:space="preserve">
+    <value>已禁用 {0} 个模组。</value>
+  </data>
+  <data name="Installed_DisabledTag" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="Installed_DisableSelected" xml:space="preserve">
+    <value>禁用所选项</value>
+  </data>
+  <data name="Installed_DownloadConfirmedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 标记为已安装。</value>
+  </data>
+  <data name="Installed_DownloadLooksInstalledFormat" xml:space="preserve">
+    <value>你已下载 {0}，它也在磁盘上，但安装尚未确认。请确认一下，这样本应用才知道你用的是哪个版本。</value>
+  </data>
+  <data name="Installed_DownloadPartialFormat" xml:space="preserve">
+    <value>你已下载 {0}，但磁盘上的文件与它还不一致，可能缺少其中一部分，也可能上一个版本还在。</value>
+  </data>
+  <data name="Installed_DownloadsConfirmed_other" xml:space="preserve">
+    <value>已将 {0} 个下载标记为已安装。</value>
+  </data>
+  <data name="Installed_DuplicateBodyFormat" xml:space="preserve">
+    <value>{0} 同时存在于启用和禁用的文件夹中：
+
+{1}
+
+是，保留启用中的那份副本
+否，保留禁用中的副本，并启用它
+取消，保持现状
+
+你不保留的那份副本会被移入 SPT 安装目录下隐藏的 .tcfmm-duplicates 文件夹，而不是被删除。</value>
+  </data>
+  <data name="Installed_DuplicateKeptDisabledFormat" xml:space="preserve">
+    <value>已处理 {0}，保留了禁用中的那份副本，另一份在 SPT 安装目录的 .tcfmm-duplicates 里。</value>
+  </data>
+  <data name="Installed_DuplicateKeptEnabledFormat" xml:space="preserve">
+    <value>已处理 {0}，保留了启用中的那份副本，另一份在 SPT 安装目录的 .tcfmm-duplicates 里。</value>
+  </data>
+  <data name="Installed_DuplicateTitleFormat" xml:space="preserve">
+    <value>处理 {0}？</value>
+  </data>
+  <data name="Installed_EnabledCount_other" xml:space="preserve">
+    <value>已启用 {0} 个模组。</value>
+  </data>
+  <data name="Installed_EnabledFilterToolTip" xml:space="preserve">
+    <value>按模组是启用还是禁用筛选</value>
+  </data>
+  <data name="Installed_EnableSelected" xml:space="preserve">
+    <value>启用所选项</value>
+  </data>
+  <data name="Installed_ExpandAllToolTip" xml:space="preserve">
+    <value>展开所有符合筛选条件的模组</value>
+  </data>
+  <data name="Installed_FolderGoneFormat" xml:space="preserve">
+    <value>该文件夹已不存在，{0}。请重新扫描以获取这一变化。</value>
+  </data>
+  <data name="Installed_GroupAllDisabled" xml:space="preserve">
+    <value>• 全部已禁用</value>
+  </data>
+  <data name="Installed_GroupCount_other" xml:space="preserve">
+    <value>{0} 个模组</value>
+  </data>
+  <data name="Installed_GroupDeleteToolTip" xml:space="preserve">
+    <value>删除此分组</value>
+  </data>
+  <data name="Installed_GroupDisableToolTip" xml:space="preserve">
+    <value>禁用此分组中的全部模组</value>
+  </data>
+  <data name="Installed_GroupDropHint" xml:space="preserve">
+    <value>将模组拖到此处</value>
+  </data>
+  <data name="Installed_GroupEnableToolTip" xml:space="preserve">
+    <value>启用此分组中的全部模组</value>
+  </data>
+  <data name="Installed_GroupExpandToolTip" xml:space="preserve">
+    <value>展开/折叠此分组</value>
+  </data>
+  <data name="Installed_GroupFilterToolTip" xml:space="preserve">
+    <value>按你自己创建的模组分组筛选</value>
+  </data>
+  <data name="Installed_GroupInvertToolTip" xml:space="preserve">
+    <value>反转此分组，禁用已启用的，启用已禁用的</value>
+  </data>
+  <data name="Installed_GroupMoveDownToolTip" xml:space="preserve">
+    <value>下移</value>
+  </data>
+  <data name="Installed_GroupMoveUpToolTip" xml:space="preserve">
+    <value>上移</value>
+  </data>
+  <data name="Installed_GroupRenameToolTip" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Installed_GroupRowToolTip" xml:space="preserve">
+    <value>单击查看详情，拖到另一个分组上即可移过去</value>
+  </data>
+  <data name="Installed_GroupSomeDisabledFormat" xml:space="preserve">
+    <value>• {0} 个已禁用</value>
+  </data>
+  <data name="Installed_ImpactNeededByFormat" xml:space="preserve">
+    <value>{0} 依赖它</value>
+  </data>
+  <data name="Installed_ImpactNeedsFormat" xml:space="preserve">
+    <value>依赖于 {0}</value>
+  </data>
+  <data name="Installed_ImpactOptionallyUsedByFormat" xml:space="preserve">
+    <value>{0} 可选依赖它</value>
+  </data>
+  <data name="Installed_ImpactOptionallyUsesFormat" xml:space="preserve">
+    <value>可选依赖于 {0}</value>
+  </data>
+  <data name="Installed_IncompleteMissing_other" xml:space="preserve">
+    <value>文件缺失，{0} 不在磁盘上。请在「详情与版本」中重新安装。</value>
+  </data>
+  <data name="Installed_IncompletePartial" xml:space="preserve">
+    <value>仅部分安装，安装过程没有完成。请在「详情与版本」中重新安装。</value>
+  </data>
+  <data name="Installed_LatestAddonUnlisted" xml:space="preserve">
+    <value>未知，此附加组件已不再列于 sp-mod.com</value>
+  </data>
+  <data name="Installed_LatestNotFound" xml:space="preserve">
+    <value>在 sp-mod.com 上未找到</value>
+  </data>
+  <data name="Installed_LatestPatcherNotListed" xml:space="preserve">
+    <value>sp-mod.com 上没有，补丁通常随另一个模组一起发布</value>
+  </data>
+  <data name="Installed_ListBadges" xml:space="preserve">
+    <value>模组列表标签</value>
+  </data>
+  <data name="Installed_ListBadgesToolTip" xml:space="preserve">
+    <value>显示每个模组属于哪些模组列表。</value>
+  </data>
+  <data name="Installed_ListChipToolTip" xml:space="preserve">
+    <value>此模组属于这个模组列表</value>
+  </data>
+  <data name="Installed_MoveFailedCountFormat" xml:space="preserve">
+    <value>{0} 个模组无法移动：{1}</value>
+  </data>
+  <data name="Installed_MoveFailedItemFormat" xml:space="preserve">
+    <value>{0}，{1}</value>
+  </data>
+  <data name="Installed_MoveFailedNamedFormat" xml:space="preserve">
+    <value>{0} 无法移动：{1}</value>
+  </data>
+  <data name="Installed_MultiSelect" xml:space="preserve">
+    <value>多选</value>
+  </data>
+  <data name="Installed_MultiSelectToolTip" xml:space="preserve">
+    <value>勾选多个模组，一起启用或禁用</value>
+  </data>
+  <data name="Installed_NewGroupPlaceholder" xml:space="preserve">
+    <value>新分组名称…</value>
+  </data>
+  <data name="Installed_NoModsFoundFormat" xml:space="preserve">
+    <value>在“{0}”下没有找到模组。</value>
+  </data>
+  <data name="Installed_NothingSelected" xml:space="preserve">
+    <value>未选择任何项。</value>
+  </data>
+  <data name="Installed_NothingToDisable" xml:space="preserve">
+    <value>没有可禁用的项。</value>
+  </data>
+  <data name="Installed_NothingToEnable" xml:space="preserve">
+    <value>没有可启用的项。</value>
+  </data>
+  <data name="Installed_NoUpdatesAvailable" xml:space="preserve">
+    <value>所选模组都没有更新。</value>
+  </data>
+  <data name="Installed_NoUpdatesReasonsFormat" xml:space="preserve">
+    <value>所选模组都无法在此更新：{0}。</value>
+  </data>
+  <data name="Installed_Pin" xml:space="preserve">
+    <value>固定</value>
+  </data>
+  <data name="Installed_PinnedFormat" xml:space="preserve">
+    <value>已固定 {0}，任何模组列表都不会把它移开。</value>
+  </data>
+  <data name="Installed_PinToolTip" xml:space="preserve">
+    <value>固定此模组，这样你应用的任何模组列表都不会把它移开。适合 HUD 和体验优化模组，无论你切换到哪份模组列表，都希望它们一直保留。</value>
+  </data>
+  <data name="Installed_ReasonAddon_other" xml:space="preserve">
+    <value>{0} 个附加组件，它们随父模组更新</value>
+  </data>
+  <data name="Installed_ReasonDisabled_other" xml:space="preserve">
+    <value>{0} 个已禁用（请先启用它们）</value>
+  </data>
+  <data name="Installed_Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="Installed_RemoveAppManagedBody" xml:space="preserve">
+    <value>这只会删除本应用为它安装的那些文件。</value>
+  </data>
+  <data name="Installed_RemoveConfigs_other" xml:space="preserve">
+    <value>{0} 有 {1} 个自己的配置或设置文件：</value>
+  </data>
+  <data name="Installed_RemoveConfigsChoicesFormat" xml:space="preserve">
+    <value>是，保留它们，移动到 {0}
+否，连同模组的其余部分一起删除
+取消，不执行任何移除</value>
+  </data>
+  <data name="Installed_RemovedConfigsKept_other" xml:space="preserve">
+    <value>已在 {1} 中保留 {0} 个配置文件。</value>
+  </data>
+  <data name="Installed_RemovedFailed_other" xml:space="preserve">
+    <value>已移除 {0}，但有 {1} 个文件无法删除（被占用或已不存在），你可能需要手动移除它们。</value>
+  </data>
+  <data name="Installed_RemovedFormat" xml:space="preserve">
+    <value>已移除 {0}。</value>
+  </data>
+  <data name="Installed_RemoveDisabledFirstFormat" xml:space="preserve">
+    <value>{0} 已禁用，请先启用它再移除。</value>
+  </data>
+  <data name="Installed_RemoveDisableHint" xml:space="preserve">
+    <value>若想在不删除文件的前提下把它从游戏中拿掉，请改用「禁用」。</value>
+  </data>
+  <data name="Installed_RemoveFailedFormat" xml:space="preserve">
+    <value>无法移除 {0}：{1}</value>
+  </data>
+  <data name="Installed_RemoveLegacyBodyFormat" xml:space="preserve">
+    <value>此模组不是通过本应用安装的，因此这会永久删除它的整个文件夹，而不只是它放置的文件：
+
+{0}</value>
+  </data>
+  <data name="Installed_RemoveNoFolderFormat" xml:space="preserve">
+    <value>找不到 {0} 的文件夹，无法移除。</value>
+  </data>
+  <data name="Installed_RemoveNoRecordFormat" xml:space="preserve">
+    <value>找不到 {0} 的安装记录，它可能已被移除。</value>
+  </data>
+  <data name="Installed_RemoveTitleFormat" xml:space="preserve">
+    <value>要移除 {0} 吗？</value>
+  </data>
+  <data name="Installed_RemoveToolTip" xml:space="preserve">
+    <value>移除这个模组</value>
+  </data>
+  <data name="Installed_SaveAsDefaultToolTip" xml:space="preserve">
+    <value>以后打开此页面时，会应用当前的筛选、排序、视图和每页数量设置。搜索框的内容不包含在内。可在「设置」中清除。</value>
+  </data>
+  <data name="Installed_SavedAsDefault" xml:space="preserve">
+    <value>已保存。今后「已安装」页面会按这种方式打开，可在「设置」中恢复。</value>
+  </data>
+  <data name="Installed_SelectAllFormat" xml:space="preserve">
+    <value>全选 {0} 个</value>
+  </data>
+  <data name="Installed_SelectAllToolTip" xml:space="preserve">
+    <value>选中当前筛选条件匹配的所有项，涵盖每一页，而不只是屏幕上这一页。</value>
+  </data>
+  <data name="Installed_SelectedFormat" xml:space="preserve">
+    <value>已选：{0}</value>
+  </data>
+  <data name="Installed_SelectionClear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Installed_ServerFolder" xml:space="preserve">
+    <value>服务器文件夹</value>
+  </data>
+  <data name="Installed_SkippedAddon_other" xml:space="preserve">
+    <value>{0} 个附加组件，请从它们的父模组更新</value>
+  </data>
+  <data name="Installed_SkippedDisabled_other" xml:space="preserve">
+    <value>{0} 个已禁用</value>
+  </data>
+  <data name="Installed_SkippedFormat" xml:space="preserve">
+    <value> 已跳过 {0}。</value>
+  </data>
+  <data name="Installed_SkippedNotFound_other" xml:space="preserve">
+    <value>{0} 个未在目录中找到</value>
+  </data>
+  <data name="Installed_SkippedUpToDate_other" xml:space="preserve">
+    <value>{0} 个已是最新</value>
+  </data>
+  <data name="Installed_SortGroupsLabel" xml:space="preserve">
+    <value>分组排序：</value>
+  </data>
+  <data name="Installed_SortOut" xml:space="preserve">
+    <value>理清</value>
+  </data>
+  <data name="Installed_SortOutToolTip" xml:space="preserve">
+    <value>此模组同时存在于一个已启用文件夹和一个已禁用文件夹中，请选择要保留哪一份</value>
+  </data>
+  <data name="Installed_SourceAppManaged" xml:space="preserve">
+    <value>由本应用安装，使用移除只会删除它放置的那些文件</value>
+  </data>
+  <data name="Installed_SourceManual" xml:space="preserve">
+    <value>手动安装，使用移除会删除它的整个文件夹</value>
+  </data>
+  <data name="Installed_SourceManualConfirmed" xml:space="preserve">
+    <value>手动安装，其版本已在此手动确认</value>
+  </data>
+  <data name="Installed_StatusDuplicate" xml:space="preserve">
+    <value>此模组同时存在于一个已启用文件夹和一个已禁用文件夹中，请使用「理清」保留其中一份</value>
+  </data>
+  <data name="Installed_StatusMixed" xml:space="preserve">
+    <value>部分禁用，此模组的部分文件夹已禁用，部分未禁用</value>
+  </data>
+  <data name="Installed_StatusUpdateFormat" xml:space="preserve">
+    <value>可更新至 {0}</value>
+  </data>
+  <data name="Installed_TargetClientOnly" xml:space="preserve">
+    <value>仅客户端</value>
+  </data>
+  <data name="Installed_TargetClientPatcher" xml:space="preserve">
+    <value>客户端 + 补丁程序</value>
+  </data>
+  <data name="Installed_TargetClientPatcherServer" xml:space="preserve">
+    <value>客户端 + 补丁程序 + 服务器</value>
+  </data>
+  <data name="Installed_TargetClientServer" xml:space="preserve">
+    <value>客户端 + 服务器</value>
+  </data>
+  <data name="Installed_TargetPatcherOnly" xml:space="preserve">
+    <value>仅补丁程序</value>
+  </data>
+  <data name="Installed_TargetPatcherServer" xml:space="preserve">
+    <value>补丁程序 + 服务器</value>
+  </data>
+  <data name="Installed_TargetServerOnly" xml:space="preserve">
+    <value>仅服务器</value>
+  </data>
+  <data name="Installed_TargetUnknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Installed_Undo" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="Installed_UndoDisableCountFormat" xml:space="preserve">
+    <value>撤销禁用 {0} 个模组</value>
+  </data>
+  <data name="Installed_UndoDisableNamedFormat" xml:space="preserve">
+    <value>撤销禁用 {0}</value>
+  </data>
+  <data name="Installed_UndoEnableCountFormat" xml:space="preserve">
+    <value>撤销启用 {0} 个模组</value>
+  </data>
+  <data name="Installed_UndoEnableNamedFormat" xml:space="preserve">
+    <value>撤销启用 {0}</value>
+  </data>
+  <data name="Installed_UndoInvertFormat" xml:space="preserve">
+    <value>撤销对 {0} 的反转</value>
+  </data>
+  <data name="Installed_Undone_other" xml:space="preserve">
+    <value>已将 {0} 个模组放回。</value>
+  </data>
+  <data name="Installed_UndoSortOutFormat" xml:space="preserve">
+    <value>撤销理清 {0}</value>
+  </data>
+  <data name="Installed_Unpin" xml:space="preserve">
+    <value>取消固定</value>
+  </data>
+  <data name="Installed_UnpinnedFormat" xml:space="preserve">
+    <value>已取消固定 {0}。</value>
+  </data>
+  <data name="Installed_UnpinToolTip" xml:space="preserve">
+    <value>取消固定此模组，这样你应用的模组列表在未包含它时，就可以再次把它移开。</value>
+  </data>
+  <data name="Installed_UpdateCancelled" xml:space="preserve">
+    <value>更新已取消。</value>
+  </data>
+  <data name="Installed_UpdateCancelledUnread" xml:space="preserve">
+    <value>更新已取消，模组页面未被确认已读。</value>
+  </data>
+  <data name="Installed_UpdateFilterToolTip" xml:space="preserve">
+    <value>按是否有可用更新筛选</value>
+  </data>
+  <data name="Installed_UpdateHandInstalledBodyFormat" xml:space="preserve">
+    <value>{0} 不是通过本应用安装的，因此没有记录当前版本究竟放置了哪些文件。更新会把新版本的文件直接装到现有文件之上，而不会先干净地移除旧版本，因此可能会残留旧版本的文件。</value>
+  </data>
+  <data name="Installed_UpdateHandInstalledTitle_other" xml:space="preserve">
+    <value>要更新 {0} 个手动安装的模组吗？</value>
+  </data>
+  <data name="Installed_UpdateNotInCatalogFormat" xml:space="preserve">
+    <value>在缓存的目录中找不到 {0}，请尝试重新扫描。</value>
+  </data>
+  <data name="Installed_UpdateQueued_other" xml:space="preserve">
+    <value>已将 {0} 个更新加入队列，进度请见「下载」页面。</value>
+  </data>
+  <data name="Installed_UpdateSelected" xml:space="preserve">
+    <value>更新所选</value>
+  </data>
+  <data name="Installed_UpdateSelectedToolTip" xml:space="preserve">
+    <value>为每个有可用更新的所选模组加入更新队列。没有更新的模组、已禁用的模组和附加组件都会被跳过。</value>
+  </data>
+  <data name="Installed_ViewCards" xml:space="preserve">
+    <value>卡片</value>
+  </data>
+  <data name="Installed_ViewGroups" xml:space="preserve">
+    <value>分组</value>
+  </data>
+  <data name="Installed_ViewGroupsToolTip" xml:space="preserve">
+    <value>把模组归入你自己的分组，风格类似 MO2 的分隔符。</value>
+  </data>
+  <data name="Installed_ViewList" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="Installed_ViewListToolTip" xml:space="preserve">
+    <value>每个模组一行，可滚动，每一行都能展开它的完整详情。</value>
+  </data>
+  <data name="InstallRole_AskLater" xml:space="preserve">
+    <value>稍后询问</value>
+  </data>
+  <data name="InstallRole_Explanation" xml:space="preserve">
+    <value>无头客户端在无人游玩的情况下托管战局，因此它需要决定战局如何进行的那类模组，例如机器人、物品、地点，而不需要任何面向玩家绘制画面的模组。知道这台机器属于哪一种，服务器下发的模组列表就能裁剪到它真正需要的部分。</value>
+  </data>
+  <data name="InstallRole_Intro" xml:space="preserve">
+    <value>这份安装中有 Fika 无头启动器，而它只会出现在运行无头客户端的机器上。</value>
+  </data>
+  <data name="InstallRole_Note" xml:space="preserve">
+    <value>之后可以在「设置」中更改，而且它绝不会影响你自己的模组列表，只影响服务器交给你的那些。</value>
+  </data>
+  <data name="InstallRole_OnlyHosts" xml:space="preserve">
+    <value>否，它只做托管</value>
+  </data>
+  <data name="InstallRole_OnlyHostsToolTip" xml:space="preserve">
+    <value>一台专用的无头机器。下发的列表不会包含只有玩家才需要的模组。</value>
+  </data>
+  <data name="InstallRole_PlaysToo" xml:space="preserve">
+    <value>是，我也在这台机器上玩</value>
+  </data>
+  <data name="InstallRole_PlaysTooToolTip" xml:space="preserve">
+    <value>这台机器既做托管，也有人在上面游玩，因此下发的列表里列出的模组它都会装上。</value>
+  </data>
+  <data name="InstallRole_Question" xml:space="preserve">
+    <value>有人在这台机器上玩游戏吗？</value>
+  </data>
+  <data name="InstallRole_Title" xml:space="preserve">
+    <value>这台机器看起来是无头机器</value>
+  </data>
+  <data name="MainWindow_LoadingCatalog" xml:space="preserve">
+    <value>正在加载模组目录…</value>
+  </data>
+  <data name="MainWindow_LoadingCatalogNote" xml:space="preserve">
+    <value>正在获取完整的 sp-mod.com 目录，这只会发生一次，之后再启动都会直接从缓存瞬间加载。</value>
+  </data>
+  <data name="MainWindow_ModsLoadedFormat" xml:space="preserve">
+    <value>已加载 {0:N0} 个模组</value>
+  </data>
+  <data name="MainWindow_NoInstallMessage" xml:space="preserve">
+    <value>你需要先在设置中指定 SPT 根目录</value>
+  </data>
+  <data name="MainWindow_NoInstallTitle" xml:space="preserve">
+    <value>未设置 SPT 安装文件夹</value>
+  </data>
+  <data name="MainWindow_SeeWhatsNew" xml:space="preserve">
+    <value>查看新内容</value>
+  </data>
+  <data name="Meta_LanguageName" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Meta_TranslationCredit" xml:space="preserve">
+    <value>机器翻译，尚未经母语者审校。欢迎在 GitHub 上提出修正和建议。</value>
+  </data>
+  <data name="ModDetails_CategoryFormat" xml:space="preserve">
+    <value>分类：{0}</value>
+  </data>
+  <data name="ModDetails_LicenseFormat" xml:space="preserve">
+    <value>许可证：{0}</value>
+  </data>
+  <data name="ModDisable_Note" xml:space="preserve">
+    <value>两种方式都不会删除任何东西，被禁用的模组会保留自己的文件与配置，重新启用时原样移回。</value>
+  </data>
+  <data name="ModDisable_Title" xml:space="preserve">
+    <value>检查依赖</value>
+  </data>
+  <data name="ModInstall_DownloadFolderMissingFormat" xml:space="preserve">
+    <value>下载文件夹 {0} 不存在。请在「设置」页面另选一个，或把它重置为你的下载文件夹。</value>
+  </data>
+  <data name="ModInstall_DownloadFolderNotWritableFormat" xml:space="preserve">
+    <value>无法保存到 {0}（{1}）。请在「设置」页面选择一个可写入的文件夹。</value>
+  </data>
+  <data name="ModInstall_DownloadIncompleteFormat" xml:space="preserve">
+    <value>下载提前中断，{0}/{1} 已到达，因此压缩包不完整，没有安装任何内容。请重试；如果总是中途停止，说明 sp-mod.com 的文件服务器提前切断了传输。</value>
+  </data>
+  <data name="ModInstall_InUseApplyListFormat" xml:space="preserve">
+    <value>应用模组列表前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseDisableFormat" xml:space="preserve">
+    <value>禁用模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseEnableFormat" xml:space="preserve">
+    <value>启用模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseGenericFormat" xml:space="preserve">
+    <value>更改模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseInstallFormat" xml:space="preserve">
+    <value>安装模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseRemoveFormat" xml:space="preserve">
+    <value>移除模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseSortOutFormat" xml:space="preserve">
+    <value>处理重复的模组前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_InUseUndoFormat" xml:space="preserve">
+    <value>撤销更改前请先关闭 {0}，SPT 安装目录内的文件在它运行期间会被锁定。</value>
+  </data>
+  <data name="ModInstall_NoDownloadLinkFormat" xml:space="preserve">
+    <value>{0} {1} 在 sp-mod.com 上没有下载链接。</value>
+  </data>
+  <data name="ModInstall_PartlyInstalledFormat" xml:space="preserve">
+    <value>{0} {1} 只安装了一部分，失败前只放置了 {2}/{3} 个文件：{4} 请关闭 SPT 及其服务器，然后重新安装。</value>
+  </data>
+  <data name="ModInstall_UnexpectedFormat" xml:space="preserve">
+    <value>无法完成该操作：{0}。</value>
+  </data>
+  <data name="ModInstall_UnrecognisedArchiveFormat" xml:space="preserve">
+    <value>{0} {1} 的压缩包看起来不像正常的 SPT 模组包（里面没有 BepInEx、user 或 SPT 文件夹），请改为手动安装。</value>
+  </data>
+  <data name="ModInstall_UnsafeArchiveEntryFormat" xml:space="preserve">
+    <value>压缩包条目“{0}”会被解压到目标文件夹之外，因此拒绝解压。</value>
+  </data>
+  <data name="ModList_ReasonApiFailedFormat" xml:space="preserve">
+    <value>无法向 sp-mod.com 查询该项（{0}）</value>
+  </data>
+  <data name="ModList_ReasonNoAddonListing" xml:space="preserve">
+    <value>sp-mod.com 上没有可下载的附加组件发布条目</value>
+  </data>
+  <data name="ModList_ReasonNoListing" xml:space="preserve">
+    <value>sp-mod.com 上没有可下载的发布条目</value>
+  </data>
+  <data name="ModList_ReasonNoVersions" xml:space="preserve">
+    <value>它没有已发布的版本</value>
+  </data>
+  <data name="ModList_ReasonOrphanedAddonFormat" xml:space="preserve">
+    <value>它是 {0} 的附加组件，而该模组未安装，也不在此列表中</value>
+  </data>
+  <data name="ModList_ReasonVersionGoneFormat" xml:space="preserve">
+    <value>版本 {0} 已不存在，也没有其他已发布的版本</value>
+  </data>
+  <data name="ModList_ReasonVersionNotTakenFormat" xml:space="preserve">
+    <value>版本 {0} 已不再发布，更新的版本也未被采用</value>
+  </data>
+  <data name="ModList_UnnamedModFormat" xml:space="preserve">
+    <value>模组 {0}</value>
+  </data>
+  <data name="ModListAdd_Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="ModListAdd_NoMatches" xml:space="preserve">
+    <value>没有匹配项。</value>
+  </data>
+  <data name="ModListAdd_NothingPicked" xml:space="preserve">
+    <value>尚未选择任何模组。</value>
+  </data>
+  <data name="ModListAdd_SearchPlaceholder" xml:space="preserve">
+    <value>按名称搜索</value>
+  </data>
+  <data name="ModListApply_Cancelled" xml:space="preserve">
+    <value>已取消，未禁用任何内容。</value>
+  </data>
+  <data name="ModListApply_FetchFailed_other" xml:space="preserve">
+    <value>有 {0} 个模组无法下载，因此未禁用任何内容。</value>
+  </data>
+  <data name="ModListApply_Stopped" xml:space="preserve">
+    <value>已停止，未能执行完毕。</value>
+  </data>
+  <data name="ModListFile_AllFiles" xml:space="preserve">
+    <value>所有文件</value>
+  </data>
+  <data name="ModListFile_TypeName" xml:space="preserve">
+    <value>TCF 模组列表</value>
+  </data>
+  <data name="ModLists_ActionAddon" xml:space="preserve">
+    <value>附加组件</value>
+  </data>
+  <data name="ModLists_ActionAddonDetailFormat" xml:space="preserve">
+    <value>附加组件，{0}</value>
+  </data>
+  <data name="ModLists_ActionDisable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="ModLists_ActionDowngrade" xml:space="preserve">
+    <value>降级</value>
+  </data>
+  <data name="ModLists_ActionEnable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="ModLists_ActionEnableReinstall" xml:space="preserve">
+    <value>启用 + 重新安装</value>
+  </data>
+  <data name="ModLists_ActionEnableUpdate" xml:space="preserve">
+    <value>启用 + 更新</value>
+  </data>
+  <data name="ModLists_ActionInstall" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="ModLists_ActionManual" xml:space="preserve">
+    <value>自行获取</value>
+  </data>
+  <data name="ModLists_ActionManualDetail" xml:space="preserve">
+    <value>不在 sp-mod.com 上，需手动安装</value>
+  </data>
+  <data name="ModLists_ActionNewestPublished" xml:space="preserve">
+    <value>最新发布</value>
+  </data>
+  <data name="ModLists_ActionNotOnList" xml:space="preserve">
+    <value>不在此列表中</value>
+  </data>
+  <data name="ModLists_ActionPinned" xml:space="preserve">
+    <value>固定</value>
+  </data>
+  <data name="ModLists_ActionPinnedDetail" xml:space="preserve">
+    <value>不在此列表中，已保留，因为你固定了它</value>
+  </data>
+  <data name="ModLists_ActionReinstall" xml:space="preserve">
+    <value>重新安装</value>
+  </data>
+  <data name="ModLists_ActionRepairFormat" xml:space="preserve">
+    <value>版本 {0} 已安装，但有文件缺失</value>
+  </data>
+  <data name="ModLists_ActionUnchanged" xml:space="preserve">
+    <value>无变化</value>
+  </data>
+  <data name="ModLists_ActionUpdate" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="ModLists_ActionVersionChangeFormat" xml:space="preserve">
+    <value>{0} → {1}</value>
+  </data>
+  <data name="ModLists_ActionVersionFormat" xml:space="preserve">
+    <value>版本 {0}</value>
+  </data>
+  <data name="ModLists_AddButton" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="ModLists_AddButtonCountFormat" xml:space="preserve">
+    <value>添加 {0} 个</value>
+  </data>
+  <data name="ModLists_Added_other" xml:space="preserve">
+    <value>已将 {0} 个模组添加到“{1}”。保存后才会写入模组列表，在你应用之前不会安装或启用任何内容。</value>
+  </data>
+  <data name="ModLists_AddFactAddon" xml:space="preserve">
+    <value>附加组件</value>
+  </data>
+  <data name="ModLists_AddFactAlreadyOn" xml:space="preserve">
+    <value>已在此列表中</value>
+  </data>
+  <data name="ModLists_AddFactByFormat" xml:space="preserve">
+    <value>作者：{0}</value>
+  </data>
+  <data name="ModLists_AddFactInstalledAsFormat" xml:space="preserve">
+    <value>安装为 {0}</value>
+  </data>
+  <data name="ModLists_AddFactInstalledNewest" xml:space="preserve">
+    <value>已安装，添加时使用最新发布的版本</value>
+  </data>
+  <data name="ModLists_AddFactNewest" xml:space="preserve">
+    <value>最新发布的版本</value>
+  </data>
+  <data name="ModLists_AddFactVersionFormat" xml:space="preserve">
+    <value>版本 {0}</value>
+  </data>
+  <data name="ModLists_AddFactVersionUnknown" xml:space="preserve">
+    <value>版本未知</value>
+  </data>
+  <data name="ModLists_AddMods" xml:space="preserve">
+    <value>添加模组</value>
+  </data>
+  <data name="ModLists_AddModsToolTip" xml:space="preserve">
+    <value>把模组放进这个列表，可以是已安装的，也可以是 sp-mod.com 上尚未安装的。不会下载任何东西。</value>
+  </data>
+  <data name="ModLists_AddNoMatches" xml:space="preserve">
+    <value>没有匹配项。</value>
+  </data>
+  <data name="ModLists_AddNonePicked" xml:space="preserve">
+    <value>尚未选择任何模组。</value>
+  </data>
+  <data name="ModLists_AddNothingHere" xml:space="preserve">
+    <value>这里没有可添加的内容。</value>
+  </data>
+  <data name="ModLists_AddPicked_other" xml:space="preserve">
+    <value>已选择 {0} 个模组。</value>
+  </data>
+  <data name="ModLists_AddShownCatalog_other" xml:space="preserve">
+    <value>已显示 {1} 个 sp-mod.com 模组中的 {0} 个。</value>
+  </data>
+  <data name="ModLists_AddShownInstalled_other" xml:space="preserve">
+    <value>已显示 {1} 个已安装模组中的 {0} 个。</value>
+  </data>
+  <data name="ModLists_AddSourceCatalogFormat" xml:space="preserve">
+    <value>sp-mod.com（{0}）</value>
+  </data>
+  <data name="ModLists_AddSourceCatalogNote" xml:space="preserve">
+    <value>发布在 sp-mod.com 上的模组。添加只是把它写进列表，真正下载它的是应用列表这一步。</value>
+  </data>
+  <data name="ModLists_AddSourceInstalledFormat" xml:space="preserve">
+    <value>已安装（{0}）</value>
+  </data>
+  <data name="ModLists_AddSourceInstalledNote" xml:space="preserve">
+    <value>本次安装已有的模组，按你当前运行的版本记录。</value>
+  </data>
+  <data name="ModLists_AddTitleFormat" xml:space="preserve">
+    <value>向“{0}”添加模组</value>
+  </data>
+  <data name="ModLists_AddTruncatedFormat" xml:space="preserve">
+    <value>仅显示 {1} 个匹配项中的前 {0} 个，继续输入可缩小范围。</value>
+  </data>
+  <data name="ModLists_AlreadyPublishing_other" xml:space="preserve">
+    <value>“{0}”已经是服务器正在发布的内容，没有任何变化（修订版本 {1}，{2} 个模组）。</value>
+  </data>
+  <data name="ModLists_AndMoreFormat" xml:space="preserve">
+    <value>，以及另外 {0} 项</value>
+  </data>
+  <data name="ModLists_AndMoreNamesFormat" xml:space="preserve">
+    <value> 以及另外 {0} 个</value>
+  </data>
+  <data name="ModLists_AppliedDownloadOnlyFormat" xml:space="preserve">
+    <value>它们已保存到 {0}，供你自行安装，没有安装任何东西。</value>
+  </data>
+  <data name="ModLists_AppliedFormat" xml:space="preserve">
+    <value>已应用：{0}。</value>
+  </data>
+  <data name="ModLists_AppliedManual_other" xml:space="preserve">
+    <value>还有 {0} 个模组需要手动安装。</value>
+  </data>
+  <data name="ModLists_AppliedMovesFailed_other" xml:space="preserve">
+    <value>有 {0} 个模组无法移动。</value>
+  </data>
+  <data name="ModLists_AppliedNothing" xml:space="preserve">
+    <value>已应用，无需改动任何内容。</value>
+  </data>
+  <data name="ModLists_Apply" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="ModLists_ApplyDownload_other" xml:space="preserve">
+    <value>下载 {0} 个模组</value>
+  </data>
+  <data name="ModLists_ApplyInstall_other" xml:space="preserve">
+    <value>安装 {0} 个模组</value>
+  </data>
+  <data name="ModLists_ApplyInstallUpdateFormat" xml:space="preserve">
+    <value>安装 {0}，更新 {1}</value>
+  </data>
+  <data name="ModLists_ApplyToolTip" xml:space="preserve">
+    <value>下载缺失的内容，启用列表点名的模组，把列表没点名的放到一边。</value>
+  </data>
+  <data name="ModLists_ApplyUpdate_other" xml:space="preserve">
+    <value>更新 {0} 个模组</value>
+  </data>
+  <data name="ModLists_BackToMods" xml:space="preserve">
+    <value>返回模组</value>
+  </data>
+  <data name="ModLists_BackToModsToolTip" xml:space="preserve">
+    <value>不再显示计划，回到这个列表点名的内容。不会改动任何东西。</value>
+  </data>
+  <data name="ModLists_Capture" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="ModLists_Captured_other" xml:space="preserve">
+    <value>已把 {0} 个已启用的模组记录为“{1}”。</value>
+  </data>
+  <data name="ModLists_CaptureDescription" xml:space="preserve">
+    <value>把当前已启用的模组记录下来，版本按你现有的版本。</value>
+  </data>
+  <data name="ModLists_CaptureHeader" xml:space="preserve">
+    <value>保存当前已安装的内容</value>
+  </data>
+  <data name="ModLists_ChangeVersionPairFormat" xml:space="preserve">
+    <value>{0}（{1} → {2}）</value>
+  </data>
+  <data name="ModLists_ChipAlreadyRight_other" xml:space="preserve">
+    <value>{0} 个正确</value>
+  </data>
+  <data name="ModLists_ChipDifferentVersion_other" xml:space="preserve">
+    <value>{0} 个版本不正确</value>
+  </data>
+  <data name="ModLists_ChipDisabled_other" xml:space="preserve">
+    <value>{0} 个已禁用</value>
+  </data>
+  <data name="ModLists_ChipGetByHand_other" xml:space="preserve">
+    <value>{0} 个需自行获取</value>
+  </data>
+  <data name="ModLists_ChipHalfInstalled_other" xml:space="preserve">
+    <value>{0} 个安装不完整</value>
+  </data>
+  <data name="ModLists_ChipMissing_other" xml:space="preserve">
+    <value>{0} 个缺失</value>
+  </data>
+  <data name="ModLists_ChipPinned_other" xml:space="preserve">
+    <value>{0} 个已固定</value>
+  </data>
+  <data name="ModLists_ChipWillDisable_other" xml:space="preserve">
+    <value>{0} 个待禁用</value>
+  </data>
+  <data name="ModLists_CloseSptBeforeApply" xml:space="preserve">
+    <value>应用前请关闭 SPT，SPT 运行时无法禁用模组。</value>
+  </data>
+  <data name="ModLists_CountAlreadyRightFormat" xml:space="preserve">
+    <value>{0} 个正确</value>
+  </data>
+  <data name="ModLists_CountDisabledFormat" xml:space="preserve">
+    <value>{0} 个已禁用</value>
+  </data>
+  <data name="ModLists_CountDownloadedFormat" xml:space="preserve">
+    <value>{0} 个已下载</value>
+  </data>
+  <data name="ModLists_CountEnabledFormat" xml:space="preserve">
+    <value>{0} 个已启用</value>
+  </data>
+  <data name="ModLists_CountPinnedFormat" xml:space="preserve">
+    <value>{0} 个已固定</value>
+  </data>
+  <data name="ModLists_CountToDisableFormat" xml:space="preserve">
+    <value>{0} 个待禁用</value>
+  </data>
+  <data name="ModLists_CountToEnableFormat" xml:space="preserve">
+    <value>{0} 个待启用</value>
+  </data>
+  <data name="ModLists_CountToFetchFormat" xml:space="preserve">
+    <value>{0} 个需自行获取</value>
+  </data>
+  <data name="ModLists_CountToInstallFormat" xml:space="preserve">
+    <value>{0} 个待安装</value>
+  </data>
+  <data name="ModLists_CountToUpdateFormat" xml:space="preserve">
+    <value>{0} 个待更新</value>
+  </data>
+  <data name="ModLists_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ModLists_DeletedFormat" xml:space="preserve">
+    <value>已删除“{0}”。磁盘上没有任何改动。</value>
+  </data>
+  <data name="ModLists_DeleteToolTip" xml:space="preserve">
+    <value>删除该列表。磁盘上不会有任何改动。</value>
+  </data>
+  <data name="ModLists_DetailFromFormat" xml:space="preserve">
+    <value>来自 {0}</value>
+  </data>
+  <data name="ModLists_DetailFromServer" xml:space="preserve">
+    <value>来自服务器</value>
+  </data>
+  <data name="ModLists_DetailImported" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ModLists_DetailMadeHere" xml:space="preserve">
+    <value>在此创建</value>
+  </data>
+  <data name="ModLists_DetailModsFormat" xml:space="preserve">
+    <value>{0} 个模组</value>
+  </data>
+  <data name="ModLists_DetailOneMod" xml:space="preserve">
+    <value>1 个模组</value>
+  </data>
+  <data name="ModLists_DetailPublished" xml:space="preserve">
+    <value>已发布到本服务器</value>
+  </data>
+  <data name="ModLists_DetailRevisionFormat" xml:space="preserve">
+    <value>修订版本 {0}</value>
+  </data>
+  <data name="ModLists_DetailSnapshot" xml:space="preserve">
+    <value>快照</value>
+  </data>
+  <data name="ModLists_DiffAddedFormat" xml:space="preserve">
+    <value>新增 {0}</value>
+  </data>
+  <data name="ModLists_DiffChangedFormat" xml:space="preserve">
+    <value>变更 {0}</value>
+  </data>
+  <data name="ModLists_DiffRemovedFormat" xml:space="preserve">
+    <value>移除 {0}</value>
+  </data>
+  <data name="ModLists_Discard" xml:space="preserve">
+    <value>放弃更改</value>
+  </data>
+  <data name="ModLists_DiscardToolTip" xml:space="preserve">
+    <value>放弃这些更改，显示已保存的列表。</value>
+  </data>
+  <data name="ModLists_DownloadOnlyNotice_other" xml:space="preserve">
+    <value>监视模式设为仅下载，因此这个列表要安装或更新的 {0} 个模组会保存下来供你自行安装，不会安装任何东西。它启用或禁用的模组仍会照常移动。</value>
+  </data>
+  <data name="ModLists_Dropped_other" xml:space="preserve">
+    <value>已丢弃 {0} 项未保存的更改，它们从未写入列表。</value>
+  </data>
+  <data name="ModLists_EmptyState" xml:space="preserve">
+    <value>先在左侧选一个列表，或记录下当前已安装的内容。
+
+模组列表记录要安装和启用哪些模组。应用列表会从 sp-mod.com 下载缺失的部分，并把列表没有点名的模组放到一边，它绝不会删除模组。</value>
+  </data>
+  <data name="ModLists_EntriesHeaderFilteredFormat" xml:space="preserve">
+    <value>此列表中的模组：{0} / 共 {1}</value>
+  </data>
+  <data name="ModLists_EntriesHeaderFormat" xml:space="preserve">
+    <value>此列表中的模组：{0}</value>
+  </data>
+  <data name="ModLists_EntryAddon" xml:space="preserve">
+    <value>附加组件</value>
+  </data>
+  <data name="ModLists_EntryClientOnly" xml:space="preserve">
+    <value>仅玩家，无头客户端会跳过</value>
+  </data>
+  <data name="ModLists_EntryHeadlessOnly" xml:space="preserve">
+    <value>仅无头，玩家会跳过</value>
+  </data>
+  <data name="ModLists_EntryInstalledAsFormat" xml:space="preserve">
+    <value>安装为 {0}</value>
+  </data>
+  <data name="ModLists_EntryNewestPublished" xml:space="preserve">
+    <value>最新发布版本</value>
+  </data>
+  <data name="ModLists_EntryNotOnForge" xml:space="preserve">
+    <value>不在 sp-mod.com 上，为手动安装</value>
+  </data>
+  <data name="ModLists_EntryPinnedToolTip" xml:space="preserve">
+    <value>已在此安装中固定，你应用的任何列表都不会将它移开</value>
+  </data>
+  <data name="ModLists_EntrySearchPlaceholder" xml:space="preserve">
+    <value>搜索此列表…</value>
+  </data>
+  <data name="ModLists_EntrySearchToolTip" xml:space="preserve">
+    <value>匹配模组的名称、列表记录的名称，以及它安装到的文件夹。</value>
+  </data>
+  <data name="ModLists_EntryServerAndClients" xml:space="preserve">
+    <value>服务器和玩家，无头客户端会跳过</value>
+  </data>
+  <data name="ModLists_EntryServerOnly" xml:space="preserve">
+    <value>仅服务器，玩家会跳过</value>
+  </data>
+  <data name="ModLists_EntrySortToolTip" xml:space="preserve">
+    <value>按该行显示的名称排序。</value>
+  </data>
+  <data name="ModLists_EntryVersionFormat" xml:space="preserve">
+    <value>版本 {0}</value>
+  </data>
+  <data name="ModLists_EntryVersionUnlockedFormat" xml:space="preserve">
+    <value>版本 {0}，未锁定</value>
+  </data>
+  <data name="ModLists_Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ModLists_ExportDialogTitle" xml:space="preserve">
+    <value>分享此模组列表</value>
+  </data>
+  <data name="ModLists_ExportedFormat" xml:space="preserve">
+    <value>已保存“{0}”，把这个文件发给任何运行此应用的人。</value>
+  </data>
+  <data name="ModLists_ExportFailedFormat" xml:space="preserve">
+    <value>无法写入文件，{0}</value>
+  </data>
+  <data name="ModLists_ExportToolTip" xml:space="preserve">
+    <value>把此列表保存成可以发给别人的文件。它只记录包含哪些模组和版本，绝不包含模组文件本身。</value>
+  </data>
+  <data name="ModLists_FetchFailureFormat" xml:space="preserve">
+    <value>{0}：{1}</value>
+  </data>
+  <data name="ModLists_FollowingFormat" xml:space="preserve">
+    <value>正在跟随“{0}”。</value>
+  </data>
+  <data name="ModLists_FollowingServerToolTip" xml:space="preserve">
+    <value>此安装跟随此服务器的列表，同时也跟随自己的列表</value>
+  </data>
+  <data name="ModLists_FollowingToolTip" xml:space="preserve">
+    <value>此安装正在跟随此列表</value>
+  </data>
+  <data name="ModLists_ForkedFormat" xml:space="preserve">
+    <value>已创建“{0}”，原列表未改动。</value>
+  </data>
+  <data name="ModLists_ForkNameFormat" xml:space="preserve">
+    <value>{0}（我的）</value>
+  </data>
+  <data name="ModLists_FromServerBadge" xml:space="preserve">
+    <value>来自服务器</value>
+  </data>
+  <data name="ModLists_FromServerToolTip" xml:space="preserve">
+    <value>服务器把此列表交给了你。它会保持该服务器写入时的原样，想改动其中的内容就复制一份。</value>
+  </data>
+  <data name="ModLists_Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ModLists_ImportDialogTitle" xml:space="preserve">
+    <value>打开共享的模组列表</value>
+  </data>
+  <data name="ModLists_ImportedFormat" xml:space="preserve">
+    <value>已导入“{0}”，预览一下就能看到应用它会产生什么效果。</value>
+  </data>
+  <data name="ModLists_ImportedNotice" xml:space="preserve">
+    <value>此列表来自他人，因此会保持对方写入时的原样。想修改其中的内容请复制一份。</value>
+  </data>
+  <data name="ModLists_ImportReadFailedFormat" xml:space="preserve">
+    <value>无法读取该文件，{0}</value>
+  </data>
+  <data name="ModLists_ImportToolTip" xml:space="preserve">
+    <value>打开别人分享给你的模组列表</value>
+  </data>
+  <data name="ModLists_ImportUpdatedFormat" xml:space="preserve">
+    <value>已将“{0}”从修订版本 {1} 更新到 {2}。</value>
+  </data>
+  <data name="ModLists_ListNotFetchedFormat" xml:space="preserve">
+    <value>未能获取该列表。{0}</value>
+  </data>
+  <data name="ModLists_MakeCopy" xml:space="preserve">
+    <value>复制一份</value>
+  </data>
+  <data name="ModLists_MakeCopyToolTip" xml:space="preserve">
+    <value>导入的列表是只读的。这样会创建一份属于你自己的副本。</value>
+  </data>
+  <data name="ModLists_NameFirst" xml:space="preserve">
+    <value>请先给列表起个名字。</value>
+  </data>
+  <data name="ModLists_NamePlaceholder" xml:space="preserve">
+    <value>列表名称</value>
+  </data>
+  <data name="ModLists_NoEntries" xml:space="preserve">
+    <value>此列表还没有列出任何模组。可以添加一些，也可以把已安装的内容记录为一个新列表。</value>
+  </data>
+  <data name="ModLists_NoMatches" xml:space="preserve">
+    <value>此列表中没有匹配项。所有内容都还在，放宽搜索或适用范围筛选即可看到。</value>
+  </data>
+  <data name="ModLists_NoneFollowed" xml:space="preserve">
+    <value>没有正在跟随的模组列表。</value>
+  </data>
+  <data name="ModLists_NoneInstalledHere" xml:space="preserve">
+    <value>此列表中的模组都没有安装在这里，因此没有版本可读取。</value>
+  </data>
+  <data name="ModLists_NoServerAddress" xml:space="preserve">
+    <value>此安装没有设置服务器地址，因此无处可询问。服务器地址在「服务器地图」页面设置。</value>
+  </data>
+  <data name="ModLists_NoServerHere" xml:space="preserve">
+    <value>这台机器没有运行装有 Server Map 模组的服务器，因此没有可发布的地方。该模组要装在服务器上，不是这里。</value>
+  </data>
+  <data name="ModLists_NothingAdded" xml:space="preserve">
+    <value>没有添加任何内容，此列表已经列出了这些模组。</value>
+  </data>
+  <data name="ModLists_NothingToAddFrom" xml:space="preserve">
+    <value>没有可添加的来源，没有设置 SPT 安装文件夹，且 sp-mod.com 目录尚未加载。</value>
+  </data>
+  <data name="ModLists_NothingToUndo" xml:space="preserve">
+    <value>没有可撤销的操作。</value>
+  </data>
+  <data name="ModLists_PinnedFormat" xml:space="preserve">
+    <value>已固定“{0}”，任何列表都不会将它移开。</value>
+  </data>
+  <data name="ModLists_PinToolTip" xml:space="preserve">
+    <value>固定此模组，你应用的任何列表就都不会把它移开。适用于无论切换到哪个列表都想保留的 HUD 和体验优化类模组。可以在这里取消固定，也可以在「已安装」页面上的该模组处取消。</value>
+  </data>
+  <data name="ModLists_PlanNoOp" xml:space="preserve">
+    <value>当前安装已经与该列表一致，无需操作。</value>
+  </data>
+  <data name="ModLists_Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="ModLists_PreviewedFormat" xml:space="preserve">
+    <value>已预览“{0}”。</value>
+  </data>
+  <data name="ModLists_PreviewToolTip" xml:space="preserve">
+    <value>查看应用此列表后会发生什么。不会移动或下载任何内容。</value>
+  </data>
+  <data name="ModLists_Publish" xml:space="preserve">
+    <value>发布到本服务器</value>
+  </data>
+  <data name="ModLists_PublishedFormat" xml:space="preserve">
+    <value>已发布“{0}”（修订版本 {1}），服务器从此刻起对外提供它。</value>
+  </data>
+  <data name="ModLists_PublishFailedFormat" xml:space="preserve">
+    <value>无法将列表写入服务器的配置文件夹：{0}</value>
+  </data>
+  <data name="ModLists_PublishToolTip" xml:space="preserve">
+    <value>把此列表写入本机上 Server Map 模组的配置文件夹，服务器便会把它提供给已连接的客户端。磁盘上不会安装或更改任何内容。</value>
+  </data>
+  <data name="ModLists_PutBack_other" xml:space="preserve">
+    <value>把 {0} 个模组恢复原样。</value>
+  </data>
+  <data name="ModLists_RefreshedFromServerFormat" xml:space="preserve">
+    <value>已从服务器刷新“{0}”：{1}。应用它仍是单独的步骤。</value>
+  </data>
+  <data name="ModLists_RefreshFromServer" xml:space="preserve">
+    <value>从服务器刷新</value>
+  </data>
+  <data name="ModLists_RefreshFromServerToolTip" xml:space="preserve">
+    <value>再次向服务器索取此列表，即使它的修订版本没有变化。管理员编辑并重新发布自己提供的列表时，从这里看就是这样。不会安装或启用任何内容；应用它仍是单独的步骤。</value>
+  </data>
+  <data name="ModLists_RefreshVersions" xml:space="preserve">
+    <value>刷新版本</value>
+  </data>
+  <data name="ModLists_RefreshVersionsToolTip" xml:space="preserve">
+    <value>读取此列表上每个已安装在本机的模组的版本，并据此更新列表。适用范围保持不变，你没有的模组保持原样。不会下载或安装任何内容，点「保存」才会留下改动。</value>
+  </data>
+  <data name="ModLists_RemovedEntryFormat" xml:space="preserve">
+    <value>已将“{0}”从“{1}”中移除。点「保存」写入列表，无论哪种情况，该模组都保持已安装、已启用。</value>
+  </data>
+  <data name="ModLists_RemoveEntryToolTip" xml:space="preserve">
+    <value>将此模组从列表中移除。它保持已安装，磁盘上不会有任何变化。</value>
+  </data>
+  <data name="ModLists_Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="ModLists_RenamedFormat" xml:space="preserve">
+    <value>已重命名为“{0}”。</value>
+  </data>
+  <data name="ModLists_RenameToolTip" xml:space="preserve">
+    <value>重命名此列表</value>
+  </data>
+  <data name="ModLists_RepublishedFormat" xml:space="preserve">
+    <value>已将“{0}”发布为修订版本 {1}。它自上次发布后有过改动，已连接的客户端会自行获取。</value>
+  </data>
+  <data name="ModLists_RevertedFormat" xml:space="preserve">
+    <value>已把“{0}”恢复为上次保存的样子。</value>
+  </data>
+  <data name="ModLists_Saved_other" xml:space="preserve">
+    <value>已保存“{0}”，共 {1} 个模组。磁盘上没有任何变化，安装、启用和移开模组都由「应用」完成。</value>
+  </data>
+  <data name="ModLists_SavedEmpty" xml:space="preserve">
+    <value>还没有保存任何列表。可以记录你当前已安装的模组，或导入别人发给你的列表。</value>
+  </data>
+  <data name="ModLists_SavedHeader" xml:space="preserve">
+    <value>已保存的列表</value>
+  </data>
+  <data name="ModLists_SaveToolTip" xml:space="preserve">
+    <value>把这些改动写入列表。不会安装、启用或禁用任何内容，那些由「应用」完成。</value>
+  </data>
+  <data name="ModLists_ScopeClientOnly" xml:space="preserve">
+    <value>仅客户端</value>
+  </data>
+  <data name="ModLists_ScopeClientOnlyFormat" xml:space="preserve">
+    <value>“{0}”现在仅面向玩家，无头客户端会跳过它。</value>
+  </data>
+  <data name="ModLists_ScopeClientsAndHeadless" xml:space="preserve">
+    <value>客户端 + 无头</value>
+  </data>
+  <data name="ModLists_ScopeClientsAndHeadlessFormat" xml:space="preserve">
+    <value>“{0}”现在会下发到玩家和无头客户端。</value>
+  </data>
+  <data name="ModLists_ScopeEveryone" xml:space="preserve">
+    <value>服务器 + 客户端 + 无头</value>
+  </data>
+  <data name="ModLists_ScopeEveryoneFormat" xml:space="preserve">
+    <value>“{0}”现在适用于每一台机器。</value>
+  </data>
+  <data name="ModLists_ScopeFilterAll" xml:space="preserve">
+    <value>所有适用范围</value>
+  </data>
+  <data name="ModLists_ScopeFilterToolTip" xml:space="preserve">
+    <value>只显示针对某一类机器的条目。仅服务器是玩家永远不需要安装的模组，仅客户端是 Fika 无头客户端会跳过的那些。</value>
+  </data>
+  <data name="ModLists_ScopeHeadlessOnly" xml:space="preserve">
+    <value>仅无头</value>
+  </data>
+  <data name="ModLists_ScopeHeadlessOnlyFormat" xml:space="preserve">
+    <value>“{0}”现在仅面向无头，玩家会跳过它。</value>
+  </data>
+  <data name="ModLists_ScopeServerAndClients" xml:space="preserve">
+    <value>服务器 + 客户端</value>
+  </data>
+  <data name="ModLists_ScopeServerAndClientsFormat" xml:space="preserve">
+    <value>“{0}”现在会下发到服务器和玩家，无头客户端会跳过它。</value>
+  </data>
+  <data name="ModLists_ScopeServerOnly" xml:space="preserve">
+    <value>仅服务器</value>
+  </data>
+  <data name="ModLists_ScopeServerOnlyFormat" xml:space="preserve">
+    <value>“{0}”现在仅限服务器，玩家应用这份列表时会完全跳过它。</value>
+  </data>
+  <data name="ModLists_ScopeToolTip" xml:space="preserve">
+    <value>这条目针对哪些机器：服务器、正在游戏的客户端、Fika 无头客户端，或它们的任意组合。记录会根据模组文件所在位置推断，遇到例外情况再手动修改，比如某个服务器模组，玩游戏的人都不需要安装；或者某个 HUD 模组，无头客户端用不上。</value>
+  </data>
+  <data name="ModLists_ServerPublishingDifferentFormat" xml:space="preserve">
+    <value>{0} 现在发布的是另一份列表，“{1}”已保存在这里。“{2}”未受影响。</value>
+  </data>
+  <data name="ModLists_ServingBadge" xml:space="preserve">
+    <value>提供中</value>
+  </data>
+  <data name="ModLists_ServingToolTip" xml:space="preserve">
+    <value>本机把这份列表提供给连接到它的客户端。编辑并保存后，会重新发布它们看到的内容。</value>
+  </data>
+  <data name="ModLists_ShowingFormat" xml:space="preserve">
+    <value>正在显示“{0}”指定的内容。</value>
+  </data>
+  <data name="ModLists_SomethingWentWrongFormat" xml:space="preserve">
+    <value>出错了，{0}</value>
+  </data>
+  <data name="ModLists_SortNameAscending" xml:space="preserve">
+    <value>名称 A-Z</value>
+  </data>
+  <data name="ModLists_SortNameDescending" xml:space="preserve">
+    <value>名称 Z-A</value>
+  </data>
+  <data name="ModLists_StatusAlreadyRight" xml:space="preserve">
+    <value>正确</value>
+  </data>
+  <data name="ModLists_StatusDisabled" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="ModLists_StatusDisabledMovingFormat" xml:space="preserve">
+    <value>已禁用 · {0}</value>
+  </data>
+  <data name="ModLists_StatusGetByHand" xml:space="preserve">
+    <value>自行获取</value>
+  </data>
+  <data name="ModLists_StatusHalfInstalled" xml:space="preserve">
+    <value>安装不完整</value>
+  </data>
+  <data name="ModLists_StatusMissing" xml:space="preserve">
+    <value>缺失</value>
+  </data>
+  <data name="ModLists_StatusPinned" xml:space="preserve">
+    <value>已固定</value>
+  </data>
+  <data name="ModLists_StatusVersionFormat" xml:space="preserve">
+    <value>{0} → {1}</value>
+  </data>
+  <data name="ModLists_StatusWillDisable" xml:space="preserve">
+    <value>将被禁用</value>
+  </data>
+  <data name="ModLists_StopFollowing" xml:space="preserve">
+    <value>停止跟随</value>
+  </data>
+  <data name="ModLists_StopFollowingToolTip" xml:space="preserve">
+    <value>清除此安装所跟随的模组列表。磁盘上不会有任何变化。</value>
+  </data>
+  <data name="ModLists_StoppedFollowing" xml:space="preserve">
+    <value>当前没有跟随任何模组列表。磁盘上的内容没有变化。</value>
+  </data>
+  <data name="ModLists_UndoFailedFormat" xml:space="preserve">
+    <value>无法撤销。{0}</value>
+  </data>
+  <data name="ModLists_UndoLabelFormat" xml:space="preserve">
+    <value>撤销“{0}”</value>
+  </data>
+  <data name="ModLists_UndoneFormat" xml:space="preserve">
+    <value>已把安装恢复到上次应用之前的状态。启用 {0} 个，禁用 {1} 个。</value>
+  </data>
+  <data name="ModLists_UndoToolTip" xml:space="preserve">
+    <value>把每个模组都恢复到该列表应用之前的状态。通常只是移动模组，无需下载任何东西。</value>
+  </data>
+  <data name="ModLists_UnpinnedFormat" xml:space="preserve">
+    <value>已取消固定“{0}”。</value>
+  </data>
+  <data name="ModLists_UnpinToolTip" xml:space="preserve">
+    <value>取消固定此模组。模组列表就能再次把它移开，这份列表也会这么做。</value>
+  </data>
+  <data name="ModLists_Unsaved_other" xml:space="preserve">
+    <value>{0} 处未保存的更改，保存列表即可保留。之后预览并应用，才会使用已保存的版本。</value>
+  </data>
+  <data name="ModLists_VersionChangeEntryFormat" xml:space="preserve">
+    <value>{0} {1} → {2}</value>
+  </data>
+  <data name="ModLists_VersionChangeRowFormat" xml:space="preserve">
+    <value>需要 {0}，目前发布的最新版本是 {1}</value>
+  </data>
+  <data name="ModLists_VersionChangeTitleCountFormat" xml:space="preserve">
+    <value>{0} 个版本已不再发布</value>
+  </data>
+  <data name="ModLists_VersionChangeTitleNamedFormat" xml:space="preserve">
+    <value>{0} 的版本已不再发布</value>
+  </data>
+  <data name="ModLists_VersionsAlreadyMatchFormat" xml:space="preserve">
+    <value>“{0}”中所有已在本机安装的模组，指定的版本都与你的版本相同。</value>
+  </data>
+  <data name="ModLists_VersionsUpdated_other" xml:space="preserve">
+    <value>已将 {0} 个模组更新为本机安装的版本：{1}{2}。保存即可保留。</value>
+  </data>
+  <data name="ModLists_VersionUnlocked" xml:space="preserve">
+    <value>未锁定</value>
+  </data>
+  <data name="ModLists_VersionWarningFormat" xml:space="preserve">
+    <value>这份列表制作于 SPT {0}，而你运行的是 {1}。为其中一个锁定的版本，在另一个上未必能用。</value>
+  </data>
+  <data name="ModListVersionChange_Intro" xml:space="preserve">
+    <value>这些模组在 sp-mod.com 上已不再有这份列表指定的版本。勾选你希望改用最新版本安装的模组，未勾选的会被跳过。</value>
+  </data>
+  <data name="ModListVersionChange_Title" xml:space="preserve">
+    <value>部分版本已不再发布</value>
+  </data>
+  <data name="ModPageGate_AlternateDownload" xml:space="preserve">
+    <value>仅下载：把它保存到你的下载文件夹，由你自行安装，而不是让本应用来安装。</value>
+  </data>
+  <data name="ModPageGate_AlternateInstall" xml:space="preserve">
+    <value>安装：让本应用为你安装，而不是只把它下载下来。</value>
+  </data>
+  <data name="ModPageGate_Install" xml:space="preserve">
+    <value>安装此模组。</value>
+  </data>
+  <data name="ModPageGate_InstallDownloadOnly" xml:space="preserve">
+    <value>将此模组下载到你的下载文件夹，由你自行安装。</value>
+  </data>
+  <data name="ModPageGate_Redownload" xml:space="preserve">
+    <value>重新下载此模组。</value>
+  </data>
+  <data name="ModPageGate_RedownloadDownloadOnly" xml:space="preserve">
+    <value>将此模组重新下载到你的下载文件夹，由你自行安装。</value>
+  </data>
+  <data name="ModPageGate_SkipNotice" xml:space="preserve">
+    <value>你正在跳过此模组的页面，连同它的更新说明一起跳过了，建议你先读一读。作者会在那里说明改了什么、某个版本需要什么、又会破坏什么。</value>
+  </data>
+  <data name="ModPageGate_Update" xml:space="preserve">
+    <value>更新这个模组。</value>
+  </data>
+  <data name="ModPageGate_UpdateDownloadOnly" xml:space="preserve">
+    <value>把这个版本下载到你的下载文件夹，由你自行安装。</value>
+  </data>
+  <data name="ModStatus_Conflict" xml:space="preserve">
+    <value>冲突，两个模组需要互不兼容的版本</value>
+  </data>
+  <data name="ModStatus_Disabled" xml:space="preserve">
+    <value>已禁用，已安装，但 SPT 不会加载</value>
+  </data>
+  <data name="ModStatus_Installed" xml:space="preserve">
+    <value>已安装，已是最新</value>
+  </data>
+  <data name="ModStatus_NoCompatibleVersion" xml:space="preserve">
+    <value>没有与你的 SPT 兼容的版本</value>
+  </data>
+  <data name="ModStatus_NotInstalled" xml:space="preserve">
+    <value>未安装</value>
+  </data>
+  <data name="ModStatus_Unknown" xml:space="preserve">
+    <value>已安装，更新状态未知</value>
+  </data>
+  <data name="ModStatus_UpdateAvailable" xml:space="preserve">
+    <value>已安装，有可用更新</value>
+  </data>
+  <data name="ModUpdate_AddonUnlistedFormat" xml:space="preserve">
+    <value>{0} 已不在 sp-mod.com 上架，因此没有可用来检查更新的来源。</value>
+  </data>
+  <data name="ModUpdate_ANewerVersion" xml:space="preserve">
+    <value>某个较新的版本</value>
+  </data>
+  <data name="ModUpdate_BadgeInstalled" xml:space="preserve">
+    <value>已安装</value>
+  </data>
+  <data name="ModUpdate_BadgeLatest" xml:space="preserve">
+    <value>最新</value>
+  </data>
+  <data name="ModUpdate_ClearedOverrideFormat" xml:space="preserve">
+    <value>已清除 {0} 的手动指定，它将恢复为根据磁盘上的文件自动检测。</value>
+  </data>
+  <data name="ModUpdate_ClearOverride" xml:space="preserve">
+    <value>清除手动指定</value>
+  </data>
+  <data name="ModUpdate_ClearOverrideToolTip" xml:space="preserve">
+    <value>恢复根据磁盘上的文件自动检测此模组的版本</value>
+  </data>
+  <data name="ModUpdate_ConfigKeepMine" xml:space="preserve">
+    <value>此模组的配置文件将完全保持原样。</value>
+  </data>
+  <data name="ModUpdate_ConfigMerge" xml:space="preserve">
+    <value>你改动过的设置会并入新版本的配置文件，你当前的副本会保留在 Data\LegacyConfigs。</value>
+  </data>
+  <data name="ModUpdate_ConfigTakeNew" xml:space="preserve">
+    <value>此模组的配置文件将被新版本的配置文件替换，你的副本会保留在 Data\LegacyConfigs。</value>
+  </data>
+  <data name="ModUpdate_ConfirmAsInstalled" xml:space="preserve">
+    <value>确认为已安装</value>
+  </data>
+  <data name="ModUpdate_ConfirmAsInstalledToolTip" xml:space="preserve">
+    <value>把下方选中的版本记为已安装，不下载任何内容</value>
+  </data>
+  <data name="ModUpdate_CurrentlyInstalledFormat" xml:space="preserve">
+    <value>当前已安装：{0}</value>
+  </data>
+  <data name="ModUpdate_DisabledNoticeFormat" xml:space="preserve">
+    <value>{0} 已禁用。请在「已安装」页面启用它，之后才能更新或重新下载。</value>
+  </data>
+  <data name="ModUpdate_Downgrade" xml:space="preserve">
+    <value>降级</value>
+  </data>
+  <data name="ModUpdate_DowngradeBodyFormat" xml:space="preserve">
+    <value>你当前安装的是 {0}，此操作会把它替换为 {1}。
+
+替换文件只是简单的那一半。这个应用无法撤销的，是较新版本已经写入的内容，包括它自己的配置文件，以及它对 SPT 存档所做的任何改动。较旧的版本可能读不回这些内容，而且有些模组会在版本之间改变数据格式，结果可能留下一个旧版本拒绝加载的存档。
+
+如果这个存档对你很重要，请在继续之前先备份。</value>
+  </data>
+  <data name="ModUpdate_DowngradeCancelled" xml:space="preserve">
+    <value>已取消降级。</value>
+  </data>
+  <data name="ModUpdate_DowngradeCancelledUnreadFormat" xml:space="preserve">
+    <value>已取消降级，{0} 的页面未被确认为已读。</value>
+  </data>
+  <data name="ModUpdate_DowngradeTitleFormat" xml:space="preserve">
+    <value>将 {0} 降级到 {1}？</value>
+  </data>
+  <data name="ModUpdate_DowngradeToolTip" xml:space="preserve">
+    <value>用这个较旧的版本替换你当前安装的版本。会先询问，因为旧版本可能读不了较新版本写入的配置或存档数据。</value>
+  </data>
+  <data name="ModUpdate_HandInstalledDowngradeBody" xml:space="preserve">
+    <value>此模组不是通过本应用安装的，因此没有记录它的当前版本究竟放入了哪些文件。降级会把选中版本的文件直接覆盖到现有文件之上，而不会先干净地移除旧版本。你可能留下旧版本的残留文件。</value>
+  </data>
+  <data name="ModUpdate_HandInstalledDowngradeTitleFormat" xml:space="preserve">
+    <value>降级 {0}？</value>
+  </data>
+  <data name="ModUpdate_HandInstalledRedownloadBody" xml:space="preserve">
+    <value>此模组不是通过本应用安装的，因此没有记录它的当前版本究竟放入了哪些文件。重新下载会把选中版本的文件直接覆盖到现有文件之上，而不会先干净地移除旧版本。你可能留下旧版本的残留文件。</value>
+  </data>
+  <data name="ModUpdate_HandInstalledRedownloadTitleFormat" xml:space="preserve">
+    <value>重新下载 {0}？</value>
+  </data>
+  <data name="ModUpdate_HandInstalledUpdateBody" xml:space="preserve">
+    <value>这个模组不是通过本应用安装的，因此没有记录能说明它当前版本究竟放置了哪些文件，更新时会把所选版本的文件直接覆盖到现有文件之上，而不是先干净地移除旧版本。最终可能会残留旧版本的文件。</value>
+  </data>
+  <data name="ModUpdate_HandInstalledUpdateTitleFormat" xml:space="preserve">
+    <value>更新 {0}？</value>
+  </data>
+  <data name="ModUpdate_Hidden_other" xml:space="preserve">
+    <value>{0} 个版本已隐藏，它们针对的 SPT 版本与你当前使用的不一致。</value>
+  </data>
+  <data name="ModUpdate_LoadingVersions" xml:space="preserve">
+    <value>正在加载版本…</value>
+  </data>
+  <data name="ModUpdate_ManualVersionPlaceholder" xml:space="preserve">
+    <value>手动设定已安装版本（例如 1.4.2）…</value>
+  </data>
+  <data name="ModUpdate_MarkedUpToDateFormat" xml:space="preserve">
+    <value>已将 {0} 标记为已是最新（{1}）。</value>
+  </data>
+  <data name="ModUpdate_MarkUpToDate" xml:space="preserve">
+    <value>标记为已是最新</value>
+  </data>
+  <data name="ModUpdate_MarkUpToDateToolTip" xml:space="preserve">
+    <value>把最新发布的版本记为已安装，不下载任何内容</value>
+  </data>
+  <data name="ModUpdate_NotInCatalogFormat" xml:space="preserve">
+    <value>在缓存的目录中找不到 {0}，请尝试重新扫描。</value>
+  </data>
+  <data name="ModUpdate_NotMatchedFormat" xml:space="preserve">
+    <value>{0} 未与 sp-mod.com 上的条目匹配，因此无法对照检查更新。</value>
+  </data>
+  <data name="ModUpdate_NoVersionsFormat" xml:space="preserve">
+    <value>{0} 在 sp-mod.com 上没有已发布的版本。</value>
+  </data>
+  <data name="ModUpdate_ParentFallback" xml:space="preserve">
+    <value>它的父模组</value>
+  </data>
+  <data name="ModUpdate_ParentNotInstalledFormat" xml:space="preserve">
+    <value>{0} 未安装，因此无法核对这些版本是否适配。</value>
+  </data>
+  <data name="ModUpdate_ParentNotInstalledUnnamed" xml:space="preserve">
+    <value>此附加组件的父模组未安装，因此无法核对这些版本是否适配。</value>
+  </data>
+  <data name="ModUpdate_ParentRequirementFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="ModUpdate_PublishedFormat" xml:space="preserve">
+    <value>发布时间：{0:d}</value>
+  </data>
+  <data name="ModUpdate_QueuedFormat" xml:space="preserve">
+    <value>已将 {0} {1} 加入队列，进度请在「下载」页面查看。</value>
+  </data>
+  <data name="ModUpdate_RecordedFormat" xml:space="preserve">
+    <value>已记录 {0} {1} 为已安装。</value>
+  </data>
+  <data name="ModUpdate_Redownload" xml:space="preserve">
+    <value>重新下载</value>
+  </data>
+  <data name="ModUpdate_RedownloadCancelledFormat" xml:space="preserve">
+    <value>已取消重新下载，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="ModUpdate_Set" xml:space="preserve">
+    <value>设定</value>
+  </data>
+  <data name="ModUpdate_ShowAll" xml:space="preserve">
+    <value>显示全部</value>
+  </data>
+  <data name="ModUpdate_ShowAllToolTip" xml:space="preserve">
+    <value>把为其他 SPT 版本构建的版本也一并显示。它们默认隐藏，因为你无法在自己使用的 SPT 版本上使用它们。</value>
+  </data>
+  <data name="ModUpdate_ShowingAllVersions" xml:space="preserve">
+    <value>正在显示所有已发布的版本，其中也包括适配其他 SPT 版本的。</value>
+  </data>
+  <data name="ModUpdate_TargetsSptFormat" xml:space="preserve">
+    <value>针对 SPT：{0}</value>
+  </data>
+  <data name="ModUpdate_Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="ModUpdate_UpdateCancelledFormat" xml:space="preserve">
+    <value>已取消更新，{0} 的页面未确认已读。</value>
+  </data>
+  <data name="ModUpdate_VersionCompatible" xml:space="preserve">
+    <value>与你已安装的 SPT 版本兼容</value>
+  </data>
+  <data name="ModUpdate_VersionFitsFormat" xml:space="preserve">
+    <value>适配 {0}</value>
+  </data>
+  <data name="ModUpdate_VersionIncompatible" xml:space="preserve">
+    <value>与你已安装的 SPT 版本不兼容</value>
+  </data>
+  <data name="ModUpdate_VersionNeedsFormat" xml:space="preserve">
+    <value>需要 {0}</value>
+  </data>
+  <data name="ModUpdate_VersionNeedsUncheckedFormat" xml:space="preserve">
+    <value>需要 {0}，无法与已安装的内容进行核对</value>
+  </data>
+  <data name="Nav_AppUpdate" xml:space="preserve">
+    <value>应用更新</value>
+  </data>
+  <data name="Nav_Browse" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="Nav_Configs" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="Nav_Dependencies" xml:space="preserve">
+    <value>依赖</value>
+  </data>
+  <data name="Nav_Downloads" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="Nav_Footprint" xml:space="preserve">
+    <value>模组足迹</value>
+  </data>
+  <data name="Nav_Installed" xml:space="preserve">
+    <value>已安装</value>
+  </data>
+  <data name="Nav_ModLists" xml:space="preserve">
+    <value>模组列表</value>
+  </data>
+  <data name="Nav_Options" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Nav_Play" xml:space="preserve">
+    <value>开始游戏</value>
+  </data>
+  <data name="Nav_ServerMap" xml:space="preserve">
+    <value>服务器地图</value>
+  </data>
+  <data name="Options_AppearanceDescription" xml:space="preserve">
+    <value>跟随系统会与 Windows 保持一致，你在 Windows 中更改设置后它也会继续跟随。浅色和深色则无论系统设置如何，都把应用固定为其中一种。</value>
+  </data>
+  <data name="Options_AppearanceHeader" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Options_AppearanceHint" xml:space="preserve">
+    <value>浅色、深色，或跟随 Windows。</value>
+  </data>
+  <data name="Options_ApplySize" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="Options_Browse" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="Options_BrowseHasDefault" xml:space="preserve">
+    <value>浏览：已保存默认设置。清除后将在应用下次启动时生效。</value>
+  </data>
+  <data name="Options_BrowseNoDefault" xml:space="preserve">
+    <value>浏览：未保存默认设置，打开时按最新排序，且只显示与你已安装的 SPT 版本匹配的模组。</value>
+  </data>
+  <data name="Options_ClearBrowseDefault" xml:space="preserve">
+    <value>清除「浏览」的默认设置</value>
+  </data>
+  <data name="Options_ClearHeadlessLauncher" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="Options_ClearHeadlessLauncherToolTip" xml:space="preserve">
+    <value>改回在安装文件夹中查找。</value>
+  </data>
+  <data name="Options_ClearInstalledDefault" xml:space="preserve">
+    <value>清除「已安装」的默认设置</value>
+  </data>
+  <data name="Options_Connect" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="Options_DataFiles" xml:space="preserve">
+    <value>数据文件…</value>
+  </data>
+  <data name="Options_DataFilesDescription" xml:space="preserve">
+    <value>查看或手动编辑本应用保存在 Data\ 下的 JSON 文件，其中包含 installed-mods.json，当「已安装」页面自带的版本控制不够用时，这会很有用。</value>
+  </data>
+  <data name="Options_DataFilesHeader" xml:space="preserve">
+    <value>数据文件</value>
+  </data>
+  <data name="Options_DataFilesHint" xml:space="preserve">
+    <value>查看或手动编辑 Data\ 下的 JSON 文件。</value>
+  </data>
+  <data name="Options_FootprintDescription" xml:space="preserve">
+    <value>添加一个页面，读取每个已安装模组自带的文件，说明它可能触及游戏的哪些部分，以及可能的代价会落在哪里：客户端还是服务器，CPU、GPU、内存还是启动过程。页面上的内容都不来自计时或测量：一个模组实际消耗多少，取决于你的硬件、你的设置和你同时运行的其它模组，而这些它都看不到。足迹大，意味着一个模组深入到了游戏的很多地方，这通常正是你安装它的原因，它是一个可以着手查看的地方，而不是结论。默认关闭。</value>
+  </data>
+  <data name="Options_FootprintHeader" xml:space="preserve">
+    <value>模组足迹页面</value>
+  </data>
+  <data name="Options_FootprintHint" xml:space="preserve">
+    <value>每个模组深入到游戏的程度。它只读取文件，不做任何测量。</value>
+  </data>
+  <data name="Options_FootprintToolTipOff" xml:space="preserve">
+    <value>添加一个页面，读取每个已安装模组自带的文件，说明它可能触及游戏的哪些部分。页面上的内容不做计时或测量，而且足迹大并不等于这个模组会拖累你的帧数。</value>
+  </data>
+  <data name="Options_FootprintToolTipOn" xml:space="preserve">
+    <value>模组足迹页面已在侧边栏中。请记住，它只读取文件，不做任何计时，一个模组实际消耗多少取决于你的硬件、你的设置和你同时运行的其它模组，而这些它都看不到。</value>
+  </data>
+  <data name="Options_ForgetCertificate" xml:space="preserve">
+    <value>忘记此证书</value>
+  </data>
+  <data name="Options_ForgetCertificateToolTip" xml:space="preserve">
+    <value>清除已记录的指纹。下次连接时会记录服务器提供的指纹，与第一次连接时一样。</value>
+  </data>
+  <data name="Options_GenerateKey" xml:space="preserve">
+    <value>生成新密钥</value>
+  </data>
+  <data name="Options_GenerateKeyToolTip" xml:space="preserve">
+    <value>用新密钥替换此服务器的密钥。在你把新密钥发给他们之前，所有使用旧密钥的人都无法再看到此服务器发布的内容。服务器无需重启即可采用新密钥。</value>
+  </data>
+  <data name="Options_GetServerMapMod" xml:space="preserve">
+    <value>获取服务器地图模组</value>
+  </data>
+  <data name="Options_GetServerMapModToolTip" xml:space="preserve">
+    <value>在浏览器中打开服务器地图模组在 sp-mod.com 上的页面。</value>
+  </data>
+  <data name="Options_HeadlessFoundFormat" xml:space="preserve">
+    <value>已找到：{0}</value>
+  </data>
+  <data name="Options_HeadlessLauncherDescription" xml:space="preserve">
+    <value>留空时，应用会在安装文件夹的顶层查找 FikaHeadlessManager.exe。如果它位于其它位置，你可以自行指向该 exe，它完全不必放在安装文件夹里。该路径会按原样使用，文件不存在时会被忽略。</value>
+  </data>
+  <data name="Options_HeadlessLauncherHeader" xml:space="preserve">
+    <value>Fika 无头启动器</value>
+  </data>
+  <data name="Options_HeadlessLauncherHint" xml:space="preserve">
+    <value>仅当它不在安装文件夹的顶层时才需要填写。</value>
+  </data>
+  <data name="Options_HeadlessLauncherPlaceholder" xml:space="preserve">
+    <value>自动查找</value>
+  </data>
+  <data name="Options_HeadlessOff" xml:space="preserve">
+    <value>此机器不运行无头客户端</value>
+  </data>
+  <data name="Options_HeadlessOn" xml:space="preserve">
+    <value>此机器运行 Fika 无头客户端</value>
+  </data>
+  <data name="Options_HeadlessPickerFilter" xml:space="preserve">
+    <value>程序 (*.exe)|*.exe|所有文件 (*.*)|*.*</value>
+  </data>
+  <data name="Options_HeadlessPickerTitle" xml:space="preserve">
+    <value>选择 Fika 无头启动器</value>
+  </data>
+  <data name="Options_HeadlessToolTip" xml:space="preserve">
+    <value>从安装文件夹中的 Fika 无头启动器检测得到；如果无头客户端由其它方式启动，可在此处覆盖。</value>
+  </data>
+  <data name="Options_HeightPlaceholder" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Options_InstalledHasDefault" xml:space="preserve">
+    <value>已安装：已保存默认值。清除后将在下次应用启动时生效。</value>
+  </data>
+  <data name="Options_InstalledNoDefault" xml:space="preserve">
+    <value>已安装：未保存默认值。打开时使用卡片视图，不带筛选，按名称排序。</value>
+  </data>
+  <data name="Options_InstallFolderDescription" xml:space="preserve">
+    <value>把它指向你的 SPT 游戏文件夹，也就是含有 EscapeFromTarkov.exe 的那个文件夹，而不是它里面的 SPT 服务器文件夹。设置好之后，已安装的 SPT 版本会作为「浏览」页面版本筛选的默认值，并用来标出不是为该版本构建的模组。</value>
+  </data>
+  <data name="Options_InstallFolderHeader" xml:space="preserve">
+    <value>SPT 安装文件夹</value>
+  </data>
+  <data name="Options_InstallFolderHint" xml:space="preserve">
+    <value>游戏文件夹，里面有 EscapeFromTarkov.exe。</value>
+  </data>
+  <data name="Options_InstallModeHeader" xml:space="preserve">
+    <value>安装模式</value>
+  </data>
+  <data name="Options_InstallModeHint" xml:space="preserve">
+    <value>替你安装模组，或只把它们下载下来。每个安装按钮旁边都有一个小按钮，用来执行另一种操作。</value>
+  </data>
+  <data name="Options_InstallPathPickerTitle" xml:space="preserve">
+    <value>选择你的 SPT 安装文件夹（含有 EscapeFromTarkov.exe 的那一个）</value>
+  </data>
+  <data name="Options_Language_Description" xml:space="preserve">
+    <value>本应用自身文本所使用的语言。系统默认会跟随 Windows 设置的显示语言。模组名称、描述与更新日志来自 Forge，保持作者书写时所用的语言。</value>
+  </data>
+  <data name="Options_Language_Header" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Options_Language_SystemDefaultFormat" xml:space="preserve">
+    <value>系统默认（{0}）</value>
+  </data>
+  <data name="Options_LanguageHint" xml:space="preserve">
+    <value>本应用自身的文本。模组描述保持作者所用的语言。</value>
+  </data>
+  <data name="Options_MachineRoleDescription" xml:space="preserve">
+    <value>Fika 无头客户端在无人游玩的情况下托管战局，因此它需要决定战局如何进行的那类模组，例如机器人、物品、地点，而不需要任何面向玩家绘制画面的模组。说明这台机器属于哪一种，服务器下发的模组列表就能裁剪到它真正需要的部分。它绝不会更改你自己的列表，也绝不会影响你手动安装的内容。</value>
+  </data>
+  <data name="Options_MachineRoleHeader" xml:space="preserve">
+    <value>这台机器是什么</value>
+  </data>
+  <data name="Options_ModPagesDescription" xml:space="preserve">
+    <value>在任何内容开始下载之前，本应用会请你打开该模组的页面，作者会在那里写明安装步骤、要求、已知冲突与警告。如果你更想直接开始安装，可以关掉它。本应用自身的更新总会先询问，因为它的更新说明就在那个页面上。</value>
+  </data>
+  <data name="Options_ModPagesHint" xml:space="preserve">
+    <value>在任何下载开始之前，先看安装步骤、要求与警告。</value>
+  </data>
+  <data name="Options_ModPagesTitle" xml:space="preserve">
+    <value>先打开每个模组的页面</value>
+  </data>
+  <data name="Options_ModPagesToolTipAsking" xml:space="preserve">
+    <value>每个模组的页面都会在任何内容下载之前打开，好让你先看到它的更新说明与安装说明。</value>
+  </data>
+  <data name="Options_ModPagesToolTipSkipping" xml:space="preserve">
+    <value>你正在跳过每个模组的更新说明。建议你先读一读，作者会在那里说明改了什么、某个版本需要什么、又会破坏什么。本应用自身的更新无论如何都会先询问。</value>
+  </data>
+  <data name="Options_MonitorConfirmAsk" xml:space="preserve">
+    <value>扫描后询问我</value>
+  </data>
+  <data name="Options_MonitorConfirmDescription" xml:space="preserve">
+    <value>你自己安装好已下载的模组之后，「已安装」页面下一次扫描就会发现它。本应用可以在那时请你确认，也可以只在模组卡片上记一笔，由你在那里确认。确认后会告诉应用你装的是哪个版本，更新检查才能保持准确。</value>
+  </data>
+  <data name="Options_MonitorConfirmHeader" xml:space="preserve">
+    <value>当已下载的模组显示为已安装时</value>
+  </data>
+  <data name="Options_MonitorConfirmHint" xml:space="preserve">
+    <value>确认后会告诉应用你安装的是哪个版本，更新检查才能保持准确。</value>
+  </data>
+  <data name="Options_MonitorConfirmQuiet" xml:space="preserve">
+    <value>只在模组卡片上记一笔</value>
+  </data>
+  <data name="Options_MonitorDescription" xml:space="preserve">
+    <value>选择由本应用替你安装模组，还是只把模组下载下来、由你自己安装。无论选哪种，浏览、更新检查与依赖都照常工作。不管你选的是哪一种，每个安装按钮旁边都有一个小按钮用来执行另一种操作，且只对这个模组生效。</value>
+  </data>
+  <data name="Options_MonitorFolderDescription" xml:space="preserve">
+    <value>模组被下载而非安装时的保存位置。留空则使用你的 Windows 下载文件夹。应用绝不会删除保存在这里的任何东西。</value>
+  </data>
+  <data name="Options_MonitorFolderHeader" xml:space="preserve">
+    <value>下载文件夹</value>
+  </data>
+  <data name="Options_MonitorFolderHint" xml:space="preserve">
+    <value>已下载模组的保存位置。留空表示使用你的 Windows 下载文件夹。</value>
+  </data>
+  <data name="Options_MonitorFolderPickerTitle" xml:space="preserve">
+    <value>选择已下载模组的保存位置</value>
+  </data>
+  <data name="Options_MonitorFolderPlaceholderFormat" xml:space="preserve">
+    <value>Windows 下载（{0}）</value>
+  </data>
+  <data name="Options_MonitorFolderReset" xml:space="preserve">
+    <value>使用下载文件夹</value>
+  </data>
+  <data name="Options_MonitorFolderResetToolTip" xml:space="preserve">
+    <value>回到你的 Windows 下载文件夹，无论 Windows 把它放在哪里。</value>
+  </data>
+  <data name="Options_MonitorListSubfoldersOff" xml:space="preserve">
+    <value>模组列表的下载内容直接放进下载文件夹</value>
+  </data>
+  <data name="Options_MonitorListSubfoldersOn" xml:space="preserve">
+    <value>每个模组列表的下载内容放进以该列表命名的文件夹</value>
+  </data>
+  <data name="Options_MonitorModeDownloadOnly" xml:space="preserve">
+    <value>仅下载，我自己安装</value>
+  </data>
+  <data name="Options_MonitorModeInstall" xml:space="preserve">
+    <value>替我安装模组</value>
+  </data>
+  <data name="Options_NoHeadlessLauncherNotice" xml:space="preserve">
+    <value>在安装文件夹里没有找到 Fika 无头启动器，所以这里不会启动它；请在下方填写它的名称，或者留空，上方的开关仍会决定服务器下发的模组列表会包含哪些模组。</value>
+  </data>
+  <data name="Options_PageDefaultsDescription" xml:space="preserve">
+    <value>「已安装」和「浏览」页面的「清除筛选」旁边各有一个「保存为默认」按钮。它打开该页面时，会套用当时设定的筛选、排序、每页数量（在「已安装」页面还包括视图），所以你总是用同样方式收窄的页面，打开时就是收窄好的。你在搜索框里输入的内容从不属于其中。在这里清除某项默认设置，页面就会恢复为应用自带的状态。</value>
+  </data>
+  <data name="Options_PageDefaultsHeader" xml:space="preserve">
+    <value>页面默认设置</value>
+  </data>
+  <data name="Options_PageDefaultsHint" xml:space="preserve">
+    <value>通过「已安装」和「浏览」页面上的「保存为默认」设置。</value>
+  </data>
+  <data name="Options_PlaysHereOff" xml:space="preserve">
+    <value>没有人在这台机器上游玩</value>
+  </data>
+  <data name="Options_PlaysHereOn" xml:space="preserve">
+    <value>有人在这台机器上游玩</value>
+  </data>
+  <data name="Options_PlaysHereToolTip" xml:space="preserve">
+    <value>如果这是一台专用的无头机器——只为托管战局、没人坐在它前面——请关闭此开关。</value>
+  </data>
+  <data name="Options_PortPlaceholder" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="Options_RoleHeadless" xml:space="preserve">
+    <value>专用无头。服务器交给这台机器的模组列表不会附带只有玩家才需要的模组，但凡是决定战局走向的模组，它依然全都会收到。</value>
+  </data>
+  <data name="Options_RoleNeither" xml:space="preserve">
+    <value>两个开关都没有打开，因此这里会被视为普通玩家安装，与两个都不去动它一样。与其依赖这一点，不如把其中一个打开。</value>
+  </data>
+  <data name="Options_RolePlayer" xml:space="preserve">
+    <value>普通玩家安装。服务器下发的模组列表会像以往一样送达。</value>
+  </data>
+  <data name="Options_RolePlaysAndHosts" xml:space="preserve">
+    <value>既游玩也托管。服务器下发的模组列表会完整送达，因为两类模组在这里都能派上用场。</value>
+  </data>
+  <data name="Options_RoleSummaryHeadless" xml:space="preserve">
+    <value>专用 Fika 无头</value>
+  </data>
+  <data name="Options_RoleSummaryNeither" xml:space="preserve">
+    <value>未设置，按玩家处理</value>
+  </data>
+  <data name="Options_RoleSummaryPlayer" xml:space="preserve">
+    <value>玩家</value>
+  </data>
+  <data name="Options_RoleSummaryPlaysAndHosts" xml:space="preserve">
+    <value>玩家兼 Fika 无头主机</value>
+  </data>
+  <data name="Options_SectionAdvanced" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="Options_SectionGeneral" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Options_SectionInstalling" xml:space="preserve">
+    <value>安装模组</value>
+  </data>
+  <data name="Options_SectionMultiplayer" xml:space="preserve">
+    <value>Fika 与服务器</value>
+  </data>
+  <data name="Options_SectionPages" xml:space="preserve">
+    <value>页面</value>
+  </data>
+  <data name="Options_SectionUpdates" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Options_ServerAddressPlaceholder" xml:space="preserve">
+    <value>服务器地址（例如 127.0.0.1）</value>
+  </data>
+  <data name="Options_ServerMapConnectionHeader" xml:space="preserve">
+    <value>服务器地图连接</value>
+  </data>
+  <data name="Options_ServerMapConnectionHint" xml:space="preserve">
+    <value>填你在 SPT 启动器里用的地址和端口，服务器如果有密钥，也一并填上。</value>
+  </data>
+  <data name="Options_ServerMapDescription" xml:space="preserve">
+    <value>添加一个页面，用于连接装有 Server Map 模组的 SPT 服务器，这样就能看到它装了什么，并与你本地已安装的内容作对比。该模组装在服务器上，而不是装在这里，没有它这个页面就无内容可显示，所以它默认关闭。请使用与 SPT 启动器中相同的地址和端口；连接不会发送任何关于你本地安装情况的信息，只是问一下服务器是谁。</value>
+  </data>
+  <data name="Options_ServerMapDisplayName" xml:space="preserve">
+    <value>地图上显示的名称</value>
+  </data>
+  <data name="Options_ServerMapDisplayNameHint" xml:space="preserve">
+    <value>留空则使用这台电脑的名称。</value>
+  </data>
+  <data name="Options_ServerMapHeader" xml:space="preserve">
+    <value>服务器地图</value>
+  </data>
+  <data name="Options_ServerMapLanOnly" xml:space="preserve">
+    <value>仅回应本网络</value>
+  </data>
+  <data name="Options_ServerMapLanOnlyFailed" xml:space="preserve">
+    <value>无法保存该设置，请查看日志。</value>
+  </data>
+  <data name="Options_ServerMapLanOnlyHint" xml:space="preserve">
+    <value>拒绝来自本机网络之外的所有 Server Map 请求，通过互联网连接的玩家将不再看到你的列表或地图。Tailscale 对端仍算作本地。立即生效；需要 Server Map 模组 0.2.0 或更高版本（含 stub 版本）。</value>
+  </data>
+  <data name="Options_ServerMapModNotice" xml:space="preserve">
+    <value>你在开服务器？Server Map 模组需要单独下载，请到该模组的页面获取，并安装到运行 SPT 的机器上。加入该服务器的玩家什么都不用装，打开这个开关就行。</value>
+  </data>
+  <data name="Options_ServerMapPageHint" xml:space="preserve">
+    <value>把服务器上装的内容与你本地的安装作对比。需要服务器上装有 Server Map 模组。</value>
+  </data>
+  <data name="Options_ServerMapReport" xml:space="preserve">
+    <value>把这台机器汇报给服务器</value>
+  </data>
+  <data name="Options_ServerMapReportHint" xml:space="preserve">
+    <value>向所有持有该服务器密钥的人共享这台机器的名称、已安装的模组，以及游戏是否正在运行。每台服务器只询问一次；关闭此项，这台机器就会从地图上移除。</value>
+  </data>
+  <data name="Options_ServerMapToolTipOff" xml:space="preserve">
+    <value>添加一个页面，用于连接装有 Server Map 模组的 SPT 服务器，并显示它装了什么，方便与你自己的安装作对比。需要服务器上装有该模组，光装这个应用还不够。</value>
+  </data>
+  <data name="Options_ServerMapToolTipOn" xml:space="preserve">
+    <value>「服务器地图」页面在侧边栏中。只有把它指向一台由管理员安装了 Server Map 模组的 SPT 服务器，它才有内容可显示。</value>
+  </data>
+  <data name="Options_SharedKeyPlaceholder" xml:space="preserve">
+    <value>共享密钥（如果服务器需要的话）</value>
+  </data>
+  <data name="Options_SizeBy" xml:space="preserve">
+    <value>×</value>
+  </data>
+  <data name="Options_SkipGateBody" xml:space="preserve">
+    <value>模组页面是作者放安装步骤、前置要求、已知冲突和警告的地方。有些模组如果跳过这些就无法工作，而本应用无法告诉你哪些模组属于这种情况。
+
+关闭此项后，模组会直接下载并安装，不再向你显示页面上的任何内容。模组需要什么，就得由你自己留意了。
+
+你随时可以重新打开。</value>
+  </data>
+  <data name="Options_SkipGateTitle" xml:space="preserve">
+    <value>不再提醒我阅读模组页面？</value>
+  </data>
+  <data name="Options_ThemeDark" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Options_ThemeFollowSystem" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="Options_ThemeLight" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Options_TrayOff" xml:space="preserve">
+    <value>关闭窗口即退出应用</value>
+  </data>
+  <data name="Options_TrayOn" xml:space="preserve">
+    <value>关闭窗口后应用继续在托盘中运行</value>
+  </data>
+  <data name="Options_TrayToolTip" xml:space="preserve">
+    <value>开启后，关闭窗口只是把它隐藏起来，通知区域会留一个图标，检查照常进行。单击图标可重新打开窗口，右键单击可立即检查或退出。仅在更新通知开启时可用。</value>
+  </data>
+  <data name="Options_TrustCertificate" xml:space="preserve">
+    <value>信任新证书</value>
+  </data>
+  <data name="Options_UpdateCheckAlreadyRunning" xml:space="preserve">
+    <value>已有一次检查正在进行。</value>
+  </data>
+  <data name="Options_UpdateCheckAnnounced_other" xml:space="preserve">
+    <value>{0} 个新更新，合并显示为一条通知。</value>
+  </data>
+  <data name="Options_UpdateCheckBaseline" xml:space="preserve">
+    <value>首次检查已完成。之前已可用的更新只做了记录，没有发出通知，从现在起新的更新都会通知。</value>
+  </data>
+  <data name="Options_UpdateCheckChecking" xml:space="preserve">
+    <value>正在检查…</value>
+  </data>
+  <data name="Options_UpdateCheckFailed" xml:space="preserve">
+    <value>检查失败。详细信息见 Data\logs 中的日志。</value>
+  </data>
+  <data name="Options_UpdateCheckNoInstall" xml:space="preserve">
+    <value>未检查，没有设置 SPT 安装文件夹。</value>
+  </data>
+  <data name="Options_UpdateCheckNone" xml:space="preserve">
+    <value>没有已安装的模组有更新。</value>
+  </data>
+  <data name="Options_UpdateCheckNothingNew_other" xml:space="preserve">
+    <value>没有新内容。{0} 个已安装的模组有更新，这些更新已经通知过了。</value>
+  </data>
+  <data name="Options_UpdateCheckNow" xml:space="preserve">
+    <value>立即检查</value>
+  </data>
+  <data name="Options_UpdateCheckNowToolTip" xml:space="preserve">
+    <value>不必等待，立即检查。它同样算作一次检查：开启通知后的第一次检查只记录已可用的更新，不发出通知；已经通知过的更新不会再次通知。</value>
+  </data>
+  <data name="Options_UpdateCheckOffline" xml:space="preserve">
+    <value>未检查，无法访问 The Forge。</value>
+  </data>
+  <data name="Options_UpdateCheckQueueBusy" xml:space="preserve">
+    <value>未检查，请等待进行中的下载完成。</value>
+  </data>
+  <data name="Options_UpdateCheckRateLimited" xml:space="preserve">
+    <value>未检查，The Forge 要求暂停。请过一分钟后重试。</value>
+  </data>
+  <data name="Options_UpdateCheckTimeFormat" xml:space="preserve">
+    <value>{0}（{1:t}）</value>
+  </data>
+  <data name="Options_UpdateInterval12Hours" xml:space="preserve">
+    <value>12 小时</value>
+  </data>
+  <data name="Options_UpdateInterval1Hour" xml:space="preserve">
+    <value>1 小时</value>
+  </data>
+  <data name="Options_UpdateInterval30Minutes" xml:space="preserve">
+    <value>30 分钟</value>
+  </data>
+  <data name="Options_UpdateInterval3Hours" xml:space="preserve">
+    <value>3 小时</value>
+  </data>
+  <data name="Options_UpdateInterval6Hours" xml:space="preserve">
+    <value>6 小时</value>
+  </data>
+  <data name="Options_UpdateIntervalHeader" xml:space="preserve">
+    <value>检查频率</value>
+  </data>
+  <data name="Options_UpdateNotificationsDescription" xml:space="preserve">
+    <value>应用打开期间，它会每隔一段时间向 The Forge 查询你已安装的模组，其中有新版本发布时显示一条 Windows 通知。查询只涉及你已安装的模组。每个发布版本只通知一次；开启此功能时“已安装”页面已经显示的更新不会通知。</value>
+  </data>
+  <data name="Options_UpdateNotificationsHeader" xml:space="preserve">
+    <value>更新通知</value>
+  </data>
+  <data name="Options_UpdateNotificationsHint" xml:space="preserve">
+    <value>已安装的模组有新版本发布时显示一条 Windows 通知。</value>
+  </data>
+  <data name="Options_UpdateNotificationsNote" xml:space="preserve">
+    <value>首次检查在应用启动一个间隔之后运行，应用退出后检查停止；关闭窗口就会退出应用，除非它被留在托盘中。收不到通知？请在 Windows 设置 &gt; 系统 &gt; 通知中确认 TCF Mod Manager 已被允许显示通知。</value>
+  </data>
+  <data name="Options_UseCurrentSize" xml:space="preserve">
+    <value>使用当前尺寸</value>
+  </data>
+  <data name="Options_UseCurrentSizeToolTip" xml:space="preserve">
+    <value>按窗口此刻的实际状态填充这些输入框。请先把它从最大化恢复，最大化的窗口没有可读取的选定尺寸。</value>
+  </data>
+  <data name="Options_UseMachineKey" xml:space="preserve">
+    <value>使用本机的密钥</value>
+  </data>
+  <data name="Options_WidthPlaceholder" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="Options_WindowCustom" xml:space="preserve">
+    <value>总是以我选择的尺寸启动</value>
+  </data>
+  <data name="Options_WindowCustomNote" xml:space="preserve">
+    <value>窗口将以下方的尺寸打开。</value>
+  </data>
+  <data name="Options_WindowDescription" xml:space="preserve">
+    <value>窗口如何打开。默认记住上次的尺寸与位置，因为把窗口拖到某个大小并让它停在那里本身就是一种选择。全屏会铺满整个显示器、没有标题栏，并覆盖任务栏，最大化则不会；无论选择哪种，随时都可以用 F11 在全屏与窗口之间切换。</value>
+  </data>
+  <data name="Options_WindowFullScreen" xml:space="preserve">
+    <value>始终以全屏启动</value>
+  </data>
+  <data name="Options_WindowFullScreenNote" xml:space="preserve">
+    <value>窗口将以全屏打开。随时可按 F11 退出全屏。</value>
+  </data>
+  <data name="Options_WindowHeader" xml:space="preserve">
+    <value>窗口</value>
+  </data>
+  <data name="Options_WindowHint" xml:space="preserve">
+    <value>窗口的打开方式。随时可按 F11 切换全屏。</value>
+  </data>
+  <data name="Options_WindowMaximised" xml:space="preserve">
+    <value>始终以最大化启动</value>
+  </data>
+  <data name="Options_WindowMaximisedNote" xml:space="preserve">
+    <value>窗口将以最大化打开。</value>
+  </data>
+  <data name="Options_WindowRemember" xml:space="preserve">
+    <value>记住上次的大小与位置</value>
+  </data>
+  <data name="Options_WindowRememberNote" xml:space="preserve">
+    <value>窗口会在你上次离开的位置重新打开。</value>
+  </data>
+  <data name="Options_WindowSizeRestoreFirst" xml:space="preserve">
+    <value>请先把窗口从最大化或全屏还原，窗口铺满屏幕时读不到你选定的大小。</value>
+  </data>
+  <data name="Options_WindowSizeSavedFormat" xml:space="preserve">
+    <value>已保存，窗口将以 {0} x {1} 打开。</value>
+  </data>
+  <data name="Play_CheckAgain" xml:space="preserve">
+    <value>重新检查</value>
+  </data>
+  <data name="Play_HeadlessDescription" xml:space="preserve">
+    <value>此安装带有 Fika 无头启动器，它只会出现在运行无头客户端的配置上。它替其他玩家托管战局，而不是你自己游玩的那一个，请先启动服务器，和游戏启动器一样。</value>
+  </data>
+  <data name="Play_HeadlessHeader" xml:space="preserve">
+    <value>Fika 无头客户端</value>
+  </data>
+  <data name="Play_LauncherDescription" xml:space="preserve">
+    <value>打开 SPT.Launcher.exe，在这里选择存档并开始游戏。请先启动服务器，否则启动器没有可登录的对象。</value>
+  </data>
+  <data name="Play_LauncherHeader" xml:space="preserve">
+    <value>游戏启动器</value>
+  </data>
+  <data name="Play_OpenHeadless" xml:space="preserve">
+    <value>打开无头启动器</value>
+  </data>
+  <data name="Play_OpenLauncher" xml:space="preserve">
+    <value>打开启动器</value>
+  </data>
+  <data name="Play_Restart" xml:space="preserve">
+    <value>重启</value>
+  </data>
+  <data name="Play_RestartedFormat" xml:space="preserve">
+    <value>已重启 {0}。</value>
+  </data>
+  <data name="Play_RestartHeadlessConfirm" xml:space="preserve">
+    <value>重启无头</value>
+  </data>
+  <data name="Play_RestartHeadlessToolTip" xml:space="preserve">
+    <value>停止无头启动器并重新启动。它不会碰服务器，也不会关闭启动器已经启动的游戏。</value>
+  </data>
+  <data name="Play_RestartHeadlessWarning" xml:space="preserve">
+    <value>重启无头会结束它正在托管的任何战局。服务器保持运行，此启动器已经启动的游戏也照旧不动，如果那个也需要关掉，请自行关闭。</value>
+  </data>
+  <data name="Play_RestartServerConfirm" xml:space="preserve">
+    <value>重启服务器</value>
+  </data>
+  <data name="Play_RestartServerToolTip" xml:space="preserve">
+    <value>停止此安装的服务器并重新启动。只针对此安装的服务器，另一个文件夹里的第二个 SPT 服务器不受影响。</value>
+  </data>
+  <data name="Play_RestartServerWarning" xml:space="preserve">
+    <value>重启服务器会结束它上面正在进行的任何战局，身处其中的玩家都会被断开。</value>
+  </data>
+  <data name="Play_RoleHeadless" xml:space="preserve">
+    <value>已设置为专用无头：从服务器传来的模组列表不会带上只有玩家才需要的模组。</value>
+  </data>
+  <data name="Play_RoleNoticeMessage" xml:space="preserve">
+    <value>设置中有“这台机器是什么”卡片。说明这里是否有人游玩，可以让从服务器传来的模组列表裁剪到无头实际需要的部分，在此之前，它会按玩家的样子传来，安装的东西超出这台机器的实际用途。</value>
+  </data>
+  <data name="Play_RoleNoticeTitle" xml:space="preserve">
+    <value>告诉应用这台机器是什么</value>
+  </data>
+  <data name="Play_RolePlaysAndHosts" xml:space="preserve">
+    <value>已设置为既游玩又托管的机器，从服务器传来的模组列表会完整送达。</value>
+  </data>
+  <data name="Play_ServerDescription" xml:space="preserve">
+    <value>启动此安装的服务器，并让它在自己的控制台窗口里保持运行。关闭本应用后它仍会继续运行。重启会把它停下再重新启动，适用于改过配置或放入了服务器模组的情况，这里没有任何操作会永久停止它；用完后关闭它的窗口即可。</value>
+  </data>
+  <data name="Play_ServerHeader" xml:space="preserve">
+    <value>SPT 服务器</value>
+  </data>
+  <data name="Play_StartedFormat" xml:space="preserve">
+    <value>已启动 {0}。</value>
+  </data>
+  <data name="Play_StartServer" xml:space="preserve">
+    <value>启动服务器</value>
+  </data>
+  <data name="PreLaunch_Behind" xml:space="preserve">
+    <value>你的安装与这个服务器不一致</value>
+  </data>
+  <data name="PreLaunch_BehindCount_other" xml:space="preserve">
+    <value>{0} 个模组需要安装、更新或启用</value>
+  </data>
+  <data name="PreLaunch_Checking" xml:space="preserve">
+    <value>正在检查服务器…</value>
+  </data>
+  <data name="PreLaunch_ComparedFormat" xml:space="preserve">
+    <value>对照“{0}”：{1}。在「模组列表」页面应用该列表即可解决，也可以直接加入，这里不会阻止你。</value>
+  </data>
+  <data name="PreLaunch_ListMoved" xml:space="preserve">
+    <value>此服务器的模组列表已变更</value>
+  </data>
+  <data name="PreLaunch_ListMovedFormat" xml:space="preserve">
+    <value>服务器正在发布修订版本 {0} 的“{1}”，而你持有的是修订版本 {2}。请到「服务器地图」页面获取，并在加入前确认有哪些变化。</value>
+  </data>
+  <data name="PreLaunch_Manual_other" xml:space="preserve">
+    <value>{0} 个模组需要手动获取</value>
+  </data>
+  <data name="PreLaunch_Matches_other" xml:space="preserve">
+    <value>你的安装与“{0}”（修订版本 {1}）一致，服务器期望的 {2} 个模组都已就位，版本也正确。</value>
+  </data>
+  <data name="PreLaunch_NoAnswerHeldListFormat" xml:space="preserve">
+    <value>{0} 没有响应，因此这里对照的是上次获取时的“{1}”。不影响启动。</value>
+  </data>
+  <data name="PreLaunch_NoAnswerNoListFormat" xml:space="preserve">
+    <value>{0} 没有响应，因此没有可对照的内容。不影响启动。</value>
+  </data>
+  <data name="PreLaunch_NoListFormat" xml:space="preserve">
+    <value>已连接到 {0}，但它不发布模组列表，因此没有可用于核对安装的内容。</value>
+  </data>
+  <data name="PreLaunch_NotFetchedFormat" xml:space="preserve">
+    <value>{0} 发布了你尚未获取的模组列表。请到「服务器地图」页面获取，看看你的安装与之相比如何。</value>
+  </data>
+  <data name="PreLaunch_Ready" xml:space="preserve">
+    <value>可以加入</value>
+  </data>
+  <data name="PreLaunch_Unavailable" xml:space="preserve">
+    <value>无法检查服务器</value>
+  </data>
+  <data name="ReadModPage_AllOpenedFormat" xml:space="preserve">
+    <value>全部 {0} 个页面已打开。</value>
+  </data>
+  <data name="ReadModPage_BatchNote" xml:space="preserve">
+    <value>这与从 sp-mod.com 手动安装一样，模组作者会把安装步骤、前置要求和注意事项写在各自的页面上。可以一次打开几个，也可以跳过并全部加入队列。</value>
+  </data>
+  <data name="ReadModPage_ButtonNoPage" xml:space="preserve">
+    <value>无可用页面</value>
+  </data>
+  <data name="ReadModPage_ButtonOpen" xml:space="preserve">
+    <value>打开页面</value>
+  </data>
+  <data name="ReadModPage_ButtonOpened" xml:space="preserve">
+    <value>已打开</value>
+  </data>
+  <data name="ReadModPage_Intro" xml:space="preserve">
+    <value>这与从 sp-mod.com 手动安装一样，在加入队列前，请先打开下面每个模组的页面。</value>
+  </data>
+  <data name="ReadModPage_OpenLast_other" xml:space="preserve">
+    <value>打开剩余 {0} 个页面</value>
+  </data>
+  <data name="ReadModPage_OpenNextFormat" xml:space="preserve">
+    <value>打开接下来 {0} 个页面</value>
+  </data>
+  <data name="ReadModPage_ProgressFormat" xml:space="preserve">
+    <value>已打开 {0}/{1}，还剩 {2} 个。</value>
+  </data>
+  <data name="ReadModPage_SkipOpening" xml:space="preserve">
+    <value>跳过打开</value>
+  </data>
+  <data name="ReadModPage_Skipping_other" xml:space="preserve">
+    <value>跳过 {0} 个未打开的页面。</value>
+  </data>
+  <data name="ReadModPage_Title" xml:space="preserve">
+    <value>请先阅读模组页面</value>
+  </data>
+  <data name="ReadModPage_TitleCountFormat" xml:space="preserve">
+    <value>请先阅读 {0} 个模组页面</value>
+  </data>
+  <data name="ReadModPage_TitleNamedFormat" xml:space="preserve">
+    <value>请先阅读 {0} 的页面</value>
+  </data>
+  <data name="ServerMap_AppVersionFormat" xml:space="preserve">
+    <value>TCF Mod Manager {0}</value>
+  </data>
+  <data name="ServerMap_CertificateChangedFormat" xml:space="preserve">
+    <value>{0} 出示的证书与应用首次连接时记录的不一致。
+
+预期：{1}
+实际出示：{2}
+
+如果服务器重建过，或者你是通过自行处理加密的隧道访问它，这种情况是正常的。如果在你与服务器之间有别的环节介入，也会出现同样的情况。只有在你清楚属于哪一种时，才应信任新证书。</value>
+  </data>
+  <data name="ServerMap_CertificateChangedTitle" xml:space="preserve">
+    <value>此服务器的证书已变更</value>
+  </data>
+  <data name="ServerMap_ConnectedFormat" xml:space="preserve">
+    <value>已连接到 {0}。</value>
+  </data>
+  <data name="ServerMap_ConnectedWithVersionFormat" xml:space="preserve">
+    <value>已连接到 {0}，运行 SPT {1}。</value>
+  </data>
+  <data name="ServerMap_ConsentAllow" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="ServerMap_ConsentDecline" xml:space="preserve">
+    <value>不共享</value>
+  </data>
+  <data name="ServerMap_ConsentMessageFormat" xml:space="preserve">
+    <value>{0} 可以把这台机器的名称、已安装的模组及其版本，以及游戏是否正在运行，展示给所有持有它密钥的人。在你同意之前不会发送任何内容，你也可以随时在「设置」中停止，这同时会把这台机器从地图上移除。</value>
+  </data>
+  <data name="ServerMap_ConsentTitle" xml:space="preserve">
+    <value>把这台机器共享给服务器？</value>
+  </data>
+  <data name="ServerMap_DetailModFormat" xml:space="preserve">
+    <value>Server Map {0}</value>
+  </data>
+  <data name="ServerMap_DetailNoList" xml:space="preserve">
+    <value>尚未发布模组列表</value>
+  </data>
+  <data name="ServerMap_DetailPublishingFormat" xml:space="preserve">
+    <value>正在发布模组列表（修订版本 {0}）</value>
+  </data>
+  <data name="ServerMap_DetailSeparator" xml:space="preserve">
+    <value>  -  </value>
+  </data>
+  <data name="ServerMap_DetailSptFormat" xml:space="preserve">
+    <value>SPT {0}</value>
+  </data>
+  <data name="ServerMap_EndpointFormat" xml:space="preserve">
+    <value>{0}:{1}</value>
+  </data>
+  <data name="ServerMap_Extras_other" xml:space="preserve">
+    <value>{0} 个模组不在列表中：{1}</value>
+  </data>
+  <data name="ServerMap_FetchAgain" xml:space="preserve">
+    <value>重新获取</value>
+  </data>
+  <data name="ServerMap_FetchAgainToolTip" xml:space="preserve">
+    <value>即使列表的修订版本没有变化也会重新获取，适用于你手上的副本已被编辑或删除的情况。</value>
+  </data>
+  <data name="ServerMap_FirstConnectionFormat" xml:space="preserve">
+    <value>已记录其证书（{0}），证书若发生变化，你会收到警告。</value>
+  </data>
+  <data name="ServerMap_InstalledCount_other" xml:space="preserve">
+    <value>已安装 {0} 个模组</value>
+  </data>
+  <data name="ServerMap_InvalidAddressFormat" xml:space="preserve">
+    <value>“{0}” 和端口 {1} 组合起来不是本应用能拨通的地址。端口必须是 1 到 65535 之间的数字。</value>
+  </data>
+  <data name="ServerMap_KeyHeld" xml:space="preserve">
+    <value>除首次握手外，每个请求都会带上它。它本身不能表明任何身份，也保护不了什么，所以它不是密码，请不要在别处重复使用。</value>
+  </data>
+  <data name="ServerMap_KeyNeeded" xml:space="preserve">
+    <value>此服务器需要密钥。运行该服务器的人可以在 Server Map 模组的配置文件夹里找到它，文件是 servermap-key.txt。</value>
+  </data>
+  <data name="ServerMap_KeyOptional" xml:space="preserve">
+    <value>只有当服务器要求时才需要填写。它由服务器生成，而不是自己选择的，它只表示你被告知过那台服务器，仅此而已。</value>
+  </data>
+  <data name="ServerMap_KeyRejected" xml:space="preserve">
+    <value>服务器没有接受这个密钥。请与运行服务器的人手上的密钥核对一下，它可能在他们发给你之后被重新生成过。连字符和大小写都不影响。</value>
+  </data>
+  <data name="ServerMap_KeyRequired" xml:space="preserve">
+    <value>此服务器需要共享密钥才会发送自己的列表。请向运行该服务器的人索取密钥，并填入上方的输入框，他们可以在模组的配置文件夹里找到它，文件是 servermap-key.txt。</value>
+  </data>
+  <data name="ServerMap_KeyRotated" xml:space="preserve">
+    <value>已生成新密钥。请把它发给所有连接此服务器的人，旧密钥刚刚失效。服务器会自行读取新密钥，不需要重启。</value>
+  </data>
+  <data name="ServerMap_KeyRotateFailed" xml:space="preserve">
+    <value>无法写入新密钥。请检查本机的 Server Map 配置文件夹是否被设为只读。</value>
+  </data>
+  <data name="ServerMap_LanOnly" xml:space="preserve">
+    <value>此服务器只应答同一网络内的机器，而本机不在该网络中。请询问运行该服务器的人，或通过 Tailscale 之类的 VPN 加入他们的网络。</value>
+  </data>
+  <data name="ServerMap_LastSeenDays_other" xml:space="preserve">
+    <value>上次出现于 {0} 天前</value>
+  </data>
+  <data name="ServerMap_LastSeenHours_other" xml:space="preserve">
+    <value>上次出现于 {0} 小时前</value>
+  </data>
+  <data name="ServerMap_LastSeenMinutes_other" xml:space="preserve">
+    <value>上次出现于 {0} 分钟前</value>
+  </data>
+  <data name="ServerMap_ListCertificateRejected" xml:space="preserve">
+    <value>未能获取列表，服务器的证书不是本应用记录的那一个。</value>
+  </data>
+  <data name="ServerMap_ListFailed" xml:space="preserve">
+    <value>无法获取列表。</value>
+  </data>
+  <data name="ServerMap_ListFailedReasonFormat" xml:space="preserve">
+    <value>无法获取列表：{0}。</value>
+  </data>
+  <data name="ServerMap_ListFetchDropped" xml:space="preserve">
+    <value>服务器第一次有应答，之后就停了，因此未能获取列表。</value>
+  </data>
+  <data name="ServerMap_ListSaved_other" xml:space="preserve">
+    <value>“{0}”（修订版本 {1}，{2} 个模组）已保存到你的模组列表。应用它要在「模组列表」页面进行，那里会先显示将会发生的更改。</value>
+  </data>
+  <data name="ServerMap_ListSummary_other" xml:space="preserve">
+    <value>{0}，修订版本 {1}，{2} 个模组</value>
+  </data>
+  <data name="ServerMap_ListSummaryManyUnresolvedFormat" xml:space="preserve">
+    <value>{0}，修订版本 {1}，{2} 个模组，{3} 个不在 The Forge 上</value>
+  </data>
+  <data name="ServerMap_ListSummaryOneUnresolvedFormat" xml:space="preserve">
+    <value>{0}，修订版本 {1}，1 个模组，{2} 个不在 The Forge 上</value>
+  </data>
+  <data name="ServerMap_ListUnreadableFormat" xml:space="preserve">
+    <value>服务器发来的列表本应用无法读取，{0}。</value>
+  </data>
+  <data name="ServerMap_LocalKeyDescriptionFormat" xml:space="preserve">
+    <value>本机正在运行 Server Map 服务端。它的密钥是 {0}，请把它连同地址与端口一起发给应当能看到此服务器所发布内容的人。</value>
+  </data>
+  <data name="ServerMap_MachinesEmpty" xml:space="preserve">
+    <value>目前还没有任何机器向这台服务器汇报。当有人运行 TCF Mod Manager 并连接、同意分享自己已安装的内容后，这台机器就会出现在这里。没有运行 TCF Mod Manager 的机器不会出现。</value>
+  </data>
+  <data name="ServerMap_MachinesHeader" xml:space="preserve">
+    <value>此服务器上的机器</value>
+  </data>
+  <data name="ServerMap_MapUnavailable" xml:space="preserve">
+    <value>刚才无法读取地图，一分钟后会再试一次。</value>
+  </data>
+  <data name="ServerMap_MapUnsupported" xml:space="preserve">
+    <value>这台服务器的 Server Map 模组版本低于 0.2.0。它仍能提供自己的模组列表，但无法显示有哪些机器在连。请让服务器的运行者更新该模组。</value>
+  </data>
+  <data name="ServerMap_ModDisabledFormat" xml:space="preserve">
+    <value>{0}（已禁用）</value>
+  </data>
+  <data name="ServerMap_NoAddress" xml:space="preserve">
+    <value>未设置服务器地址，请输入与你在 SPT 启动器中填写的相同地址。</value>
+  </data>
+  <data name="ServerMap_NoList" xml:space="preserve">
+    <value>这台服务器没有发布模组列表。服务器的运行者可以在运行服务器的那台机器上打开本应用，在「模组列表」页面用“发布到这台服务器”发布一份。</value>
+  </data>
+  <data name="ServerMap_NoListHeldFormat" xml:space="preserve">
+    <value>这台服务器没有在发布模组列表。“{0}”仍留在你的模组列表里，是你上次获取时的样子。不过，如果你原本以为会在这里看到它，请确认该地址就是你发布时指向的那台服务器，也确认文件已经到达那台服务器的配置文件夹。</value>
+  </data>
+  <data name="ServerMap_NoPinRecorded" xml:space="preserve">
+    <value>尚未记录证书。本应用首次连接时会记录服务器出示的证书，此后它一旦发生变化就会提醒你。</value>
+  </data>
+  <data name="ServerMap_NotConnected" xml:space="preserve">
+    <value>尚未连接。</value>
+  </data>
+  <data name="ServerMap_NoThumbprint" xml:space="preserve">
+    <value>（无）</value>
+  </data>
+  <data name="ServerMap_NotReporting" xml:space="preserve">
+    <value>这台机器没有向该服务器汇报。你可以在「设置」的「服务器地图连接」中更改。</value>
+  </data>
+  <data name="ServerMap_NotServerMapFormat" xml:space="preserve">
+    <value>{0}:{1} 上确实有东西在运行，但它不是一台安装了 Server Map 模组的服务器。请让它的运行者装上该模组，地图需要服务器端有这个模组，而不只是本应用。</value>
+  </data>
+  <data name="ServerMap_NotSetUp" xml:space="preserve">
+    <value>尚未设置。请输入服务器地址以连接。</value>
+  </data>
+  <data name="ServerMap_PinRecordedFormat" xml:space="preserve">
+    <value>已信任证书 {0}。SPT 的证书是为 localhost 自签名的，所以识别服务器的是这个指纹，而不是证书上的名称。</value>
+  </data>
+  <data name="ServerMap_PresenceAppOpen" xml:space="preserve">
+    <value>应用已打开</value>
+  </data>
+  <data name="ServerMap_PresenceInGame" xml:space="preserve">
+    <value>游戏中</value>
+  </data>
+  <data name="ServerMap_ProtocolNewerFormat" xml:space="preserve">
+    <value>那台服务器的 Server Map 比本应用能识别的更新（它使用版本 {0}，本应用使用版本 {1}）。请更新 TCF Mod Manager。</value>
+  </data>
+  <data name="ServerMap_ProtocolOlderFormat" xml:space="preserve">
+    <value>那台服务器的 Server Map 比本应用能识别的更旧（它使用版本 {0}，本应用使用版本 {1}）。请让它的运行者更新该模组。</value>
+  </data>
+  <data name="ServerMap_PublishedListHeader" xml:space="preserve">
+    <value>已发布的模组列表</value>
+  </data>
+  <data name="ServerMap_PublishedNamed_other" xml:space="preserve">
+    <value>“{0}”（修订版本 {1}，{2} 个模组）</value>
+  </data>
+  <data name="ServerMap_PublishedNamedFormat" xml:space="preserve">
+    <value>“{0}”（修订版本 {1}）</value>
+  </data>
+  <data name="ServerMap_PublishedUnnamed_other" xml:space="preserve">
+    <value>一个模组列表（修订版本 {0}，{1} 个模组）</value>
+  </data>
+  <data name="ServerMap_PublishedUnnamedFormat" xml:space="preserve">
+    <value>一个模组列表（修订版本 {0}）</value>
+  </data>
+  <data name="ServerMap_PublishesNothing" xml:space="preserve">
+    <value>这台服务器没有发布模组列表。</value>
+  </data>
+  <data name="ServerMap_ReachFailedFormat" xml:space="preserve">
+    <value>无法连接到 {0}:{1}：{2}</value>
+  </data>
+  <data name="ServerMap_Reconnect" xml:space="preserve">
+    <value>重新连接</value>
+  </data>
+  <data name="ServerMap_RefreshMap" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ServerMap_RefreshMapToolTip" xml:space="preserve">
+    <value>再次向服务器查询有哪些机器向它汇报。该页面在打开期间也会每分钟自动执行一次。</value>
+  </data>
+  <data name="ServerMap_ReportFailed" xml:space="preserve">
+    <value>上次汇报没有送达服务器，之后每分钟会重试一次。</value>
+  </data>
+  <data name="ServerMap_ReportingFormat" xml:space="preserve">
+    <value>这台机器以“{0}”的身份向该服务器汇报。上次汇报时间：{1}。</value>
+  </data>
+  <data name="ServerMap_ReportingPendingFormat" xml:space="preserve">
+    <value>本机以“{0}”的身份向该服务器汇报。</value>
+  </data>
+  <data name="ServerMap_RoleHeadless" xml:space="preserve">
+    <value>无头</value>
+  </data>
+  <data name="ServerMap_RolePlayer" xml:space="preserve">
+    <value>玩家</value>
+  </data>
+  <data name="ServerMap_RoleServer" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="ServerMap_ServingOwnList_other" xml:space="preserve">
+    <value>该服务器正在分发你自己的列表“{0}”（修订版本 {1}，{2} 个模组）。它依然归你所有，可在「模组列表」页面编辑，改动后再次发布，即可更新服务器分发的内容。</value>
+  </data>
+  <data name="ServerMap_StandingBehind_other" xml:space="preserve">
+    <value>有 {0} 个模组待安装、更新或启用：{1}</value>
+  </data>
+  <data name="ServerMap_StandingManual_other" xml:space="preserve">
+    <value>有 {0} 个模组需要手动获取：{1}</value>
+  </data>
+  <data name="ServerMap_StandingNoList" xml:space="preserve">
+    <value>此安装中没有来自该服务器的模组列表，因此无从比对。</value>
+  </data>
+  <data name="ServerMap_StandingNotReported" xml:space="preserve">
+    <value>尚未发送它的模组列表。</value>
+  </data>
+  <data name="ServerMap_StandingUnreadable" xml:space="preserve">
+    <value>发送的模组列表当前版本的应用无法读取。把这里的 TCF Mod Manager 更新一下应该就能解决。</value>
+  </data>
+  <data name="ServerMap_StandingUpToDate_other" xml:space="preserve">
+    <value>已具备“{1}”要求的全部内容（{0} 个模组）</value>
+  </data>
+  <data name="ServerMap_ThisMachine" xml:space="preserve">
+    <value>本机</value>
+  </data>
+  <data name="ServerMap_UnreachableFormat" xml:space="preserve">
+    <value>在 {0}:{1} 处没有任何响应。服务器可能没有运行，也可能是地址或端口有误，它和你在 SPT 启动器里用的是同一个。</value>
+  </data>
+  <data name="Sort_AuthorAscending" xml:space="preserve">
+    <value>按作者（A-Z）</value>
+  </data>
+  <data name="Sort_AuthorDescending" xml:space="preserve">
+    <value>按作者（Z-A）</value>
+  </data>
+  <data name="Sort_BrowseLastUpdated" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="Sort_BrowseMostDownloaded" xml:space="preserve">
+    <value>下载最多</value>
+  </data>
+  <data name="Sort_BrowseMostEndorsed" xml:space="preserve">
+    <value>点赞最多</value>
+  </data>
+  <data name="Sort_BrowseMostFavourited" xml:space="preserve">
+    <value>收藏最多</value>
+  </data>
+  <data name="Sort_BrowseNewest" xml:space="preserve">
+    <value>最新优先</value>
+  </data>
+  <data name="Sort_FootprintLargestOnDisk" xml:space="preserve">
+    <value>磁盘占用最大</value>
+  </data>
+  <data name="Sort_FootprintMostComponents" xml:space="preserve">
+    <value>组件最多</value>
+  </data>
+  <data name="Sort_FootprintMostPatches" xml:space="preserve">
+    <value>补丁类最多</value>
+  </data>
+  <data name="Sort_FootprintName" xml:space="preserve">
+    <value>名称（A-Z）</value>
+  </data>
+  <data name="Sort_GroupAscending" xml:space="preserve">
+    <value>按分组（A-Z）</value>
+  </data>
+  <data name="Sort_GroupDescending" xml:space="preserve">
+    <value>按分组（Z-A）</value>
+  </data>
+  <data name="Sort_GroupNameAscending" xml:space="preserve">
+    <value>分组名称（A-Z）</value>
+  </data>
+  <data name="Sort_GroupNameDescending" xml:space="preserve">
+    <value>分组名称（Z-A）</value>
+  </data>
+  <data name="Sort_GroupsManual" xml:space="preserve">
+    <value>手动排序</value>
+  </data>
+  <data name="Sort_NameAscending" xml:space="preserve">
+    <value>按名称（A-Z）</value>
+  </data>
+  <data name="Sort_NameDescending" xml:space="preserve">
+    <value>按名称（Z-A）</value>
+  </data>
+  <data name="Sort_RecentlyInstalled" xml:space="preserve">
+    <value>最近安装</value>
+  </data>
+  <data name="SptEnvironment_DetectedFormat" xml:space="preserve">
+    <value>检测到 SPT {0}。</value>
+  </data>
+  <data name="SptEnvironment_NoFileVersionFormat" xml:space="preserve">
+    <value>“{0}”没有可识别的文件版本。</value>
+  </data>
+  <data name="SptEnvironment_NoInstallFolder" xml:space="preserve">
+    <value>未设置 SPT 安装文件夹。</value>
+  </data>
+  <data name="SptEnvironment_NoServerExeFormat" xml:space="preserve">
+    <value>在“{0}”下找不到 SPT 服务器可执行文件，请确认这是 SPT 服务器的安装文件夹（即包含 SPT.Server.exe 的那个）。</value>
+  </data>
+  <data name="SptEnvironment_ReadFailedFormat" xml:space="preserve">
+    <value>无法从“{0}”读取文件版本：{1}</value>
+  </data>
+  <data name="SptEnvironment_TitleFormat" xml:space="preserve">
+    <value>{0} [SPT {1}]</value>
+  </data>
+  <data name="SptEnvironment_Unknown" xml:space="preserve">
+    <value>无法判断这是哪个版本的 SPT。</value>
+  </data>
+  <data name="SptLaunch_ClientAlreadyRunning" xml:space="preserve">
+    <value>游戏已在运行。</value>
+  </data>
+  <data name="SptLaunch_ClientExeNotFoundFormat" xml:space="preserve">
+    <value>{0} 中没有 SPT 启动器，请检查「设置」页面上的安装文件夹。</value>
+  </data>
+  <data name="SptLaunch_ClientNotFoundHere" xml:space="preserve">
+    <value>此安装中未找到 SPT 启动器。</value>
+  </data>
+  <data name="SptLaunch_ClientRunning" xml:space="preserve">
+    <value>运行中，游戏或其启动器已经打开。</value>
+  </data>
+  <data name="SptLaunch_HeadlessAlreadyRunning" xml:space="preserve">
+    <value>无头启动器已在运行。</value>
+  </data>
+  <data name="SptLaunch_HeadlessExeNotFoundFormat" xml:space="preserve">
+    <value>{0} 中没有 Fika 无头启动器，请检查「设置」页面上的安装文件夹。</value>
+  </data>
+  <data name="SptLaunch_HeadlessNotFoundHere" xml:space="preserve">
+    <value>此安装中未找到 Fika 无头启动器。</value>
+  </data>
+  <data name="SptLaunch_HeadlessNotRunning" xml:space="preserve">
+    <value>无头启动器没有运行，因此无需重启，请改为启动它。</value>
+  </data>
+  <data name="SptLaunch_NotRunning" xml:space="preserve">
+    <value>未运行。</value>
+  </data>
+  <data name="SptLaunch_Running" xml:space="preserve">
+    <value>运行中。</value>
+  </data>
+  <data name="SptLaunch_ServerAlreadyRunning" xml:space="preserve">
+    <value>SPT 服务器已在运行。</value>
+  </data>
+  <data name="SptLaunch_ServerExeNotFoundFormat" xml:space="preserve">
+    <value>{0} 中没有 SPT 服务器可执行文件，请检查「设置」页面上的安装文件夹。</value>
+  </data>
+  <data name="SptLaunch_ServerNotFoundHere" xml:space="preserve">
+    <value>此安装中未找到 SPT 服务器可执行文件。</value>
+  </data>
+  <data name="SptLaunch_ServerNotRunning" xml:space="preserve">
+    <value>服务器没有运行，因此无需重启，请改为启动它。</value>
+  </data>
+  <data name="SptLaunch_StartFailedFormat" xml:space="preserve">
+    <value>无法启动 {0}：{1}</value>
+  </data>
+  <data name="SptLaunch_StopFailedFormat" xml:space="preserve">
+    <value>无法停止 {0}。它可能正以其他用户或管理员身份运行，手动关闭它的窗口再重新启动，也能达到同样的效果。</value>
+  </data>
+  <data name="SptLaunch_StopFailedReasonFormat" xml:space="preserve">
+    <value>无法停止 {0}：{1}。它可能正以其他用户或管理员身份运行，手动关闭它的窗口再重新启动，也能达到同样的效果。</value>
+  </data>
+  <data name="Tray_CheckNow" xml:space="preserve">
+    <value>立即检查更新</value>
+  </data>
+  <data name="Tray_CheckResultTitle" xml:space="preserve">
+    <value>更新检查</value>
+  </data>
+  <data name="Tray_NoticeBody" xml:space="preserve">
+    <value>它正在托盘中检查模组更新。单击托盘图标可重新打开窗口，右键单击可退出。你可以在「设置」中关闭此提示。</value>
+  </data>
+  <data name="Tray_NoticeTitle" xml:space="preserve">
+    <value>TCF Mod Manager 仍在运行</value>
+  </data>
+  <data name="Tray_Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="Tray_Quit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Tray_ToolTip" xml:space="preserve">
+    <value>TCF Mod Manager，正在检查模组更新</value>
+  </data>
+  <data name="UpdateToast_ItemFormat" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="UpdateToast_More_other" xml:space="preserve">
+    <value>另有 {0} 个</value>
+  </data>
+  <data name="UpdateToast_Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="UpdateToast_Title_other" xml:space="preserve">
+    <value>有 {0} 个模组可更新</value>
+  </data>
+</root>

@@ -235,6 +235,17 @@
         // a copy of it and its absence is not a gap.
         english.Remove("Meta_ShippedLanguages");
 
+        //
+        // The languages whose CLDR plural rule has ONE category, so a family with a single form is
+        // what complete looks like rather than a form that went missing. Mirrors the single-form arm
+        // in Core\Services\PluralRules.For, which an inline build task cannot reference - and a
+        // language shipping with an arm there and not here fails a test rather than passing quietly.
+        //
+        var singleForm = new[] { "zh", "ja", "ko" };
+
+        Func<string, bool> needsSeveralForms = tag =>
+            !singleForm.Contains(tag.Split('-')[0], StringComparer.OrdinalIgnoreCase);
+
         var folder = Path.GetDirectoryName(Source);
 
         foreach (var path in Directory.GetFiles(folder, "Strings.*.resx").OrderBy(p => p, StringComparer.Ordinal))
@@ -255,9 +266,14 @@
             // worse than a missing key: Plural() falls back to _other and then to the base key,
             // neither of which a translation holds, so it renders the key name rather than English.
             //
-            var lonely = keys.Where(k => baseOf(k) != k)
-                .GroupBy(baseOf)
-                .Count(g => g.Count() == 1);
+            // Except in a language that HAS one form, where one form per family is what complete
+            // looks like. Chinese translates each family once, into the _other wording Plural()
+            // reaches for whatever the count - so measuring it here would print a standing false
+            // alarm on every build, which is how a line people are meant to read stops being read.
+            //
+            var lonely = needsSeveralForms(tag)
+                ? keys.Where(k => baseOf(k) != k).GroupBy(baseOf).Count(g => g.Count() == 1)
+                : 0;
 
             var line = tag + ": " + (english.Count - missing) + "/" + english.Count;
             if (missing > 0) line += ", " + missing + " missing";

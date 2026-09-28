@@ -599,10 +599,12 @@ Grab `Data\logs\tcfmm-<date>.log` - ideally after adding the `verbose` marker fi
 ### Translating
 **Options - Language** picks the language the app's own text is read in. **System default** follows whatever display language Windows is set to.
 
-Five languages ship: English, Deutsch, Français, Italiano and Русский.
+Six languages ship: English, Deutsch, Français, Italiano, Русский and 简体中文.
+
+Chinese ships as `zh-Hans` - the script tag rather than a region - so a machine set to Chinese (Simplified), `zh-CN` or `zh-SG` alike, lands on it. A Traditional Chinese machine (`zh-Hant`, `zh-TW`) has nothing to land on and reads English until somebody translates it.
 
 #### warning
-**Four of those five are machine translations and no native speaker has checked them.** They were made so that the app is usable in your language today rather than never - the alternative was English only, waiting for a volunteer to translate 1,290 strings from nothing. Expect to find wording that is clumsy, a term that isn't what your community actually says, and the occasional sentence that is simply wrong. The language picker in Options says which language a translation came from a person and which from a machine.
+**Five of those six are machine translations and no native speaker has checked them.** They were made so that the app is usable in your language today rather than never - the alternative was English only, waiting for a volunteer to translate 1,399 strings from nothing. Expect to find wording that is clumsy, a term that isn't what your community actually says, and the occasional sentence that is simply wrong. The language picker in Options says which language a translation came from a person and which from a machine.
 
 Mod names, descriptions, changelogs and category names come from sp-mod and stay in whatever language their author wrote them in, so the app being in your language does not put the catalog in it.
 
@@ -615,13 +617,13 @@ Open an issue on the new [issues tab](https://sp-mod.com/mod/2945/tcf-mod-manage
 2. What it says now - a screenshot is perfect, or just the text.
 3. What it should say.
 
-That is it. A dozen of those from someone who actually speaks the language is worth more than a whole new translation, and it is how these four stop being machine output.
+That is it. A dozen of those from someone who actually speaks the language is worth more than a whole new translation, and it is how these five stop being machine output.
 
 #### Adding a language that isn't there
 Rarer, and bigger, but no tooling from here and no build environment.
 
 1. Take `src/TCFModManager.App/Localization/Strings.resx` from [the repository](https://github.com/TheCrimsonFckr/TCFModManager).
-2. Open it in **ResXResourceManager** - the [standalone build](https://github.com/dotnet/ResXResourceManager/releases), not the Visual Studio extension. It shows every language side by side in a grid, one row per string, so you can read the English and the four existing translations while you fill in yours.
+2. Open it in **ResXResourceManager** - the [standalone build](https://github.com/dotnet/ResXResourceManager/releases), not the Visual Studio extension. It shows every language side by side in a grid, one row per string, so you can read the English and the five existing translations while you fill in yours.
 3. Add a column for your language and work down it. Most entries carry a note saying what the string is for and what each `{0}` gets replaced with.
 4. Send the `Strings.<tag>.resx` it generates back: a pull request if you use git, the file attached to an issue if you don't. Either is fine.
 
@@ -632,7 +634,7 @@ Leave anything in braces exactly as it is - `{0}`, `{1}`, and the part after a c
 You don't have to finish, and you don't have to keep up. A string you haven't translated is shown in English, so a half-done language is a part-English app rather than a broken one - send what you have. The same holds after a release adds new text: your language carries on working and only the new strings read in English until somebody gets to them.
 
 #### Things to keep in mind
-**Counted sentences are split by form.** "1 mod installed" and "3 mods installed" are separate entries whose keys end `_one` and `_other`. English needs two forms; Russian needs three and already has them in this file, Czech four, Arabic six. Say which your language needs when you send it - the extra forms are a small change here, and the key names were built to take them.
+**Counted sentences are split by form.** "1 mod installed" and "3 mods installed" are separate entries whose keys end `_one` and `_other`. English needs two forms; Russian needs three and already has them in this file, Czech four, Arabic six. Chinese needs one - every count reads the same wording, with the number carried by the sentence - and that is handled too. Say which your language needs when you send it - the forms are a small change here, and the key names were built to take them.
 
 **Two entries are not translations.** `Meta_LanguageName` is your language's name written in your language, the way the dropdown should list it - `Deutsch`, not `German`. `Meta_TranslationCredit` is yours: put your name in it and it appears under the language picker in Options.
 
