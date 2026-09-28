@@ -1347,10 +1347,10 @@ public sealed partial class InstalledModCardViewModel : LocalizedViewModel
         //
         // The slice is a string[], which converts implicitly to Span<string>, and C# 14 picks
         // MemoryExtensions.Reverse<T>(this Span<T>) - which reverses in place and returns VOID -
-        // over the LINQ one. This project is net9.0-windows with LangVersion=latest, so it compiled
-        // for as long as the newest SDK on the machine was 9. The moment a .NET 10 SDK is installed
-        // (which building the ServerMap server mod requires - it targets net10.0) this line stops
-        // compiling, with an error that names neither Reverse nor Span.
+        // over the LINQ one. That arrived the moment a .NET 10 SDK was on the machine, and the
+        // project now targets net10.0 outright, so this is the permanent state rather than a
+        // portability hedge: parts[..^1].Reverse() does not compile here, and the error names
+        // neither Reverse nor Span.
         //
         var reversedDomain = string.Concat(Enumerable.Reverse(parts[..^1]));
         if (NormalizedOrNull($"{reversedDomain}-{modName}") is { } reversed) yield return reversed;

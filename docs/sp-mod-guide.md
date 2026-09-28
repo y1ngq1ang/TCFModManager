@@ -4,7 +4,7 @@ It also keeps **mod lists** - save the set you run, switch between sets, send on
 
 Rather install mods yourself? **Monitor mode** has the app download each mod for you to install by hand, and still keep track of what you have. And with **update notifications** on, it tells you when a mod you have gets a new release - even from the tray, with its window closed.
 
-WPF with Fluent Design and .NET 9
+WPF with Fluent Design and .NET 10
 
 The released build is entirely self-contained.
 

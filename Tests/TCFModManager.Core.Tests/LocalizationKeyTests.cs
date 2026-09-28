@@ -9,7 +9,7 @@ namespace TCFModManager.Core.Tests;
 //
 // D7: every key the app asks for exists, and every key the resx holds is asked for.
 //
-// These read the App's SOURCE rather than its assembly. The App is a net9.0-windows WPF project and
+// These read the App's SOURCE rather than its assembly. The App is a net10.0-windows WPF project and
 // this test project is not, so referencing it would drag the whole UI stack in for the sake of
 // scanning text - and the XAML half could not be checked that way regardless, since a {loc:Str}
 // key is a string the compiler never sees.

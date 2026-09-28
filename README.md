@@ -5,7 +5,7 @@ mods, built against [sp-mod](https://sp-mod.com) catalog. Browse the full mod li
 down to what actually works on your SPT version, install with dependencies resolved for you, and
 see at a glance what's out of date.
 
-WPF with Fluent Design, .NET 9, no account or API key needed.
+WPF with Fluent Design, .NET 10, no account or API key needed.
 
 > Standalone for now. Integration with [TCFModSync](https://github.com/TheCrimsonFckr/TCFModSync)
 > (pushing a managed mod set out to clients) is the direction of travel manage first, then sync.
@@ -336,10 +336,10 @@ moves.
 ## Layout
 
 - `src/TCFModManager.Core` sp-mod API client, models, and all the non-UI services (install,
- download, extraction, scanning, version matching, caching, logging). Plain `net9.0`, no UI
+ download, extraction, scanning, version matching, caching, logging). Plain `net10.0`, no UI
  dependencies, so it's reusable from tests, a console tool, or a future TCFModSync integration.
  One package reference: SharpCompress.
-- `src/TCFModManager.App` the WPF shell (`net9.0-windows10.0.17763.0`, [WPF-UI](https://www.nuget.org/packages/WPF-UI)
+- `src/TCFModManager.App` the WPF shell (`net10.0-windows10.0.17763.0`, [WPF-UI](https://www.nuget.org/packages/WPF-UI)
  4.3.0 for Fluent Design, MVVM via CommunityToolkit.Mvvm, Microsoft.Toolkit.Uwp.Notifications for update notifications). Six pages: Browse, Installed,
  Dependencies, Downloads, App update, Options.
 - `Tests/TCFModManager.Core.Tests` xunit tests over the API client, version matching,
@@ -392,7 +392,7 @@ literally, because one mod's API against another absolutely does break between p
 
 ## Building
 
-Needs the .NET 9 SDK, and Windows for `TCFModManager.App` (WPF doesn't build on Linux/macOS).
+Needs the .NET 10 SDK, and Windows for `TCFModManager.App` (WPF doesn't build on Linux/macOS).
 Open `TCFModManager.sln`, or:
 
 ```
@@ -439,7 +439,7 @@ The bump is left uncommitted for you to review. The script points it out when it
 uncommitted changes, since until it's committed the source zip beside the release still carries the
 old version.
 
-The published exe is ~135MB, almost entirely the bundled .NET 9 runtime and WPF framework
+The published exe is ~152MB, almost entirely the bundled .NET 10 runtime and WPF framework
 assemblies rather than app code. `SatelliteResourceLanguages` is already set to trim non-English
 resources. `InvariantGlobalization` is **not** usable here WPF's XAML binding pipeline calls
 `CultureInfo.GetCultureInfo("en-US")` on startup and invariant mode throws.

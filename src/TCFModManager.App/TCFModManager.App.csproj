@@ -2,15 +2,17 @@
 
   <PropertyGroup>
     <!--
-      The Windows 10 1809 TFM, not plain net9.0-windows, for the WinRT projection that update
-      notifications' toasts go through (Microsoft.Toolkit.Uwp.Notifications). Measured 2026-09-27:
-      +24.8 MB on the single-file exe, nearly all of it Microsoft.Windows.SDK.NET.dll, and the
-      published host still reads CET-compat 0 with CetCompat=false below. 1809 is also the floor the
-      toolkit's unpackaged-app activation needs. See docs\CLOSED-TCFUpdateNotifications-DESIGN.md §10.
+      The Windows 10 1809 TFM, not plain net10.0-windows, for the WinRT projection that update
+      notifications' toasts go through (Microsoft.Toolkit.Uwp.Notifications). Measured 2026-09-27 on
+      .NET 9: +24.8 MB on the single-file exe, nearly all of it Microsoft.Windows.SDK.NET.dll. Checked
+      again on 2026-09-29 under .NET 10: that assembly is byte-for-byte the same one the .NET 9
+      targeting pack carried, so the figure stands as measured. The published host still reads
+      CET-compat 0 with CetCompat=false below, and still starts. 1809 is also the floor the toolkit's
+      unpackaged-app activation needs. See docs\CLOSED-TCFUpdateNotifications-DESIGN.md §10.
 
-      The output folder follows the TFM: bin\<config>\net9.0-windows10.0.17763.0\.
+      The output folder follows the TFM: bin\<config>\net10.0-windows10.0.17763.0\.
     -->
-    <TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net10.0-windows10.0.17763.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TCFModManager.App</RootNamespace>
@@ -25,7 +27,8 @@
       package references; the ones a project generates from its own EmbeddedResource items are
       built and published regardless - verified on 9.0.318, including a single-file publish, which
       is byte-for-byte the same size with and without it and carries the satellites inside the
-      bundle either way. Leave it as it is.
+      bundle either way. Re-checked on the .NET 10 SDK: a single-file publish still carries all five
+      of this app's satellites, zh-Hans among them. Leave it as it is.
 
       InvariantGlobalization was tried alongside this and reverted: WPF's XAML binding pipeline
       calls CultureInfo.GetCultureInfo("en-US") internally (XamlLanguage.GetSpecificCulture, hit on
@@ -38,7 +41,8 @@
 
     <!--
       Opts the published host (apphost/singlefilehost) out of Intel CET / "Hardware-enforced Stack
-      Protection", which .NET 9 turns on by default (breaking change, .NET 9 Preview 6).
+      Protection", which .NET 9 turned on by default (breaking change, .NET 9 Preview 6) and .NET 10
+      still turns on.
 
       With it on, the process is killed the instant the host tries to set thread context anywhere
       the shadow stack doesn't already allow - reported as exception 0xc0000602 in KERNELBASE.dll,
@@ -75,7 +79,8 @@
     MarkupCompilePass1 - which builds a temporary project out of every C# file in this one. The
     accessor therefore does not exist yet the first time the code using it is compiled. Verified on
     9.0.318: the SDK route fails with "The name 'Strings' does not exist in the current context" in
-    the _wpftmp project, whichever folder it is told to generate into.
+    the _wpftmp project, whichever folder it is told to generate into. Not re-tested under .NET 10 -
+    the generator below is unchanged and still works, so the SDK route was left where it was.
 
     Both generated files are written with LF endings explicitly, because the rest of the repo is LF
     and a generator using the platform's newline writes CRLF on Windows and LF everywhere else. The
