@@ -716,18 +716,25 @@ public partial class BrowseViewModel : LocalizedViewModel
     /// mod's newest release is one that runs on the installed SPT - it moves for description and
     /// metadata edits too, which is part of what this sort is for - but when the newest release
     /// targets a line this install isn't on, that date is describing an update that can't be used
-    /// here, so the newest usable release's date is used instead.</summary>
+    /// here, so the newest usable release's date is used instead. Only a definite "doesn't run here"
+    /// steps aside - with no install folder set nothing is definite, and the Forge's date stands.</summary>
     private static DateTimeOffset LastUpdatedDate(Mod mod, string? installedSptVersion)
     {
         var newest = ModCardViewModel.LatestVersion(mod);
 
-        var newestRunsHere = newest is not null
-            && SptVersionMatcher.IsSatisfiedBy(newest.SptVersionConstraint, installedSptVersion) == true;
+        //
+        // Steps aside only when the newest release is KNOWN not to run here - IsSatisfiedBy says
+        // false. It answers null when it cannot tell, which is what a null installedSptVersion
+        // produces for every mod, and treating that as false collapsed this sort into Newest first:
+        // with no SPT install folder set, all 1384 mods fell through to the same date the other sort
+        // orders by, so choosing between the two changed nothing and the dropdown read as broken.
+        // Unknown is not a reason to discard the Forge's own date, which every cached mod carries.
+        //
+        if (newest is not null
+            && SptVersionMatcher.IsSatisfiedBy(newest.SptVersionConstraint, installedSptVersion) == false)
+            return NewestReleaseDate(mod, installedSptVersion);
 
-        if (newest is null || newestRunsHere)
-            return mod.UpdatedAt ?? NewestReleaseDate(mod, installedSptVersion);
-
-        return NewestReleaseDate(mod, installedSptVersion);
+        return mod.UpdatedAt ?? NewestReleaseDate(mod, installedSptVersion);
     }
 
     private static bool MatchesSptVersionFilter(Mod mod, List<(int Major, int Minor)> selectedLines)
