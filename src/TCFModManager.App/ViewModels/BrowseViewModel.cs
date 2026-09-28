@@ -208,8 +208,28 @@ public partial class BrowseViewModel : LocalizedViewModel
             nameof(Strings.Filter_HideInstalledToolTip)),
     ];
 
-    [ObservableProperty]
-    private string _attributeFilterSummary = Strings.Filter_AnyMod;
+    //
+    // Computed rather than a field, for the reason LocalizedViewModel sets out: a field is filled
+    // once and then keeps the language it was filled in. This is not the record of anything that
+    // happened - it is a restatement of which boxes are currently ticked - so it has to be read
+    // fresh. Two things make that matter here rather than in theory: AppServices constructs Browse
+    // before AppLanguage.ApplyStored has run, so a field would be filled in English no matter what
+    // language the app goes on to read in; and a language switch has to relabel it.
+    //
+    public string AttributeFilterSummary
+    {
+        get
+        {
+            var selected = AttributeOptions.Where(o => o.IsSelected).ToList();
+
+            return selected.Count switch
+            {
+                0 => Strings.Filter_AnyMod,
+                1 => selected[0].Label,
+                _ => Text(Strings.Filter_SelectedCountFormat, selected.Count),
+            };
+        }
+    }
 
     /// <summary>The Category dropdown's entries, rebuilt from the cached catalog once it has loaded.</summary>
     public ObservableCollection<CategoryFilterItem> CategoryOptions { get; } = [CategoryFilterItem.All];
@@ -259,8 +279,26 @@ public partial class BrowseViewModel : LocalizedViewModel
     /// pre-checked; an empty selection means no filter.</summary>
     public ObservableCollection<SptVersionOption> SptVersionOptions { get; } = [];
 
-    [ObservableProperty]
-    private string _sptVersionFilterSummary = Strings.Browse_AllSptVersions;
+    // Computed for the same reason AttributeFilterSummary is: as a field it would keep whichever
+    // language the SPT release list was first read in, and a language switch would leave it behind.
+    public string SptVersionFilterSummary
+    {
+        get
+        {
+            // Carries its own "SPT" now: the leading label that used to supply it is gone, and
+            // "All versions" on its own doesn't say versions of what.
+            var selected = SptVersionOptions.Where(o => o.IsSelected).Select(o => o.Label).ToList();
+
+            return selected.Count switch
+            {
+                0 => Strings.Browse_AllSptVersions,
+                <= 3 => Text(
+                    Strings.Browse_SptVersionsFormat,
+                    string.Join(Strings.Common_ListSeparator, selected)),
+                _ => Text(Strings.Browse_SptVersionCountFormat, selected.Count),
+            };
+        }
+    }
 
     private bool _sptVersionOptionsBuilt;
 
@@ -761,17 +799,9 @@ public partial class BrowseViewModel : LocalizedViewModel
     }
 
     // "Any mod", the one option's own label, or a count. Same shape as the SPT version summary.
-    private void UpdateAttributeFilterSummary()
-    {
-        var selected = AttributeOptions.Where(o => o.IsSelected).ToList();
-
-        AttributeFilterSummary = selected.Count switch
-        {
-            0 => Strings.Filter_AnyMod,
-            1 => selected[0].Label,
-            _ => Text(Strings.Filter_SelectedCountFormat, selected.Count),
-        };
-    }
+    // The wording lives in AttributeFilterSummary itself; this only tells WPF to read it again.
+    private void UpdateAttributeFilterSummary() =>
+        OnPropertyChanged(nameof(AttributeFilterSummary));
 
     //
     // Rebuilt from the catalog rather than hardcoded, so the list is whatever The Forge is
@@ -804,20 +834,8 @@ public partial class BrowseViewModel : LocalizedViewModel
 
     private bool _categoryOptionsBuilt;
 
-    private void UpdateSptVersionFilterSummary()
-    {
-        // Carries its own "SPT" now: the leading label that used to supply it is gone, and
-        // "All versions" on its own doesn't say versions of what.
-        var selected = SptVersionOptions.Where(o => o.IsSelected).Select(o => o.Label).ToList();
-        SptVersionFilterSummary = selected.Count switch
-        {
-            0 => Strings.Browse_AllSptVersions,
-            <= 3 => Text(
-                Strings.Browse_SptVersionsFormat,
-                string.Join(Strings.Common_ListSeparator, selected)),
-            _ => Text(Strings.Browse_SptVersionCountFormat, selected.Count),
-        };
-    }
+    private void UpdateSptVersionFilterSummary() =>
+        OnPropertyChanged(nameof(SptVersionFilterSummary));
 
     /// <summary>Pulls the major.minor out of a version or constraint string, ignoring any leading
     /// operator (^, ~, &gt;=, etc.) - e.g. "^3.9.0" and "3.9.4" both yield (3, 9).</summary>

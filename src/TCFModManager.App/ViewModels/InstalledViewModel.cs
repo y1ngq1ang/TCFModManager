@@ -150,8 +150,23 @@ public partial class InstalledViewModel : LocalizedViewModel
     //
     private readonly HashSet<(int ModId, bool IsAddon, string Version)> _deferredDownloads = [];
 
-    [ObservableProperty]
-    private string _attributeFilterSummary = Strings.Filter_AnyMod;
+    // Computed rather than a field, for the reason LocalizedViewModel sets out - see the twin of
+    // this on BrowseViewModel, which also explains why a snapshot is wrong here rather than merely
+    // late: it would keep whichever language it was first filled in.
+    public string AttributeFilterSummary
+    {
+        get
+        {
+            var selected = AttributeOptions.Where(o => o.IsSelected).ToList();
+
+            return selected.Count switch
+            {
+                0 => Strings.Filter_AnyMod,
+                1 => selected[0].Label,
+                _ => Text(Strings.Filter_SelectedCountFormat, selected.Count),
+            };
+        }
+    }
 
     /// <summary>The Category dropdown's entries, rebuilt after each scan from the categories actually present in the install.</summary>
     public ObservableCollection<CategoryFilterItem> CategoryOptions { get; } = [CategoryFilterItem.All];
@@ -424,18 +439,10 @@ public partial class InstalledViewModel : LocalizedViewModel
 
     partial void OnSelectedCategoryChanged(CategoryFilterItem value) => AutoApplyFilter();
 
-    // "Any mod", the one option's own label, or a count.
-    private void UpdateAttributeFilterSummary()
-    {
-        var selected = AttributeOptions.Where(o => o.IsSelected).ToList();
-
-        AttributeFilterSummary = selected.Count switch
-        {
-            0 => Strings.Filter_AnyMod,
-            1 => selected[0].Label,
-            _ => Text(Strings.Filter_SelectedCountFormat, selected.Count),
-        };
-    }
+    // "Any mod", the one option's own label, or a count. The wording lives in
+    // AttributeFilterSummary itself; this only tells WPF to read it again.
+    private void UpdateAttributeFilterSummary() =>
+        OnPropertyChanged(nameof(AttributeFilterSummary));
 
     //
     // Rebuilt from what is actually installed rather than from the whole catalog: filtering your

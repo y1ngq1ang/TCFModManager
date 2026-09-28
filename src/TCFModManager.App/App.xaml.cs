@@ -34,10 +34,19 @@ public partial class App : Application
             return;
         }
 
-        AppLog.Start($"{AppVersion.Current}, SPT install: {AppServices.SptEnvironment.InstallPath ?? "(not set)"}");
+        //
+        // Reads the stored path directly rather than through AppServices.SptEnvironment.InstallPath.
+        // Touching AppServices is what constructs its singletons, and twelve of them are view models
+        // whose constructors compose localized text - so doing it here, four lines above
+        // AppLanguage.ApplyStored, left every one of those strings in whatever language was current
+        // before the language had been resolved, which is English. ToGameRoot is applied so the line
+        // still reports the game root, which is the value that property held.
+        //
+        AppLog.Start($"{AppVersion.Current}, SPT install: {SptInstallationService.ToGameRoot(new SettingsService().Load().SptInstallPath) ?? "(not set)"}");
 
         // Before the theme and before any string is read, so the first frame is drawn in the right
-        // language rather than re-read a moment later.
+        // language rather than re-read a moment later. Before any string read for real now: nothing
+        // constructs AppServices above this line any more.
         AppLanguage.ApplyStored();
 
         // Subscribes the source every {loc:Str} binding reads from, so a language chosen before any
